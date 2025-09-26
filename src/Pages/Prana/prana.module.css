@@ -1,0 +1,1408 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Apply Montserrat as default font for all elements */
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Alternative: Apply to body and let it inherit */
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.aboutBannerImage {
+  width: 100%;
+}
+
+.aboutBannerContainer {
+  position: relative;
+}
+
+.section7BrowcherBtn{
+  
+}
+
+.procustPageSubContainer {
+  width: 80%;
+  margin: auto !important;
+}
+
+.linkBtnsDiv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: absolute;
+  right: 25px;
+  top: 25%;
+  z-index: 23;
+  width: 40px;
+  /* Adjust the top position according to your design */
+}
+
+.linkIconBtns {
+  min-width: unset !important;
+  width: 35px;
+  height: 35px;
+  background-color: var(--white-background) !important;
+  border-radius: 75px !important;
+  cursor: pointer;
+}
+
+.linkIconBtns:hover {
+  width: 40px;
+  height: 40px;
+}
+
+.Section2MainHeader {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 45px !important;
+  font-weight: 900 !important;
+  line-height: 55px !important;
+  text-align: left !important;
+  padding-left: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.Section2MainHeader span {
+  color: #34bc3d;
+}
+
+.Section2Maincontainer {
+  background-color: #f8fbff;
+  padding: 5% 0;
+}
+
+.sliderContainer {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.section2ImageCard {
+  height: 100%;
+  width: 90%;
+  margin: auto !important;
+  padding: 50px;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  border-radius: 10px !important;
+  justify-content: space-between;
+}
+
+.section5MainHeader {
+  height: 145px !important;
+}
+
+.section2CardBike {
+  width: 100%;
+  /* height: 400px; */
+  /* margin: 0 20%; */
+}
+
+.CategoryHeader {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 50px !important;
+  font-weight: 600 !important;
+  line-height: 70px !important;
+  text-align: center;
+  margin-bottom: 50px !important;
+}
+
+.FeaturesValue {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  text-align: left !important;
+}
+
+.FeaturesLable {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 25px !important;
+  text-align: left !important;
+}
+
+.Section2CardRowContainer {
+  margin: 20px 0 !important;
+  width: 100%;
+}
+
+.FeaturesList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px 0 !important;
+  width: 100% !important;
+}
+
+.FeaturesListItem {
+  font-size: 25px !important;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.FeaturesListItem svg {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.Section2Btn {
+  color: white !important;
+  background-color: black !important;
+  text-transform: none !important;
+  display: flex;
+  column-gap: 15px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin-top: 10px !important;
+  height: 45px !important;
+}
+
+/* .Section2Btn svg {
+    font-size: 25px !important;
+} */
+
+.Section2BtnPrice {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  text-align: left;
+}
+
+.sectionBtnContainer {
+  display: flex;
+  margin-top: 20px !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px !important;
+  width: 100%;
+}
+
+.section3MainContainer {
+  margin: 5% 0;
+}
+
+/* .section3SubContainer {
+    width: 90% !important;
+    margin: auto !important;
+} */
+
+.section3Row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section3Row.shrink img {
+  width: 25%;
+  /* Adjust the width for non-hovered images when another image is hovered */
+  transition: width 0.5s ease;
+}
+
+.section3Row img {
+  width: 32%;
+  transition: width 0.5s ease;
+}
+
+.section3Row img.hovered {
+  width: 46%;
+}
+
+.section3MainHeader {
+  font-size: 45px !important;
+  line-height: 60px !important;
+  text-align: left !important;
+  color: #004787;
+  padding-left: 5px !important;
+}
+
+.cardTextContainerSection2 {
+  width: 100%;
+}
+
+.section3Card {
+  border-radius: 32px !important;
+}
+
+.section3CardImage {
+  height: 550px;
+  border-radius: 32px !important;
+  object-fit: cover;
+}
+
+.section4MainContainer {
+  margin: 5% 0 !important;
+}
+
+.section4ThreeSixty {
+  min-height: 435px;
+}
+
+.NoteTextFor360 {
+  text-align: center !important;
+  margin-top: 15px !important;
+}
+
+.section4TextContainer {
+  padding: 0 0 0 0% !important;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.Sectio4Header {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 23px !important;
+  font-weight: 600 !important;
+  line-height: 35px !important;
+  text-align: left;
+  color: #34bc3d;
+}
+
+.Sectio4HeaderText {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 38px !important;
+  /* font-weight: 600 !important; */
+  line-height: 60px !important;
+  text-align: left;
+  color: #004787;
+  margin-bottom: 10px !important;
+}
+
+.Sectio4SubText {
+  font-size: 15px !important;
+  line-height: 30px !important;
+  text-align: left;
+  width: 80%;
+}
+
+.variantColourContainer {
+  display: flex;
+  column-gap: 15px;
+  margin-top: 20px !important;
+  align-items: center;
+}
+
+.ColourContainer {
+  border-radius: 10px !important;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+}
+
+.activeColourContainer {
+  height: 50px;
+  width: 50px;
+}
+
+.ColourDivContainer {
+  display: flex;
+  column-gap: 10px !important;
+}
+
+.section5MainContainer {
+  margin: 3% 0 5% 0 !important;
+}
+
+.section5HeaderText {
+  font-size: 60px !important;
+  font-weight: 900 !important;
+  line-height: 75px !important;
+  text-align: left !important;
+}
+
+.section5Row {
+  margin-top: 30px !important;
+}
+
+.Section5SubHeader1 {
+  font-size: 17px !important;
+  margin-top: 5px !important;
+}
+
+.section5RightContainer {
+  display: flex;
+  column-gap: 2%;
+}
+
+.Section5VerticalDivider {
+  /* height: 100%; */
+  width: 1px;
+  background-color: black;
+}
+
+.section5TextContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: space-between;
+}
+
+.section6CoroselItems {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Section5SubHeader {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  line-height: 40px !important;
+  text-align: left !important;
+}
+
+.section5ImageContainer {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2%;
+  row-gap: 15px;
+  /* margin: 45px 0; */
+}
+
+.Section5SubHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.section5Image {
+  width: 100%;
+}
+
+.Section5Text {
+  font-size: 15px !important;
+  line-height: 30px !important;
+  text-align: left;
+  color: var(--description-light-text);
+}
+
+.section5Btn {
+  width: 100%;
+  display: flex !important;
+  column-gap: 10px;
+  align-items: center !important;
+  background-color: black !important;
+  padding: 10px 0 !important;
+  font-size: 20px !important;
+}
+
+.section5SpecImage {
+  /* width: 100%; */
+  object-fit: cover;
+  border-radius: 32px !important;
+  /* transform: rotate(90deg); */
+}
+
+.section6Row {
+  margin: 3% 0 !important;
+}
+
+.Section6ColumnImage {
+  width: 100%;
+  border-radius: 32px;
+  /* height: 230px !important; */
+}
+
+.section6RowHeaderText {
+  font-size: 25px !important;
+  line-height: 30px !important;
+  margin-top: 10px !important;
+}
+
+.section6Button {
+  display: flex !important;
+  column-gap: 15px;
+  text-transform: none !important;
+  color: #004787 !important;
+  font-size: 13px !important;
+  padding-left: 0 !important;
+  align-items: center !important;
+}
+
+.section6Button path {
+  fill: #004787 !important;
+}
+
+.section7HeaderImage {
+  width: 100%;
+}
+
+.section7column1 {
+  width: 30%;
+  min-width: 150px !important;
+}
+
+.section7TableContainer {
+  width: 100%;
+  overflow-x: scroll !important;
+}
+
+.section7TableContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.section7Table {
+  margin: 0 0 2% !important;
+  overflow-x: scroll !important;
+}
+
+/* .procustPageSubContainer {
+    width: 90%;
+} */
+
+td,
+th {
+  border-bottom: 0px !important;
+}
+
+.section7column2,
+.section7column3 {
+  width: 35%;
+  min-width: 230px !important;
+}
+
+tr:nth-child(even) {
+  background-color: #f2feff;
+}
+
+tbody tr {
+  height: 100px !important;
+}
+
+tbody .section7column1 {
+  border-right: 1px solid lightgray;
+}
+
+.TableColSpanCell {
+  background-color: #004787 !important;
+}
+
+.TableColSpanCell .section7CellMainText {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.section7CellMainText {
+  font-size: 17px !important;
+  color: #80808099 !important;
+  padding-left: 20% !important;
+}
+
+.section7CellText {
+  font-size: 17px !important;
+  color: #000000 !important;
+  padding-left: 20% !important;
+  line-height: 35px !important;
+}
+
+.section7EMI {
+  font-size: 23px !important;
+  color: #80808099 !important;
+}
+
+.section7ColoursBox {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 5px !important;
+  border: 2px solid black !important;
+}
+
+.section7ColoursContainer {
+  display: flex;
+  column-gap: 10px;
+  padding-left: 20%;
+}
+
+.section7Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px !important;
+}
+
+.section7ButtonContainer {
+  display: flex;
+  column-gap: 10px;
+}
+
+.section7FooterText {
+  font-size: 15px !important;
+  line-height: 35px !important;
+  color: #80808099 !important;
+}
+
+.section7Button {
+  display: flex;
+  font-size: 12px !important;
+  width: max-content;
+  padding: 10px 30px !important;
+  text-transform: none !important;
+  column-gap: 10px;
+}
+
+.section7Maincontainer {
+  padding: 0 0 5% !important;
+}
+
+.section8MainContainer {
+  padding: 0 0 5% !important;
+}
+
+.section8Image {
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 32px;
+}
+
+.section8SubHeaderText {
+  color: #80808099;
+  font-size: 20px !important;
+}
+
+.section8Hader2 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+}
+
+.section8SubHader2 {
+  font-size: 15px !important;
+  line-height: 30px !important;
+  text-align: right;
+}
+
+.section8Button {
+  text-transform: none !important;
+  font-size: 16px !important;
+  color: #34bc3d !important;
+}
+
+.section8TextContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 90%;
+  margin-left: 10%;
+  row-gap: 15px;
+}
+
+.section9Header2 {
+  font-size: 25px !important;
+  line-height: 35px !important;
+}
+
+.section9SubHeader {
+  width: 70%;
+}
+
+.AccordionContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 15px !important;
+}
+
+.AccordianTab {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  /* border-color: white !important; */
+  position: unset !important;
+}
+
+.AccordianSubMainHeading2 {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  color: #1d1d1f !important;
+  text-transform: capitalize !important;
+}
+
+.someNrmlText {
+  font-size: 15px !important;
+  line-height: 25px !important;
+  color: #80808099 !important;
+  font-weight: 400 !important;
+  border-bottom: 1px solid lightgray;
+  padding: 8px 16px 20px !important;
+}
+
+.section8HeaderText {
+  text-align: right;
+}
+
+.section8SubHader1 {
+  text-align: right;
+}
+
+.someNrmlTextContainer {
+  padding: 0 !important;
+}
+
+.section9Btn {
+  margin-left: 20px !important;
+  column-gap: 10px !important;
+  color: #004787 !important;
+}
+
+.section9MainContainer {
+  margin: 0 0 5% !important;
+}
+
+.section9TextContainer {
+  /* min-height: 420px !important; */
+}
+
+.TableColumnTitle {
+  /* text-align: center !important; */
+}
+
+.colourVariantBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #9e9e9e;
+  cursor: pointer !important;
+}
+
+.highlightBorder {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border: 1.5px solid #607eff;
+  border-radius: 7px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1680px) {
+  .FeaturesValue {
+    font-size: 15px !important;
+  }
+  .FeaturesLable {
+    font-size: 12px !important;
+  }
+  .Section2BtnPrice {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+  .Section2Btn {
+    height: 40px !important;
+  }
+  .Section5Text {
+    font-size: 13px !important;
+  }
+  .section5MainHeader {
+    height: 140px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .Section2MainHeader {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+
+  .section2ImageCard {
+    padding: 40px !important;
+  }
+
+  .section2CardBike {
+    /* height: 290px; */
+  }
+
+  .CategoryHeader {
+    font-size: 40px !important;
+    line-height: 55px !important;
+  }
+
+  .FeaturesValue {
+    font-size: 16px !important;
+    line-height: 25px !important;
+  }
+
+  .FeaturesLable {
+    font-size: 11px !important;
+    line-height: 24px !important;
+  }
+
+  .colourVariantBox {
+    width: 28px;
+    height: 28px;
+  }
+
+  .FeaturesListItem {
+    font-size: 18px !important;
+    column-gap: 10px;
+  }
+
+  .Sectio4Header {
+    font-size: 20px !important;
+    line-height: normal !important;
+    font-weight: 400 !important;
+  }
+
+  .FeaturesListItem svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .FeaturesList {
+    row-gap: 15px;
+    padding: 10px !important;
+  }
+
+  .section5MainHeader {
+    height: 125px !important;
+  }
+
+  .Section2BtnPrice {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    font-weight: 600 !important;
+  }
+
+  .Section2Btn {
+    height: 35px !important;
+    font-size: 10px !important;
+  }
+
+  .section3MainHeader,
+  .Sectio4HeaderText,
+  .section5HeaderText {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+
+  .section3CardImage {
+    height: 400px;
+  }
+
+  .Sectio4SubText {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+
+  .ColourContainer {
+    height: 35px;
+    width: 35px;
+  }
+
+  .activeColourContainer {
+    height: 40px;
+    width: 40px;
+  }
+
+  .Section5SubHeader {
+    font-size: 21px !important;
+    line-height: 35px !important;
+  }
+  .Section5SubHeader1 {
+    font-size: 15px !important;
+  }
+  .Section5Text {
+    font-size: 12px !important;
+  }
+
+  .section5Btn {
+    font-size: 15px !important;
+  }
+
+  .section6RowHeaderText {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .section6Button {
+    font-size: 13px !important;
+  }
+
+  .section7CellMainText {
+    font-size: 15px !important;
+  }
+
+  .section7CellText {
+    font-size: 15px !important;
+  }
+
+  .section7EMI {
+    font-size: 15px !important;
+  }
+
+  tbody tr {
+    height: 80px !important;
+  }
+
+  .section7Button {
+    font-size: 12px !important;
+    padding: 10px 25px !important;
+  }
+
+  .section7FooterText {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .section8SubHeaderText {
+    font-size: 15px !important;
+  }
+
+  .section8Hader2 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .section8SubHader2 {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+
+  .section8Button {
+    font-size: 15px !important;
+  }
+
+  .AccordianSubMainHeading2 {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .someNrmlText {
+    font-size: 13px !important;
+    line-height: 25px !important;
+  }
+
+  .AccordianTab {
+    margin: 0 !important;
+  }
+
+  .section8TextContainer {
+    justify-content: center !important;
+    padding: 20px 0 !important;
+    row-gap: 25px !important;
+  }
+
+  .section4ThreeSixty {
+    min-height: 305px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Section2MainHeader {
+    font-size: 35px !important;
+    line-height: 45px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .section2CardBike {
+    /* height: 225px; */
+  }
+
+  .section2ImageCard {
+    padding: 20px !important;
+  }
+
+  .CategoryHeader {
+    font-size: 37px !important;
+    line-height: 45px !important;
+    margin-bottom: 35px !important;
+  }
+
+  .FeaturesValue {
+    font-size: 14px !important;
+  }
+
+  .FeaturesLable {
+    font-size: 10px !important;
+  }
+
+  .section3MainHeader,
+  .Sectio4HeaderText,
+  .section5HeaderText {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+
+  .Section2BtnPrice {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .Section2Btn {
+    height: 40px !important;
+    font-size: 12px !important;
+  }
+
+  .section3CardImage {
+    height: 350px;
+  }
+
+  .Sectio4SubText {
+    font-size: 12px !important;
+    line-height: 25px !important;
+    width: 90% !important;
+  }
+
+  .Section5Text {
+    font-size: 11px !important;
+    line-height: 25px !important;
+  }
+
+  .variantColourContainer {
+    margin-top: 10px !important;
+  }
+
+  .ColourContainer {
+    height: 25px;
+    width: 25px;
+  }
+
+  .activeColourContainer {
+    height: 30px;
+    width: 30px;
+  }
+
+  .section5Btn {
+    font-size: 10px !important;
+  }
+
+  .section7CellMainText,
+  .section7CellText {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .section7EMI {
+    font-size: 12px !important;
+  }
+
+  tbody tr {
+    height: 60px !important;
+  }
+
+  .section7ColoursBox {
+    height: 25px !important;
+    width: 25px !important;
+  }
+
+  .section7Button {
+    font-size: 12px !important;
+    padding: 10px 15px !important;
+  }
+
+  .section7FooterText {
+    font-size: 14px !important;
+  }
+
+  .section8SubHeaderText {
+    font-size: 10px !important;
+  }
+
+  .Section5SubHeader {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .section6RowHeaderText {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .Section5SubHeader1 {
+    font-size: 14px !important;
+  }
+
+  .section6Button {
+    font-size: 12px !important;
+    column-gap: 20px !important;
+  }
+
+  .section8Hader2 {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .section8SubHader2 {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+
+  .section8Button {
+    font-size: 13px !important;
+  }
+
+  .section8TextContainer {
+    row-gap: 20px !important;
+  }
+
+  .AccordianSubMainHeading2 {
+    font-size: 16px !important;
+  }
+
+  .AccordianMainHeadingtab {
+    min-height: unset !important;
+  }
+
+  .AccordianMainHeadingtab > div {
+    margin: 0 !important;
+  }
+
+  .someNrmlText {
+    font-size: 10px !important;
+    line-height: 18px !important;
+  }
+
+  .section9TextContainer {
+    /* min-height: 290px !important; */
+  }
+
+  .section9Header2 {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+
+  .section4ThreeSixty {
+    min-height: 230px !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .aboutBannerImage {
+    height: 100% !important;
+  }
+
+  .section4TextContainer {
+    padding: 0 !important;
+  }
+
+  .Sectio4SubText {
+    font-size: 20px !important;
+    line-height: 35px !important;
+  }
+
+  .Section2BtnPrice {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+
+  .Section2Btn {
+    height: 35px !important;
+    font-size: 10px !important;
+  }
+  .section5MainHeader {
+    margin-bottom: 10px !important;
+    height: unset !important;
+  }
+
+  .section8TextContainer {
+    align-items: flex-start;
+    width: 100%;
+    margin-left: unset !important;
+  }
+
+  .section8HeaderText {
+    text-align: left;
+  }
+
+  .section8SubHader2 {
+    text-align: left;
+  }
+
+  /* .Section5VerticalDivider {
+        display: none !important;
+    }
+
+    .section5RightContainer {
+        flex-direction: column;
+        row-gap: 10px;
+    } */
+
+  .section7Footer {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+  }
+
+  .section3Row.shrink img {
+    width: 15%;
+  }
+
+  .colourVariantBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .section3Row img.hovered {
+    width: 66%;
+  }
+
+  .section7FooterText {
+    font-size: 15px !important;
+  }
+
+  .section2CardBike {
+    height: auto;
+    width: 100%;
+  }
+
+  .AccordianMainHeadingtab {
+    padding: 0 !important;
+  }
+
+  .section5RightContainer {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .Section5VerticalDivider {
+    display: none;
+  }
+
+  .section4Row {
+    row-gap: 40px !important;
+  }
+
+  .section5TextContainer {
+    width: 100%;
+  }
+  .section8Row {
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section4TextContainer {
+    padding: 0 !important;
+  }
+
+  .Section2ImageCard {
+    width: 100% !important;
+  }
+
+  .Section2CardRowContainer {
+    row-gap: 15px;
+  }
+
+  .section6RowHeaderText {
+    font-size: 22px !important;
+    line-height: 35px !important;
+  }
+
+  .section6Button {
+    font-size: 15px !important;
+    column-gap: 20px !important;
+  }
+
+  .FeaturesValue {
+    font-size: 14px !important;
+    line-height: normal !important;
+  }
+
+  .FeaturesLable {
+    font-size: 11px !important;
+    line-height: normal !important;
+    color: #80808099 !important;
+  }
+
+  .sliderContainer {
+    width: 95%;
+  }
+
+  .Section5VerticalDivider {
+    display: none !important;
+  }
+
+  .procustPageSubContainer {
+    width: 90%;
+  }
+  .section7CellMainText {
+    padding-left: 0 !important;
+  }
+
+  .Sectio4Header {
+    font-size: 18px !important;
+    text-align: left;
+  }
+
+  .section3MainHeader,
+  .Sectio4HeaderText,
+  .section5HeaderText {
+    font-size: 25px !important;
+    line-height: 35px !important;
+    padding: 0;
+    padding-left: 0 !important;
+  }
+
+  .section3CardImage {
+    height: 250px;
+  }
+
+  .Section5SubHeader {
+    font-size: 27px !important;
+    line-height: 45px !important;
+  }
+
+  .section7FooterText {
+    font-size: 15px !important;
+    line-height: 25px !important;
+    text-align: justify;
+    color: var(--description-light-text);
+    width: 95% !important;
+    margin: auto !important;
+  }
+
+  .section5RightContainer {
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 20px 0 !important;
+  }
+
+  .section5TextContainer {
+    width: 100% !important;
+    row-gap: 0;
+  }
+
+  .Section5Text {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    text-align: justify;
+    color: var(--description-light-text);
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+
+  .colourVariantBox {
+    width: 25px;
+    height: 25px;
+  }
+
+  .Sectio4SubText {
+    font-size: 15px !important;
+    line-height: 35px !important;
+    text-align: justify;
+    color: var(--description-light-text);
+    width: 100% !important;
+  }
+
+  .linkBtnsDiv {
+    column-gap: 5px !important;
+    width: max-content;
+    right: 10px;
+    flex-direction: row;
+    top: unset;
+    bottom: 5px;
+  }
+
+  .linkIconBtns {
+    width: 15px;
+    height: 15px;
+    padding: 5px !important;
+  }
+
+  .section8SubHeaderText {
+    font-size: 15px !important;
+    line-height: 30px !important;
+    width: 100%;
+  }
+
+  .section9Header2 {
+    font-size: 20px !important;
+  }
+
+  .section8TextContainer {
+    row-gap: 0px !important;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .section8Row {
+    row-gap: 20px !important;
+  }
+
+  .AccordianSubMainHeading2 {
+    font-size: 15px !important;
+  }
+
+  .section8Hader2 {
+    font-size: 16px !important;
+    line-height: 25px !important;
+  }
+
+  .section8SubHader2 {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .someNrmlText {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    text-align: justify;
+    color: var(--description-light-text);
+    width: 100% !important;
+    padding: 10px 5px 20px !important;
+  }
+
+  .section8Button {
+    font-size: 12px !important;
+    margin-left: 0 !important;
+  }
+
+  .section9TextContainer {
+    min-height: unset !important;
+  }
+
+  .Section2BtnPrice {
+    font-size: 15px !important;
+    line-height: normal !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .FeaturesValue {
+    font-size: 9px !important;
+    line-height: normal !important;
+  }
+
+  .FeaturesLable {
+    font-size: 7px !important;
+    line-height: normal !important;
+    color: #80808099 !important;
+  }
+
+  .Section2Btn {
+    font-size: 11px !important;
+    height: 30px !important;
+    padding: 0 10px !important;
+    column-gap: 10px !important;
+  }
+
+  .Section2BtnPrice {
+    font-size: 12px !important;
+    line-height: normal !important;
+  }
+
+  .section7ButtonContainer {
+    flex-direction: column;
+    row-gap: 20px !important;
+  }
+  .section7Button {
+    width: 100% !important;
+  }
+}

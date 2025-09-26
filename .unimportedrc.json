@@ -1,0 +1,12 @@
+{
+  "ignoreUnresolved": [],
+  "ignoreUnused": [
+    "@fontsource/source-sans-pro",
+    "@testing-library/react",
+    "react-lazy-load-image-component",
+    "react-scripts"
+  ],
+  "ignoreUnimported": [
+    "src/Components/horizantalTimeLine.jsx"
+  ]
+}

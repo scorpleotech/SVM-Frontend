@@ -1,0 +1,26 @@
+.table-tabs{
+    background-color: #fff !important;
+    border-radius: 2px;
+    padding: 8px 20px 0 8px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table-tabs .MuiButtonBase-root.MuiTab-root{
+    color: #424141 !important;
+    text-transform: capitalize;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+.table-tabs .MuiButtonBase-root.MuiTab-root.Mui-selected{
+    color: #222222 !important;
+    text-transform: capitalize;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background-color: #f2f2f2 !important;
+    border-radius: 4px !important;
+}
+.table-tabs .MuiTabs-indicator{
+    background-color: #222222 !important;
+}
+

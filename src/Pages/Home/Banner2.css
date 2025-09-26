@@ -1,0 +1,216 @@
+/* Import Orbitron font */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap");
+
+.alive-banner-container {
+    background-image: url("../../Assets/Images/Alive/png set/homebanner.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 5%;
+    min-height: 35rem;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* LEFT CONTENT */
+.content-section {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 8%;
+    max-width: 450px;
+    width: 100%;
+}
+
+.pre-book-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(40px);
+}
+
+/* BUTTON GROUP */
+.button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap; /* allows stacking if space is too tight */
+}
+
+.banner-btn {
+    font-family: "Orbitron", monospace, sans-serif !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 14px;
+    padding: 12px 28px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+    text-align: center;
+    min-width: 140px;
+}
+
+.banner-btn:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+}
+
+/* DESCRIPTION TEXT */
+.desc-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+}
+
+/* SOCIAL ICONS */
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 2;
+}
+
+.social-links a {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE - Tablet & Mobile */
+@media (max-width: 768px) {
+    .alive-banner-container {
+        min-height: 300px;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        background-size: 120%;
+        background-position: center center;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .content-section {
+        padding-bottom: 10%;
+        padding-left: 4%;
+        max-width: 180px;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+
+    .pre-book-section {
+        transform: translateY(0);
+        align-items: flex-start;
+    }
+
+    .button-group {
+        gap: 6px;
+    }
+
+    .banner-btn {
+        font-size: 0.65rem;   /* smaller text */
+        padding: 6px 12px;    /* smaller padding */
+        border-radius: 8px;
+        min-width: 90px;      /* smaller width */
+        letter-spacing: 1px;
+    }
+
+    .desc-text {
+        font-size: 0.35rem;
+        margin-top: 0.1rem;
+        text-align: left;
+    }
+
+    /* Move social links to bottom-right */
+    .social-links {
+        right: 3%;
+        bottom: 3%;
+        top: auto;
+        transform: none;
+        gap: 4px;
+        flex-direction: row;
+    }
+
+    .social-links a {
+        width: 20px;
+        height: 20px;
+        font-size: 8px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    .alive-banner-container {
+        min-height: 250px;
+        padding: 0;
+        width: 100vw;
+        background-size: 100%;
+        background-position: center center;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .content-section {
+        padding-bottom: 15%;
+        padding-left: 3%;
+        max-width: 130px;
+    }
+
+    .banner-btn {
+        font-size: 0.35rem;   /* very small text */
+        padding: 2px 4px;    /* very compact */
+        border-radius: 6px;
+        min-width: 70px;
+        letter-spacing: 0.8px;
+    }
+
+    .desc-text {
+        font-size: 0.3rem;
+    }
+
+    /* Bottom-right social links */
+    .social-links {
+        right: 2%;
+        bottom: 20%;
+        top: auto;
+        transform: none;
+        flex-direction: row;
+        gap: 3px;
+    }
+
+    .social-links a {
+        width: 18px;
+        height: 18px;
+        font-size: 7px;
+    }
+}

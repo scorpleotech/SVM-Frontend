@@ -1,0 +1,486 @@
+.VisitUsMainContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.section1HeaderText {
+  font-family: "Orbitron" !important;
+  font-size: 40px !important;
+  line-height: 80px !important;
+  font-weight: bolder !important;
+  text-align: left !important;
+}
+
+.SubmitBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.section1SubHeaderText {
+  font-size: 30px !important;
+  text-align: left;
+}
+
+.Section1MainContainer {
+  width: 80%;
+  margin: 75px 10% 30px;
+  position: relative;
+  /* height: 900px; */
+}
+
+.Section1CardFormContainer {
+  border-radius: 32px !important;
+  padding: 30px;
+  height: auto;
+  margin-top: 30px !important;
+  z-index: 1;
+  width: 100%;
+}
+
+.Section1MainRow {
+  margin-top: 50px !important;
+  height: max-content;
+  justify-content: space-between;
+  row-gap: 25px !important;
+}
+
+.ColumnCard {
+  height: 100% !important;
+  border-radius: 32px !important;
+  position: relative;
+  padding: 20px;
+}
+
+.CardIconContainer {
+  background: #3a3a4e;
+  filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.4));
+  width: max-content;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.CardIconContainer svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.CardTextContainer {
+  padding: 25px 10px 0;
+}
+
+.CardText {
+  font-size: 16px !important;
+  text-align: center !important;
+}
+
+.AddressText {
+  font-size: 16px !important;
+  text-align: left !important;
+}
+
+.TextInput1 > div {
+  height: 56px;
+  border-radius: 20px !important;
+}
+
+.Section2formRow2 {
+  margin-top: 30px !important;
+  row-gap: 30px;
+}
+
+.InputContainer {
+  padding: 0 30px;
+}
+
+.Section2formLable {
+  font-size: 15px !important;
+  padding-left: 10px !important;
+  text-align: left;
+}
+
+.NrmlTextInput {
+  width: 100% !important;
+  filter: drop-shadow(3px 3px 10px rgba(36, 65, 93, 0.3));
+}
+
+.NrmlTextInput > div {
+  border-radius: 20px;
+}
+
+.formInputContainer {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.FormSubmitByn {
+  text-transform: none !important;
+  border: 2px solid black !important;
+  color: black !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  height: 50px;
+  border-radius: 20px !important;
+  width: max-content;
+  padding: 5px 25px !important;
+}
+
+.StoreFloatText1 {
+  font-family: "NothanSans" !important;
+  position: absolute;
+  font-size: 12rem !important;
+  font-weight: bolder !important;
+  color: #f2f2f266;
+  z-index: -1;
+  right: -30px;
+  top: -65px;
+}
+
+.Section1CardForNote {
+  display: none;
+  padding: 50px 0 !important;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  filter: drop-shadow(0px 13px 17.5px rgba(0, 0, 0, 0.16));
+  background: linear-gradient(
+    -164deg,
+    rgba(0, 14, 2, 0.75) 0%,
+    rgb(149 149 149 / 40%) 100%
+  );
+  border-radius: 32px !important;
+  z-index: 2;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+}
+
+.Section1CardForNoteRow {
+  height: 100%;
+  align-items: center;
+  width: 90%;
+  margin: auto 5% !important;
+}
+
+.Section1SubCardHeaderText {
+  color: var(--white-background);
+  font-size: 60px !important;
+  line-height: 60p;
+  text-align: left;
+}
+
+.Section1SubCardText {
+  color: var(--white-background);
+  font-size: 20px !important;
+  text-align: left;
+}
+
+.SocialIconContainer {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.section1InterSectorIcon svg {
+  height: 290px !important;
+  width: 100% !important;
+}
+
+.section1InterSectorIcon {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.Section2MainContainer {
+  height: max-content;
+  width: 80%;
+  margin: 75px 10% 30px;
+  position: relative;
+}
+
+.Section2InputContainer {
+  width: 45%;
+  margin: 0 auto !important;
+}
+
+.Section2MapCard {
+  border-radius: 32px !important;
+}
+
+.MapIframe {
+  width: 100%;
+  height: 700px;
+}
+
+.Section2Row {
+  justify-content: center !important;
+  margin-top: 20px !important;
+}
+
+.ColumnContainer {
+  display: flex;
+  column-gap: 10px;
+}
+
+.Section2Text {
+  font-size: 18px !important;
+  text-align: left;
+}
+
+.MailText {
+  text-align: left !important;
+}
+
+.StoreFloatText2 {
+  right: unset;
+  top: 454px;
+  left: -10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .section1HeaderText {
+    font-size: 33px !important;
+    line-height: normal !important;
+  }
+
+  .TextInput1 > div {
+    height: 44px !important;
+  }
+
+  .Section1MainContainer {
+    /* height: 700px; */
+  }
+
+  .section1SubHeaderText {
+    font-size: 20px !important;
+    line-height: normal !important;
+  }
+
+  .Section1CardFormContainer {
+    /* padding: 0 !important; */
+  }
+
+  .NrmlTextInput > div {
+    height: 45px !important;
+  }
+
+  .Section2formLable {
+    font-size: 14px !important;
+  }
+
+  .FormSubmitByn {
+    font-size: 14px !important;
+    height: 40px;
+    border-radius: 15px !important;
+  }
+
+  .Section1SubCardHeaderText {
+    font-size: 35px !important;
+  }
+
+  .Section1SubCardText {
+    font-size: 14px !important;
+  }
+
+  .Section1CardFormContainer {
+    height: auto;
+  }
+
+  .StoreFloatText1 {
+    font-size: 10rem !important;
+    top: -60px;
+  }
+
+  .Section1CardForNote {
+    padding: 30px 0 !important;
+  }
+
+  .section1InterSectorIcon svg {
+    height: 165px !important;
+  }
+
+  .Section2MainContainer {
+    margin: 30px 10%;
+  }
+
+  .MapIframe {
+    height: 500px;
+  }
+
+  .ColumnContainer svg {
+    height: 15px;
+  }
+
+  .Section2Text {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+
+  .CardText {
+    font-size: 15px !important;
+  }
+
+  .AddressText {
+    font-size: 15px !important;
+  }
+
+  .CardIconContainer {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .CardIconContainer svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .CardTextContainer {
+    padding: 15px 0px 0;
+  }
+
+  .StoreFloatText2 {
+    top: 450px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .CardText {
+    font-size: 16px !important;
+  }
+
+  .CardTextContainer {
+    padding: 10px 0;
+  }
+
+  .AddressText {
+    font-size: 13px !important;
+  }
+
+  .StoreFloatText1 {
+    font-size: 9rem !important;
+    top: -40px;
+    right: 25px;
+  }
+
+  .StoreFloatText2 {
+    top: 275px;
+    right: unset;
+    left: -45px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section1HeaderText {
+    font-size: 35px !important;
+    line-height: 60px !important;
+  }
+
+  .Section1MainContainer {
+    /* height: 1125px; */
+    margin: 30px 10%;
+  }
+
+  .StoreFloatText1 {
+    font-size: 6rem !important;
+  }
+
+  .section1SubHeaderText {
+    font-size: 17px !important;
+    line-height: normal !important;
+  }
+
+  .Section1CardFormContainer {
+    /* padding: 0 !important; */
+  }
+
+  .Section1CardForNoteRow {
+    row-gap: 25px;
+  }
+
+  .section1InterSectorIcon {
+    display: none;
+  }
+
+  .NrmlTextInput > div {
+    height: 45px !important;
+  }
+
+  .Section2formLable {
+    font-size: 16px !important;
+  }
+
+  .Section1SubCardHeaderText {
+    font-size: 35px !important;
+  }
+
+  .Section1SubCardText {
+    font-size: 14px !important;
+  }
+
+  .Section1CardFormContainer {
+    height: auto;
+  }
+
+  .Section2formRow2 {
+    margin-top: 0 !important;
+  }
+
+  .Section1CardForNote {
+    padding: 30px 0 !important;
+  }
+
+  .section1InterSectorIcon svg {
+    height: 165px !important;
+  }
+
+  .Section2MainContainer {
+    margin: 30px 10%;
+  }
+
+  .MapIframe {
+    height: 500px;
+  }
+
+  .ColumnContainer svg {
+    height: 15px;
+  }
+
+  .Section2Row {
+    row-gap: 25px;
+  }
+
+  .Section2Text {
+    font-size: 17px !important;
+    line-height: normal !important;
+  }
+
+  .CardText {
+    font-size: 20px !important;
+  }
+
+  .section1BtnMainContainer {
+    position: relative;
+  }
+
+  .CardTextContainer {
+    padding: 25px 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Section1MainContainer {
+    /* height: 1150px; */
+  }
+
+  .CardText {
+    font-size: 13px !important;
+  }
+
+  .Section2InputContainer {
+    width: 85% !important;
+  }
+}

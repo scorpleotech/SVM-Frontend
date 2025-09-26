@@ -1,0 +1,1053 @@
+.eventsPageSubContainer1 {
+  padding: 4% 10% 3%;
+}
+
+.eventsPageMainHeading {
+  font-family: "orbitron" !important;
+  font-size: 50px !important;
+  line-height: normal !important;
+  text-align: center !important;
+}
+
+.eventsPageSubHeading {
+  font-family: "NothanSans" !important;
+  font-size: 22px !important;
+  line-height: normal !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+}
+
+.eventBannerRow {
+  margin-top: 50px !important;
+  row-gap: 30px !important;
+}
+
+.eventsBanner {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+.neweventsBanner{
+  object-fit: contain !important;
+}
+
+.eventsBannerTextContainer {
+  padding-left: 35px !important;
+  position: relative;
+}
+
+.eventsBannerHeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  /* text-align: center !important; */
+  margin-top: 30px !important;
+}
+
+.eventsBannerText {
+  font-size: 14px !important;
+  line-height: 25px !important;
+  text-align: justify !important;
+  margin-top: 25px !important;
+  color: #5a5353;
+}
+
+.EventBannerbtnContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px !important;
+}
+
+.eventBannerBtnIcon {
+  z-index: 1;
+  position: absolute;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+  background: rgba(255, 255, 255, 0.85);
+  right: 110px;
+  width: 45px;
+  height: 45px;
+  border-radius: 75px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+  font-size: 18px !important;
+}
+
+.arrowTransist {
+  animation: arraowTransist 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arraowTransist {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  100% {
+    transform: translate(110px, 0%);
+  }
+}
+
+.TermsMainContainer {
+  width: 80%;
+  margin: 3% 10% 5%;
+}
+
+.TermsMainContainer iframe {
+  width: 100%;
+  height: 45rem;
+}
+
+.termsBanner {
+  width: 100%;
+}
+
+.eventBannerBtn {
+  border: 1px solid var(--black-background) !important;
+  color: var(--black-background) !important;
+  border-radius: 75px !important;
+  display: flex !important;
+  column-gap: 5px;
+  text-transform: none !important;
+  position: relative !important;
+  padding: 0 20px !important;
+  height: 50px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.termsHeading {
+  text-align: center;
+  margin-bottom: 30px !important;
+  min-height: 180px;
+  background: #004787;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px !important;
+  color: white;
+  font-weight: 700 !important;
+  /* text-transform: uppercase !important; */
+  font-family: "Orbitron" !important;
+  letter-spacing: 4px !important;
+  padding: 30px 10%;
+}
+
+.TermsMainContainer h4 {
+  font-family: "NothanSans" !important;
+  color: #004787 !important;
+}
+
+.TermsMainContainer p,
+.TermsMainContainer li,
+.TermsMainContainer span,
+.TermsMainContainer p > strong,
+.TermsMainContainer p > a,
+.TermsMainContainer p > a > u {
+  font-family: "Goutham" !important;
+  font-size: 15px !important;
+  text-align: justify !important;
+  overflow-x: hidden !important;
+}
+
+.TermsMainContainer li {
+  overflow-x: unset !important;
+}
+
+.eventBannerBtn > span {
+  margin-left: 30px;
+}
+
+.BtnTransist > span {
+  margin-left: 0px;
+  margin-right: 35px;
+}
+
+.BannerDateChip {
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+}
+
+.eventsPageImage {
+  width: 100%;
+}
+
+.eventsCardTopic {
+  position: absolute !important;
+  text-transform: none !important;
+  color: var(--black-background) !important;
+  background: var(--white-background) !important;
+  z-index: 85;
+  left: 5px;
+  top: 5px;
+  border-radius: 75px !important;
+  font-weight: 600 !important;
+  height: auto;
+  font-size: 9px !important;
+  border: none;
+}
+
+.eventsCardTopic:hover {
+  color: var(--black-background);
+  background: var(--white-background);
+}
+
+.eventsCardMessage {
+  margin-bottom: 15px !important;
+  font-size: 17px !important;
+  text-align: left;
+  font-weight: 500 !important;
+  color: var(--black-background);
+  line-height: 25px !important;
+  width: 85%;
+  margin-left: 0px !important;
+  margin-top: 15px !important;
+}
+
+.eventsSubHEadercard {
+  margin-bottom: 40px !important;
+  font-size: 14px !important;
+  text-align: left;
+  font-weight: 500 !important;
+  color: #5a5353;
+  line-height: 20px !important;
+  width: 85%;
+  margin-left: 0px !important;
+}
+
+.eventsCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  bottom: 10px;
+}
+
+.eventsSmalltext {
+  display: flex;
+  align-content: center;
+  column-gap: 5px !important;
+  font-size: 12px !important;
+  color: var(--description-light-text) !important;
+}
+
+.eventsCardButton {
+  font-size: larger !important;
+  min-width: unset !important;
+  width: 40px;
+  height: 40px;
+  padding: 0 !important;
+  background: white !important;
+  color: black !important;
+  border-radius: 50% !important;
+}
+
+.eventsCardButton:hover {
+  background: var(--black-background) !important;
+  color: var(--white-background) !important;
+}
+
+.eventsPageSubContainer2 {
+  width: 90%;
+  margin: 0% 5% 4% !important;
+}
+
+.eventsPageSubContainer2 > div {
+  padding: 10px 0;
+}
+
+.eventsCard {
+  width: 90%;
+  margin: 5px;
+  margin-left: 5%;
+  height: 100%;
+}
+
+.BlogsBannerRightcontainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px !important;
+}
+
+.blogsBannerLeftContainer {
+  height: 100%;
+  position: relative;
+}
+
+.leftContainerText {
+  font-size: 35px !important;
+  color: black;
+  background-color: white;
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.eventsBannerLeftTextContainer1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  row-gap: 5px !important;
+}
+
+.eventsBannerLeftTextContainer2 {
+  bottom: 8%;
+}
+
+.BannerChip {
+  width: max-content;
+  background-color: white !important;
+  color: black !important;
+}
+
+.eventsBannerLeftbtnContainer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 20px !important;
+  align-items: flex-end !important;
+}
+
+.eventsBannerBtn {
+  background-color: white !important;
+  color: black !important;
+  font-size: 25px !important;
+  padding: 0 !important;
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  min-width: max-content !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.eventsBannerBtn:hover {
+  background-color: black !important;
+  color: white;
+}
+
+.rightContainerText {
+  font-size: 23px !important;
+}
+
+.eventsBannerrightbtnContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  right: 0;
+  height: 80%;
+  justify-content: space-between;
+  bottom: 10%;
+  right: 5%;
+  align-items: flex-end;
+}
+
+.blogsMainContainer {
+  padding: 1% 10% 4%;
+}
+
+.categoryListContainer {
+  display: flex;
+  column-gap: 40px !important;
+  align-items: center;
+  padding-left: 2%;
+  margin-bottom: 45px !important;
+}
+
+.categoryHeading {
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  color: #5a5353;
+  cursor: pointer !important;
+}
+
+.activeCategory {
+  font-size: 35px !important;
+  font-weight: 600 !important;
+  color: black;
+}
+
+.eventsPageRow {
+  row-gap: 60px !important;
+}
+
+.AccordionContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 15px !important;
+  width: 80% !important;
+  margin: 5% 10% !important;
+}
+
+.AccordianTab {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  /* border-color: white !important; */
+  position: unset !important;
+}
+
+.AccordianSubMainHeading2 {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  color: #1d1d1f !important;
+  text-transform: capitalize !important;
+}
+
+.someNrmlText {
+  font-size: 18px !important;
+  line-height: 30px !important;
+  color: #80808099 !important;
+  font-weight: 400 !important;
+  border-bottom: 1px solid lightgray;
+  padding: 8px 16px 20px !important;
+}
+
+.loginModalWidth {
+  width: 25vw !important;
+  height: max-content !important;
+  border-radius: 5px !important;
+  /* left: 50% !important; */
+  transform: translate(0, 20%);
+}
+
+.forgetPasswordmodalclose {
+  position: absolute;
+  right: 0 !important;
+  top: 0 !important;
+  cursor: pointer !important;
+  z-index: 22;
+}
+
+.closebtn {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.enquiryFormSection2 {
+  /* position: absolute; */
+  width: 70%;
+  margin: auto;
+  padding: 40px 0 !important;
+}
+
+.EnquiryFormImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  object-position: 92%;
+}
+
+.enqiryrow {
+  height: 100%;
+  width: 100%;
+  margin-left: 0px !important;
+}
+
+.enQuiryFormHeading {
+  font-family: "Orbitron" !important;
+  font-size: 30px !important;
+  line-height: normal !important;
+  color: #004787 !important;
+  font-weight: 600 !important;
+  margin-bottom: 5px !important;
+  text-align: center !important;
+}
+
+.successmodal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px !important;
+}
+
+.enquiryFormSubHeading {
+  font-size: 12px !important;
+  line-height: normal !important;
+  color: #979797 !important;
+  margin-bottom: 30px !important;
+  text-align: center !important;
+}
+
+.Section2formLable {
+  font-size: 15px !important;
+  line-height: normal !important;
+  color: #80808099 !important;
+  font-weight: 400 !important;
+}
+
+.valildatorForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.valildatorForm div {
+  width: 100%;
+}
+
+.SignUpFormInput > div {
+  height: 45px !important;
+  border-radius: 20px !important;
+}
+
+.SignUpFormInput > label {
+  margin-top: 5px !important;
+  font-size: 12px !important;
+}
+
+.enqiryImageContainer,
+.enqiryFormContainer {
+  height: 100%;
+  padding: 0 !important;
+  position: relative;
+}
+
+.subHederTextBecomeDealer {
+  width: 80%;
+  margin: 0 auto !important;
+  font-size: 14px !important;
+  text-align: justify !important;
+}
+
+.bodyContent {
+  width: 80%;
+  margin: auto 10%;
+}
+
+.enquiryBtn {
+  text-transform: none !important;
+  border: 1px solid black !important;
+  color: black !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  height: 40px;
+  border-radius: 20px !important;
+  width: max-content;
+  padding: 5px 25px !important;
+}
+
+.formInputContainer {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+
+.leaderFormInput > div {
+  background-color: #d3d3d340;
+}
+
+.dealerformInputRow {
+  row-gap: 25px !important;
+}
+
+.rightAlignContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tcoInput > div {
+  width: 300px !important;
+}
+
+.dealerSubheading {
+  font-size: 25px !important;
+  line-height: normal !important;
+  color: #004787 !important;
+  font-weight: 600 !important;
+  margin: 20px 0 !important;
+  text-align: center !important;
+}
+
+.PiechartrightContainer,
+.PiechartleftContainer {
+  padding: 30px 35px !important;
+  min-height: 400px !important;
+}
+
+.firstGraphHeaderText {
+  font-size: 17px !important;
+  line-height: normal !important;
+  /* color: #004787 !important; */
+  /* font-weight: 600 !important; */
+  margin: 20px 0 !important;
+  /* text-align: center !important; */
+}
+
+.MainHeadig,
+.firstGraphSubText {
+  font-size: 30px !important;
+  line-height: normal !important;
+  color: #004787 !important;
+  font-weight: 600 !important;
+  margin: 20px 0 !important;
+  /* text-align: center !important; */
+}
+
+.MainHeadig {
+  font-size: 20px !important;
+}
+
+.legendContainer {
+  display: flex;
+  column-gap: 35px !important;
+  align-items: center;
+}
+
+.legendText {
+  font-size: 13px !important;
+  line-height: normal !important;
+  color: #979797 !important;
+  font-weight: 400 !important;
+  margin: 20px 0 !important;
+  display: flex;
+  column-gap: 5px !important;
+  align-items: center;
+  /* text-align: center !important; */
+}
+
+.ColourContainer {
+  border-radius: 50% !important;
+  height: 10px;
+  width: 10px;
+}
+
+.subText1 {
+  font-size: 14px !important;
+  line-height: normal !important;
+  margin: 5px 0 !important;
+}
+
+.subText2 {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  margin: 5px 0 !important;
+}
+
+.tabFlexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1680px) {
+  .loginModalWidth {
+    /* height: 70vh !important; */
+    border-radius: 5px !important;
+    top: 50%;
+    /* transform: translate(0, 5%); */
+  }
+
+  .enquiryFormSubHeading {
+    font-size: 10px !important;
+  }
+
+  .eventsPageMainHeading {
+    font-size: 45px !important;
+  }
+
+  .eventsPageSubHeading {
+    font-size: 18px !important;
+  }
+
+  .eventBannerBtn {
+    height: 40px !important;
+    font-size: 13px !important;
+    padding: 0 10px !important;
+  }
+
+  .eventBannerBtnIcon {
+    width: 35px;
+    height: 35px;
+    right: 95px !important;
+  }
+
+  @keyframes arraowTransist {
+    0% {
+      transform: translate(0%, 0%);
+    }
+
+    100% {
+      transform: translate(95px, 0%);
+    }
+  }
+
+  .eventsCardMessage {
+    font-size: 13px !important;
+  }
+
+  .eventsSubHEadercard {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .eventsPageMainHeading {
+    font-size: 45px !important;
+    line-height: normal !important;
+  }
+
+  .eventsPageSubHeading {
+    font-size: 17px !important;
+    line-height: normal !important;
+  }
+
+  .eventsBannerHeaderText {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    margin-top: 25px !important;
+  }
+
+  .eventsBannerText {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-top: 18px !important;
+  }
+
+  .eventBannerBtn {
+    font-size: 14px !important;
+    line-height: normal !important;
+    height: 40px !important;
+  }
+
+  .eventBannerBtnIcon {
+    width: 35px;
+    height: 35px;
+    right: 105px;
+  }
+
+  @keyframes arraowTransist {
+    0% {
+      transform: translate(0%, 0%);
+    }
+
+    100% {
+      transform: translate(105px, 0%);
+    }
+  }
+
+  .loginModalWidth {
+    /* height: 80vh !important; */
+    /* transform: translate(0%, 10%); */
+    width: 30vw !important;
+  }
+
+  .AccordianSubMainHeading2 {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .someNrmlText {
+    font-size: 13px !important;
+    line-height: 25px !important;
+  }
+
+  .AccordianTab {
+    margin: 0 !important;
+  }
+
+  .eventBannerBtn > span {
+    margin-left: 25px;
+  }
+
+  .BtnTransist > span {
+    margin-left: 0px;
+    margin-right: 25px;
+  }
+
+  .EventBannerbtnContainer {
+    margin-top: 15px !important;
+  }
+
+  .eventsCardMessage {
+    margin-top: 17px !important;
+    line-height: normal !important;
+    font-size: 17px !important;
+  }
+
+  .eventsSmalltext {
+    font-size: 12px !important;
+    flex-direction: column;
+    row-gap: 5px !important;
+  }
+
+  .leftContainerText {
+    font-size: 20px !important;
+    width: 42% !important;
+  }
+
+  .rightContainerText {
+    font-size: 13px !important;
+  }
+
+  .eventsBannerBtn {
+    font-size: 18px !important;
+    line-height: normal !important;
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .categoryHeading {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+
+  .activeCategory {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .SignUpFormInput > div {
+    height: 40px !important;
+  }
+
+  .SignUpFormInput > label {
+    margin-top: 0px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .eventsBannerTextContainer {
+    padding-left: 20px !important;
+  }
+
+  /* .eventsBannerHeaderText {
+    font-size: 37px !important;
+    line-height: normal !important;
+    margin-top: 20px !important;
+  } */
+  .section9Smalltext {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .eventsCardMessage {
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+    font-size: 12px !important;
+  }
+
+  .eventsSubHEadercard {
+    font-size: 10px !important;
+  }
+
+  .SignUpFormInput > div {
+    height: 30px !important;
+  }
+
+  .SignUpFormInput > label {
+    margin-top: 0px !important;
+    font-size: 10px !important;
+  }
+
+  .enQuiryFormHeading {
+    font-size: 20px !important;
+  }
+
+  .enquiryFormSubHeading {
+    font-size: 8px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .leftContainerText {
+    font-size: 15px !important;
+    width: 42% !important;
+  }
+
+  .rightContainerText {
+    font-size: 10px !important;
+  }
+
+  .BannerChip {
+    font-size: 11px !important;
+    padding: 5px 0 !important;
+    height: max-content !important;
+  }
+
+  .AccordianSubMainHeading2 {
+    font-size: 16px !important;
+  }
+
+  .AccordianMainHeadingtab {
+    min-height: unset !important;
+  }
+
+  .enquiryBtn {
+    font-size: 12px !important;
+    height: 30px !important;
+  }
+
+  .AccordianMainHeadingtab > div {
+    margin: 0 !important;
+  }
+
+  .someNrmlText {
+    font-size: 10px !important;
+    line-height: 18px !important;
+  }
+
+  .eventsBannerBtn {
+    font-size: 14px !important;
+    line-height: normal !important;
+    height: 35px !important;
+    width: 35px !important;
+  }
+
+  .eventsCard {
+    width: 95% !important;
+    margin-left: 2.5%;
+  }
+
+  .TermsMainContainer iframe {
+    height: 35rem;
+  }
+  .TermsMainContainer img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .eventsBannerTextContainer {
+    padding-left: 0px !important;
+  }
+
+  .loginModalWidth {
+    width: 80% !important;
+    height: max-content !important;
+    top: 15% !important;
+    transform: unset !important;
+    position: fixed;
+  }
+
+  .enqiryImageContainer {
+    display: none !important;
+  }
+
+  .TermsMainContainer iframe {
+    height: 28rem;
+  }
+
+  .enquiryFormSection2 {
+    /* position: fixed; */
+    padding: 30px 40px !important;
+    /* transform: unset !important; */
+    width: 100%;
+    background: #fff;
+    /* top: 89px; */
+    /* left: 10% !important; */
+    /* margin: 20px 20px; */
+  }
+
+  .forgetPasswordmodalclose {
+    /* position: relative !important; */
+    top: 0px !important;
+    right: 0% !important;
+    /* Add iOS-specific styles here */
+  }
+
+  .bodyContentRow {
+    row-gap: 20px !important;
+  }
+
+  .tcoInput,
+  .tcoInput > div {
+    width: 100% !important;
+  }
+
+  .PiechartrightContainer,
+  .PiechartleftContainer {
+    min-height: unset !important;
+  }
+
+  .PiechartrightContainer {
+    padding: 10px 35px 30px !important;
+  }
+
+  .PiechartleftContainer {
+    padding: 30px 35px 0px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .eventsCardMessage {
+    font-size: 20px !important;
+    line-height: normal !important;
+  }
+
+  .AccordianSubMainHeading2 {
+    font-size: 20px !important;
+  }
+
+  .someNrmlText {
+    font-size: 15px !important;
+    line-height: 30px !important;
+    text-align: justify;
+    color: var(--description-light-text);
+    width: 100% !important;
+  }
+
+  .categoryListContainer {
+    overflow-x: scroll;
+  }
+
+  .categoryHeading {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    width: max-content !important;
+  }
+
+  .activeCategory {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+  }
+
+  .eventsPageMainHeading {
+    font-size: 35px !important;
+    line-height: normal !important;
+  }
+
+  .TermsMainContainer iframe {
+    height: 15rem;
+  }
+
+  /* .eventsBannerHeaderText {
+    font-size: 32px !important;
+    line-height: normal !important;
+    margin-top: 20px !important;
+  } */
+
+  .termsHeading {
+    height: auto;
+    padding: 30px 20px;
+    font-size: 22px !important;
+  }
+
+  .BannerDateChip {
+    left: 0;
+  }
+
+  .eventsPageSubContainer2 {
+    margin: 10% 5%;
+  }
+}

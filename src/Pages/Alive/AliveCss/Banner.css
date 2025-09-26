@@ -1,0 +1,250 @@
+/* ===== Banner.css ===== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Banner Container */
+.alive-banner-container {
+    background: linear-gradient(135deg, #e8eef5 0%, #d1dae6 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: clamp(70vh, 85vh, 90vh);
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        font-family: "Arial", sans-serif;
+        box-sizing: border-box;
+        overflow: hidden;
+}
+
+/* Top Right Logo */
+.top-right-text {
+    position: absolute;
+    top: clamp(15px, 5vw, 50px);
+    right: clamp(15px, 8vw, 120px);
+    z-index: 3;
+}
+
+.top-right-logo {
+    width: clamp(80px, 12vw, 160px);
+    height: auto;
+    display: block;
+}
+
+/* Left Content */
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+    width: 45%;
+    z-index: 2;
+    padding-left: 2rem;
+}
+
+/* ALIVE Logo + Tagline Box */
+.alive-logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: clamp(120px, 30vw, 300px);
+    margin-bottom: 2rem;
+    /* space below tagline box */
+}
+
+.alive-logo-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.4rem;
+}
+
+.tagline {
+    font-size: clamp(0.7rem, 1.7vw, 1.15rem);
+    font-weight: 600;
+    font-family: 'Montserrat' !important;
+    color: #333;
+    line-height: 1.4;
+    font-style: italic;
+    width: 100%;
+    text-align: left;
+}
+
+/* Pre-book Section */
+.pre-book-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    /* extra space above button */
+}
+
+.pre-book-btn {
+    font-family: "Orbitron", monospace, sans-serif !important;
+    font-size: clamp(0.50rem, 1.5vw, 1.1rem);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 14px;
+    padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 40px);
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+.pre-book-btn:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+}
+
+/* Sub Text Below Button */
+.sub-text {
+    font-weight: 500;
+    font-family: 'Montserrat' !important;
+    color: #333;
+    line-height: 1.4;
+    font-style: italic;
+    width: 100%;
+    text-align: left;
+}
+
+/* Right Content */
+.right-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.scooter-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-right: 350px;
+    margin-left: -160px;
+    margin-top: 20px;
+}
+
+.scooter-image {
+    width: clamp(800px, 85vw, 3000px);
+    height: auto;
+    max-height: 95vh;
+    object-fit: contain;
+}
+
+/* Social Links */
+.social-links {
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 3;
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 768px) {
+    .alive-banner-container {
+        min-height: 25vh;
+        padding: 0%;
+        flex-direction: row;
+        align-items: flex-end;
+        /* Changed to align items to bottom */
+        position: relative;
+        overflow: visible;
+    }
+
+    .left-content {
+        width: 45%;
+        padding-left: 1rem;
+        align-items: flex-start;
+        align-self: center;
+        /* Keep left content centered vertically */
+    }
+
+    /* Reduce space between tagline and button in mobile */
+    .alive-logo-box {
+        margin-bottom: 0.5rem;
+        /* reduced from 2rem */
+    }
+
+    .pre-book-section {
+        margin-top: 0.5rem;
+        /* reduced from 1.5rem */
+    }
+
+    .tagline {
+        font-size: clamp(0.46rem, 0.9vw, 0.66rem);
+    }
+
+    .sub-text {
+        font-size: clamp(0.6rem, 1vw, 0.75rem);
+        text-align: left;
+        display: none;
+    }
+
+    .right-content {
+        width: 65%;
+        justify-content: flex-start;
+        height: 100%;
+        overflow: visible;
+        align-items: flex-end;
+        /* Align content to bottom */
+        position: relative;
+    }
+
+    .scooter-container {
+        padding-right: 0;
+       
+        overflow: visible;
+        height: auto;
+        /* Changed from 100% to auto */
+        display: flex;
+        align-items: flex-end;
+        /* Align scooter to bottom */
+        margin-bottom: 0;
+        /* Ensure it sits at the very bottom */
+        margin-left: 0;
+            /* no negative margin */
+            overflow: hidden;
+            /* prevent leak */
+    }
+
+    .scooter-image {
+        width: 120%;
+        max-width: none;
+        height: auto;
+        object-fit: contain;
+        align-self: flex-end;
+        /* Ensure image aligns to bottom */
+    }
+
+    .social-links {
+        position: absolute;
+        bottom: 10px;
+        /* Positioned in bottom corner */
+        right: 10px;
+        transform: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 15px;
+        z-index: 4;
+        /* Higher z-index to ensure it's above the scooter */
+    }
+
+    .pre-book-btn {
+        max-width: 100%;
+    }
+}

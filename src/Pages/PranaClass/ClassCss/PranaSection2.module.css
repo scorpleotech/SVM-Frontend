@@ -1,0 +1,445 @@
+/* PranaSection2.module.css - CSS Module Implementation */
+
+.pranaMainContainer {
+    background-color: #f8fbff;
+    padding: 5% 0;
+    min-height: 100vh;
+}
+
+.pranaContentContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pranaMainHeader {
+    font-family: "Arial", sans-serif !important;
+    font-size: 45px !important;
+    font-weight: 900 !important;
+    line-height: 55px !important;
+    text-align: left !important;
+    margin-bottom: 40px !important;
+    color: #333 !important;
+}
+
+.pranaMainHeader span {
+    color: #34bc3d;
+}
+
+.pranaMainRow {
+    margin: 0;
+    align-items: stretch;
+}
+
+/* Bike Variants Section */
+.bikeVariantsSection {
+    padding-right: 20px;
+}
+
+.bikeVariantCol {
+    margin-bottom: 20px;
+}
+
+.bikeVariantCard {
+    background: white !important;
+    border-radius: 15px !important;
+    border: 3px solid transparent !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    padding: 30px 20px;
+    height: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.bikeVariantCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.bikeVariantCard.selected {
+    border-color: #0b0b0b !important;
+    box-shadow: 0 8px 25px rgba(52, 188, 61, 0.2) !important;
+}
+
+.bikeVariantCard.selected::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 2px solid #090909;
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+.pranaLogoContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pranaLogoImage {
+    max-width: 180px;
+    max-height: 45px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.pranaLogoText {
+    font-family: "Arial Black", sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    letter-spacing: 3px !important;
+    text-align: center !important;
+    color: #000 !important;
+    margin: 0 !important;
+    text-transform: uppercase;
+}
+
+.bikeVariantImage {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Highlights Section */
+.highlightsSection {
+    padding-left: 20px;
+}
+
+.highlightsCard {
+    background: white !important;
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    padding: 25px 20px !important;
+    height: 100%;
+    min-height: 450px;
+}
+
+.highlightsTitle {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    margin-bottom: 25px !important;
+    text-align: left !important;
+}
+
+.specItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.specLabel {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #666 !important;
+    flex: 1;
+}
+
+.specValue {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    text-align: right;
+}
+
+/* Color Selection */
+.colorSelection {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: flex-start;
+}
+
+.colorOption {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.colorOption:hover {
+    transform: scale(1.1);
+}
+
+.colorOption.selected {
+    border-color: #0b0b0b;
+    transform: scale(1.1);
+}
+
+.colorOption.selected::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid currentColor;
+}
+
+/* Price Section */
+.priceSection {
+    margin: 20px 0 15px 0;
+}
+
+.priceLabel {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #666 !important;
+    margin-bottom: 5px !important;
+}
+
+.priceValue {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+}
+
+/* Pre-book Button */
+.preBookButton {
+    background-color: #000 !important;
+    color: white !important;
+    text-transform: none !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    height: 45px !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-top: 15px !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.preBookButton:hover {
+    background-color: #333 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.preBookButton:focus {
+    outline: 2px solid #080808;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .pranaMainHeader {
+        font-size: 40px !important;
+        line-height: 50px !important;
+    }
+
+    .bikeVariantsSection {
+        padding-right: 10px;
+    }
+
+    .highlightsSection {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pranaMainHeader {
+        font-size: 35px !important;
+        line-height: 45px !important;
+        text-align: center !important;
+    }
+
+    .bikeVariantsSection,
+    .highlightsSection {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .highlightsSection {
+        margin-top: 30px;
+    }
+
+    .highlightsCard {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pranaContentContainer {
+        padding: 0 15px;
+    }
+
+    .pranaMainHeader {
+        font-size: 32px !important;
+        line-height: 40px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .bikeVariantCard {
+        padding: 15px;
+        margin-bottom: 15px;
+        min-height: 280px;
+    }
+
+    .bikeVariantImage {
+        max-height: 200px;
+    }
+
+    .highlightsCard {
+        padding: 20px !important;
+    }
+
+    .highlightsTitle {
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .colorOption {
+        width: 35px;
+        height: 35px;
+    }
+
+    .specValue {
+        font-size: 14px !important;
+    }
+
+    .priceValue {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pranaMainHeader {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+
+    .bikeVariantCol {
+        margin-bottom: 15px;
+    }
+
+    .bikeVariantCard {
+        min-height: 250px;
+    }
+
+    .bikeVariantImage {
+        max-height: 180px;
+    }
+
+    .pranaLogoImage {
+        max-width: 120px;
+        max-height: 30px;
+    }
+
+    .pranaLogoText {
+        font-size: 18px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .highlightsTitle {
+        font-size: 18px !important;
+    }
+
+    .specItem {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+    .specLabel {
+        font-size: 15px !important;
+    }
+
+    .specValue {
+        font-size: 15px !important;
+    }
+
+    .colorOption {
+        width: 30px;
+        height: 30px;
+    }
+
+    .priceValue {
+        font-size: 18px !important;
+    }
+
+    .preBookButton {
+        font-size: 12px !important;
+        height: 45px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pranaMainHeader {
+        font-size: 24px !important;
+        line-height: 30px !important;
+    }
+
+    .highlightsCard {
+        padding: 15px !important;
+    }
+
+    .colorSelection {
+        gap: 10px;
+    }
+
+    .colorOption {
+        width: 25px;
+        height: 25px;
+    }
+
+    .preBookButton {
+        font-size: 11px !important;
+        height: 40px !important;
+        gap: 8px !important;
+    }
+}
+
+/* Accessibility and Focus States */
+.colorOption:focus {
+    outline: 2px solid #080808;
+    outline-offset: 2px;
+}
+
+.bikeVariantCard:focus-within {
+    outline: 2px solid #0a0b0a;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .pranaMainContainer {
+        background-color: white !important;
+    }
+
+    .bikeVariantCard,
+    .highlightsCard {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+
+    .preBookButton {
+        display: none !important;
+    }
+
+    .colorSelection {
+        display: none !important;
+    }
+}

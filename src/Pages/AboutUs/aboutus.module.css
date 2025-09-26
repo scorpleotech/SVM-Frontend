@@ -1,0 +1,1008 @@
+.aboutBannerContainer {
+  position: relative;
+  /* Ensure the container is positioned relative to its normal position */
+}
+
+.aboutBannerContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  /* Use a linear gradient for the box shadow */
+  /* box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75); */
+  z-index: 1;
+}
+
+.aboutBannerImage {
+  width: 100%;
+  box-shadow: inset 0 10px 10px -10px var(--white-background);
+  /* max-height: 1000px; */
+  /* height: calc(100vh - 70px); */
+}
+
+.aboutBannerMainText {
+  position: absolute;
+  color: white;
+  font-size: 50px !important;
+  line-height: 50px !important;
+  text-align: center;
+  z-index: 2;
+  top: 10%;
+  right: 10%;
+}
+
+/* Section 3 Starts Here */
+
+.Section3BtnIcon {
+  z-index: 1;
+  position: absolute;
+  background-color: #00000014;
+  left: -10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 75px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* top: 2px; */
+  font-size: 25px;
+}
+
+.section2TextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.section2BtnContainer {
+  margin-top: 35px !important;
+}
+
+.section2Text {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+  text-align: justify;
+  width: 95%;
+}
+
+.section2rightMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.section2SplSubText {
+  width: 97%;
+}
+
+.section2MainContainer {
+  /* width: 80%;
+    margin: 50px auto; */
+  background-image: url("../../Assets/Images/section2background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 0 4%;
+}
+
+.section2Row {
+  width: 80%;
+  margin: 50px 10% 0 !important;
+}
+
+.Section3Btn {
+  border: 1px solid var(--black-background) !important;
+  color: var(--black-background) !important;
+  border-radius: 75px !important;
+  display: flex !important;
+  column-gap: 5px;
+  text-transform: none !important;
+  position: relative !important;
+  /* height: 40px; */
+  z-index: 1;
+  font-size: 25px !important;
+}
+
+.Section3Btn span {
+  margin-left: 40px !important;
+}
+
+.section2headerContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: flex-end;
+}
+
+.section2headerText1 {
+  font-family: "NothanSans" !important;
+  font-size: 35px !important;
+  font-weight: 400 !important;
+  line-height: 37px !important;
+}
+
+.section2headerText2 {
+  font-family: "Orbitron" !important;
+  font-size: 60px !important;
+  font-weight: 600 !important;
+  line-height: 60px !important;
+  color: #004787;
+}
+
+.SvmSecondHeading {
+  font-size: 30px !important;
+  line-height: 30px !important;
+}
+
+.section2headerText2Style {
+  border: 3px solid #004787;
+  width: 70px;
+}
+
+/* Section 3 Starts Here */
+
+.section3MainContainer {
+  /* margin-top: 20px !important; */
+  /* background-image: url("../../Assets/Images/section3SubBanner.png"); */
+  background-image: url("../../Assets/Images/mission-vision.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 350px !important;
+  position: relative;
+}
+
+.section3MainContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  z-index: 1;
+}
+
+.Section3FirstDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin: 0 0 20px;
+}
+
+.section3FutureText {
+  font-family: "NothanSans" !important;
+  font-size: calc(1em + 1.7vw) !important;
+  line-height: calc(1em + 1vw) !important;
+  color: #004787;
+}
+
+.section3Logo {
+  height: 5vw;
+  min-height: 45px !important;
+}
+
+.section3Text {
+  color: #ffffffb3 !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+  text-align: left;
+  width: 85%;
+}
+
+.section4ThreeSixty {
+}
+
+.section3VisitionBigText {
+  font-family: "Orbitron" !important;
+  position: absolute;
+  opacity: 0.7;
+  font-size: 9vw !important;
+  top: -30px;
+  left: -5px;
+  background: linear-gradient(180deg, #ffffff 0%, #00000096 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 22;
+  font-weight: bolder !important;
+  line-height: 11vw !important;
+}
+
+.section3VisitionSmallText {
+  position: absolute;
+  font-family: "NothanSans" !important;
+  font-size: 3.5vw !important;
+  -webkit-text-stroke: 2px White;
+  z-index: 1;
+  opacity: 0.2;
+  bottom: 0%;
+  left: 7%;
+}
+
+.section3MissionSmallText {
+  left: unset;
+  right: 24%;
+}
+
+.section3MissionBigText {
+  left: unset;
+  right: 0;
+}
+
+.section2VisionBigImage {
+  position: absolute;
+  z-index: 3;
+  height: 160px;
+  top: 0;
+  left: 0;
+  width: 30%;
+}
+
+.section2VisionImage {
+  position: absolute;
+  z-index: 3;
+  height: 160px;
+  bottom: 0;
+  left: 10%;
+}
+
+.section2MissionBigImage {
+  position: absolute;
+  z-index: 3;
+  height: 160px;
+  top: 0;
+  right: 0;
+  width: 45%;
+}
+
+.section2MissionImage {
+  position: absolute;
+  z-index: 3;
+  height: 160px;
+  bottom: 0;
+  right: 27%;
+}
+
+.section3SubContainer {
+  position: absolute;
+  z-index: 23;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  width: 87%;
+}
+
+.section4Maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0 0;
+}
+
+.section4HeaderText {
+  /* background: linear-gradient(173deg,
+            #ffc61c 0.00%,
+            #df25d0 50.20%,
+            #51e8ef 100.00%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  font-family: "NothanSans" !important;
+  color: #004787 !important;
+  font-size: 55px !important;
+  line-height: 60px !important;
+  width: max-content !important;
+  font-weight: bolder !important;
+}
+
+.section4SubContainer {
+  margin: 2% 0 !important;
+  width: 100%;
+}
+
+.RowContainer1 {
+  width: 90%;
+  margin: auto 5% !important;
+}
+
+.RowContainer2 {
+  width: 75%;
+  margin: auto 12.5% !important;
+}
+
+.section4ColorDividerLine {
+  border-top: 8px solid transparent;
+  /* border-image-source: linear-gradient(173deg, #ffc61c 0%, #df25d0 50.2%, #51e8ef 100%); */
+  border-color: #004787;
+  border-image-slice: 1;
+  margin: 90px 0;
+}
+
+.ColumnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: space-evenly;
+  row-gap: 10px !important;
+}
+
+.section4SmallImagesContainer {
+  width: 60px !important;
+  height: 60px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* row-gap: !important; */
+}
+
+/* .SplContainer1 {
+    width: 130px !important;
+    height: 130px !important;
+} */
+
+.section3Text2 {
+  padding-left: 15% !important;
+}
+
+.section3Row {
+  display: flex;
+}
+
+.section4SmallImages {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.reverseColumn {
+  flex-direction: column-reverse;
+}
+
+.section4SubHeaderText {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 30px !important;
+  text-align: center !important;
+  color: var(--description-light-text);
+}
+
+.section4SmallTextContainer {
+  height: 100px !important;
+}
+
+.MobileResponsiveContainer {
+  display: none !important;
+}
+
+.section4YearText {
+  font-size: 35px !important;
+  font-weight: bolder !important;
+  text-align: center !important;
+  font-family: "NothanSans" !important;
+}
+
+@media screen and (max-width: 1680px) {
+  .section3Text {
+    font-size: 15px !important;
+    line-height: 30px !important;
+  }
+  .section2headerText2 {
+    font-size: 45px !important;
+    line-height: 50px !important;
+  }
+
+  .section2headerText1 {
+    font-size: 28px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .section2Text {
+    font-size: 13px !important;
+    line-height: 25px !important;
+  }
+
+  .section2headerText1 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+
+  .section3VisitionBigText {
+    top: -25px !important;
+    /* font-size: 8vw !important; */
+  }
+
+  /* .section3SubContainer {
+    transform: translate(-50%, -40%);
+  } */
+
+  .section2headerText2 {
+    font-size: 50px !important;
+    line-height: 65px !important;
+  }
+
+  .SvmSecondHeading {
+    font-size: 25px !important;
+    line-height: 25px !important;
+  }
+
+  .Section3Btn {
+    font-size: 16px !important;
+  }
+
+  .section3VisitionSmallText {
+    font-size: 50px !important;
+  }
+
+  .Section3BtnIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    left: -6px;
+  }
+
+  .ColumnContainer {
+    height: 180px !important;
+  }
+
+  .Section3Btn span {
+    margin-left: 25px !important;
+  }
+
+  .section2BtnContainer {
+    margin-top: 20px !important;
+  }
+
+  .section3MainContainer {
+    height: 250px !important;
+  }
+
+  .section3Text {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+
+  .section4Maincontainer {
+    padding: 50px 0 0;
+  }
+
+  .section4SmallImages {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .section4ColorDividerLine {
+    margin: 55px 0;
+    border-width: 6px !important;
+  }
+
+  .section4YearText {
+    font-size: 25px !important;
+    margin-top: 10px !important;
+  }
+
+  .section4HeaderText {
+    font-size: 40px !important;
+    line-height: 55px !important;
+  }
+
+  .section2VisionBigImage,
+  .section2MissionBigImage {
+    height: 110px !important;
+  }
+
+  .section2VisionImage,
+  .section2MissionImage {
+    height: 95px !important;
+  }
+
+  .RowContainer1 {
+    width: 90%;
+    margin: auto 5% !important;
+  }
+
+  .section4SubHeaderText {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section2Row {
+    width: 90%;
+    margin: 50px 5% !important;
+  }
+
+  .section2Text {
+    font-size: 13px !important;
+    line-height: 23px !important;
+  }
+
+  .section2headerText1 {
+    font-size: 23px !important;
+    line-height: 25px !important;
+  }
+
+  .section2headerText2 {
+    font-size: 45px !important;
+    line-height: 55px !important;
+  }
+
+  .SvmSecondHeading {
+    font-size: 22px !important;
+    line-height: 22px !important;
+  }
+
+  .Section3Btn {
+    font-size: 16px !important;
+  }
+
+  .section3SubContainer {
+    width: 90%;
+  }
+
+  .Section3BtnIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    left: -6px;
+  }
+
+  .Section3Btn span {
+    margin-left: 25px !important;
+  }
+
+  .section2BtnContainer {
+    margin-top: 20px !important;
+  }
+
+  .section3MainContainer {
+    height: 210px !important;
+  }
+
+  .section3Text {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    width: 90%;
+  }
+
+  .section4Maincontainer {
+    padding: 30px 0 0;
+  }
+
+  .section2VisionBigImage,
+  .section2MissionBigImage {
+    height: 110px !important;
+  }
+
+  .section3VisitionSmallText {
+    font-size: 40px !important;
+  }
+
+  .section2MissionImage {
+    height: 95px !important;
+  }
+
+  .section2VisionImage {
+    height: 95px !important;
+    left: 5%;
+  }
+
+  .section4SubContainer {
+    margin: 15px 0 30px !important;
+  }
+
+  .RowContainer1 {
+    width: 90%;
+    margin: auto 5% !important;
+  }
+
+  .section4SmallTextContainer {
+    height: 65px !important;
+  }
+
+  .section4SubHeaderText {
+    font-size: 9px !important;
+    line-height: 20px !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section2Row {
+    flex-direction: column-reverse !important;
+    row-gap: 10px !important;
+    margin: 50px 5% 0px !important;
+  }
+
+  .section2SplSubText {
+    width: 100%;
+  }
+
+  .section2Text {
+    font-size: 15px !important;
+    line-height: 30px !important;
+  }
+
+  .section2headerText1 {
+    font-size: 30px !important;
+    line-height: 45px !important;
+  }
+
+  .section4SubContainer {
+    display: none !important;
+  }
+
+  .MobileResponsiveContainer {
+    display: block !important;
+    margin: 45px 0 !important;
+  }
+
+  .section3SubContainer {
+    transform: translate(-50%, -50%);
+  }
+
+  .aboutBannerImage {
+    height: 100% !important;
+  }
+
+  .section2headerText2 {
+    font-size: 55px !important;
+    line-height: 60px !important;
+  }
+
+  .SvmSecondHeading {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .Section3Btn {
+    font-size: 30px !important;
+  }
+
+  .section3SubContainer {
+    width: 80%;
+  }
+
+  .Section3BtnIcon {
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    left: -10px;
+  }
+
+  .Section3Btn span {
+    margin-left: 50px !important;
+  }
+
+  .section2BtnContainer {
+    margin-top: 20px !important;
+  }
+
+  .section3MainContainer {
+    height: 400px !important;
+  }
+
+  .section3Text {
+    font-size: 15px !important;
+    line-height: 25px !important;
+    width: 100%;
+  }
+
+  .section3Row {
+    row-gap: 140px;
+  }
+
+  .section3VisitionSmallText {
+    font-size: 35px !important;
+    line-height: 40px !important;
+    bottom: 55% !important;
+  }
+
+  .section3MissionSmallText {
+    bottom: 0 !important;
+  }
+
+  .section2VisionBigImage,
+  .section2MissionBigImage {
+    height: 110px !important;
+  }
+
+  .section2MissionImage {
+    height: 95px !important;
+  }
+
+  .section2VisionImage {
+    height: 95px !important;
+    left: 5%;
+  }
+
+  .section4SubContainer {
+    margin: 45px 0 !important;
+  }
+
+  .section4SmallTextContainer {
+    height: max-content !important;
+  }
+
+  .RowContainer1,
+  .RowContainer2 {
+    width: 90%;
+    margin: auto 5% !important;
+    row-gap: 100px;
+  }
+
+  .section4ColorDividerLine {
+    border-width: 0 !important;
+    margin: 50px 0;
+  }
+
+  .reverseColumn {
+    flex-direction: column;
+  }
+
+  .ColumnContainer {
+    height: 100% !important;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .section4YearText {
+    font-size: 40px !important;
+  }
+
+  .section4SmallImagesContainer {
+    height: max-content !important;
+    width: 110px !important;
+  }
+
+  .section4SubHeaderText {
+    font-size: 15px !important;
+    line-height: 30px !important;
+  }
+
+  .MobileResponsiveContainer {
+    overflow-x: scroll !important;
+    width: 90%;
+  }
+
+  .section3Text2 {
+    padding-left: 0 !important;
+  }
+
+  .empltyColumn {
+    display: none !important;
+  }
+
+  .MobileRowContainer {
+    display: flex;
+    column-gap: 20px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .ColumnContainer {
+    /* min-width: max-content !important; */
+    width: 95% !important;
+  }
+
+  .margintopstyle {
+    margin-top: 30px !important;
+    width: 100%;
+  }
+
+  .section3VisitionBigText {
+    top: -10px !important;
+    /* font-size: 8vw !important; */
+  }
+  .section3MissionBigText {
+    top: 45% !important;
+  }
+  .section3MissionSmallText {
+    right: 10%;
+    bottom: 5% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutBannerMainText {
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+
+  .section2Row {
+    flex-direction: column-reverse !important;
+    row-gap: 10px !important;
+  }
+
+  .section2Text {
+    font-size: 15px !important;
+    line-height: 25px !important;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .section2headerText1 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+    text-align: right !important;
+  }
+
+  .section3VisitionSmallText {
+    font-size: 35px !important;
+  }
+
+  .section2headerText2 {
+    font-size: 40px !important;
+    line-height: 45px !important;
+  }
+
+  .SvmSecondHeading {
+    font-size: 20px !important;
+    line-height: 23px !important;
+  }
+
+  .section2headerText2Style {
+    border: 2px solid #004787;
+    width: 55px;
+  }
+
+  .Section3Btn {
+    font-size: 30px !important;
+  }
+
+  .section3SubContainer {
+    width: 80%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Section3BtnIcon {
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    left: -10px;
+  }
+
+  .Section3Btn span {
+    margin-left: 50px !important;
+  }
+
+  .section2BtnContainer {
+    margin-top: 20px !important;
+  }
+
+  .section3MainContainer {
+    height: 450px !important;
+  }
+
+  .section3Text {
+    font-size: 15px !important;
+    line-height: 30px !important;
+    width: 100%;
+  }
+
+  .section3Row {
+    row-gap: 90px;
+  }
+
+  .section2VisionBigImage,
+  .section2MissionBigImage {
+    height: 110px !important;
+  }
+
+  .section2MissionImage {
+    height: 95px !important;
+  }
+
+  .section2VisionImage {
+    height: 95px !important;
+    left: 5%;
+  }
+
+  .section4SubContainer {
+    margin: 45px 0 !important;
+  }
+
+  .section4SmallTextContainer {
+    height: max-content !important;
+  }
+
+  .section3VisitionSmallText {
+    left: 0;
+    bottom: 0;
+  }
+
+  .section3MissionSmallText {
+    left: unset;
+    right: 0;
+  }
+
+  .RowContainer1,
+  .RowContainer2 {
+    width: 90%;
+    margin: auto 5% !important;
+    row-gap: 50px;
+  }
+
+  .section4ColorDividerLine {
+    border-width: 0;
+    margin: 50px 0;
+  }
+
+  .reverseColumn {
+    flex-direction: column;
+  }
+
+  .ColumnContainer {
+    height: 100% !important;
+    justify-content: center;
+    row-gap: 20px !important;
+  }
+
+  .section4SmallImagesContainer {
+    height: max-content !important;
+    width: 90px !important;
+  }
+  .section4YearText {
+    font-size: 30px !important;
+  }
+
+  .section4SubHeaderText {
+    font-size: 15px !important;
+    line-height: 30px !important;
+    font-weight: 500 !important;
+  }
+
+  .section3VisitionBigText {
+    font-size: 70px !important;
+    top: 10px !important;
+  }
+
+  .section3MissionBigText {
+    top: 50% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section2headerText1 {
+    font-size: 17px !important;
+    line-height: 25px !important;
+  }
+
+  .section2headerText2 {
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
+
+  .SvmSecondHeading {
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+
+  .section2Text {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+
+  .section3VisitionBigText {
+    font-size: 55px !important;
+  }
+
+  .section3Text {
+    font-size: 15px !important;
+  }
+
+  .section4SubHeaderText {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+}

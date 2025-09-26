@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preload" href="/static/media/image-2.1a2a5a7835a87048fe09.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="./new.css" />
+  <meta name="title"
+  content="Srivaru Motors Prana | Electric Bikes in India" />
+<meta name="description"
+  content="SVM PRANA premium electric bike company in India, Srivaru Motors offers sustainable solutions with eBikes that offer rider comfort, safety & eco-friendly performance." />
+  <meta property="og:image" content="https://srivarumotors.com/images/uploads/1723542984214.png" />
+<meta property="twitter:image" content="https://srivarumotors.com/images/uploads/1723542984214.png" />
+  <script src="/static/js/main.js"></script>
+<link href="/static/css/main.css" rel="stylesheet">
+
+  <script>
+    fetch('https://api.srivarumotors.com/banner/active').then(res => res.json()).then(data => {
+      console.log(data);
+      localStorage.setItem("bannerData", JSON.stringify(data));
+      var x = document.createElement("img");
+      x.setAttribute("src", data[0].image);
+      x.setAttribute("width", "1");
+      x.setAttribute("height", "1");
+      x.setAttribute('style', 'display:none')
+      document.body.appendChild(x);
+
+      var xi = document.createElement("img");
+      xi.setAttribute("src", data[0].imageSmall);
+      xi.setAttribute("width", "1");
+      xi.setAttribute("height", "1");
+      xi.setAttribute('style', 'display:none')
+      document.body.appendChild(xi);
+    })
+  </script>
+
+
+
+  <link rel="apple-touch-icon" href="./logo192.png" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <!-- <link rel="stylesheet" href="odometer-theme-default.css" /> -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <!-- Scripts placed at the end for deferred loading -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRMRFGX55W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MRMRFGX55W');
+  </script> -->
+  <!-- <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.defer = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '482050072671748');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=482050072671748&ev=PageView&noscript=1" />
+  </noscript> -->
+</body>
+
+</html>

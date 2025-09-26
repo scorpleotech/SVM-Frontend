@@ -1,0 +1,485 @@
+.StoreMainContainer {
+  /* background: var(--main-page-background); */
+  position: relative;
+  overflow: hidden;
+}
+
+.section1MainContainer {
+  width: 80%;
+  margin: 75px 10% 0;
+}
+
+.section1HeaderText {
+  font-family: "Orbitron" !important;
+  font-size: 40px !important;
+  line-height: 50px !important;
+  font-weight: bolder !important;
+  text-align: left !important;
+}
+
+.StoreFloatText1 {
+  font-family: "NothanSans" !important;
+  position: absolute;
+  font-size: 12rem !important;
+  font-weight: bolder !important;
+  color: #f2f2f266;
+  z-index: -1;
+  right: -30px;
+  top: -65px;
+}
+
+.StoreFloatText2 {
+  right: unset;
+  top: 454px;
+  left: -10px;
+}
+
+.section1SubHeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 20px !important;
+  text-align: left;
+  line-height: normal !important;
+}
+
+.section1BtnMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section1BtnSubContainer {
+  display: flex;
+  column-gap: 15px;
+}
+
+.section1Btn {
+  display: flex !important;
+  column-gap: 10px;
+  align-items: center !important;
+  border-radius: 50px !important;
+  border: 2px solid lightgray !important;
+  color: black !important;
+  height: 40px;
+  text-transform: none !important;
+  padding: 0 15px !important;
+}
+
+.section1Btn svg {
+  font-size: 20px;
+}
+
+.dotIcon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* border: 1px solid lightgray; */
+  background-color: lightgray;
+}
+
+.activeDotBtn {
+  background-color: #00cb2f;
+}
+
+.Section1MainRow {
+  margin-top: 50px !important;
+  height: max-content;
+  justify-content: space-between;
+  row-gap: 25px !important;
+}
+
+.ColumnCard {
+  height: 100% !important;
+  border-radius: 32px !important;
+  position: relative;
+  padding: 20px;
+}
+
+.CardIconContainer {
+  background: #3a3a4e;
+  filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.4));
+  width: max-content;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.CardIconContainer svg {
+  width: 30px;
+  height: 30px;
+}
+
+.CardTextContainer {
+  padding: 25px 10px 0;
+}
+
+.CardText {
+  font-size: 25px !important;
+  text-align: center !important;
+}
+
+.AddressText {
+  font-size: 23px !important;
+  text-align: left !important;
+}
+
+.Section1MapRow {
+  margin-top: 30px !important;
+  height: 700px;
+  padding-bottom: 40px;
+}
+
+.MapTextBoxContainer {
+  padding: 30px 40px;
+  height: 100%;
+  border-radius: 32px !important;
+}
+
+.ColumnContainer svg {
+  font-size: 20px !important;
+  margin-top: 4px !important;
+}
+
+.SmallLocationIconContainer svg {
+  font-size: 50px !important;
+  margin-top: -5px !important;
+}
+
+.MapBoxContainer {
+  height: 100%;
+  border-radius: 32px !important;
+}
+
+.Section2Row {
+  flex-direction: column !important;
+}
+
+.locationCardContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-top: 25px !important;
+  height: 490px !important;
+  overflow-y: scroll;
+  padding-bottom: 5px !important;
+}
+
+.locationCardContainer::-webkit-scrollbar {
+  display: none !important;
+}
+
+.mapImage {
+  width: 100%;
+  height: 100%;
+}
+
+.Section1MapCol {
+  height: 100% !important;
+}
+
+.pincodeText {
+  font-family: "NothanSans" !important;
+  font-size: 25px !important;
+  text-align: center !important;
+}
+
+.Section1InputFeild > div {
+  border-radius: 20px;
+}
+
+.Section1ColumnContainer {
+  /* width: 24% !important; */
+}
+
+.CardIconContainer svg {
+  color: white;
+}
+
+.locationdetailsCard {
+  width: 90%;
+  margin: 0 auto !important;
+}
+
+.locationCardmain {
+  padding: 20px 25px !important;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px !important;
+  border-radius: 25px !important;
+}
+
+.ColumnContainer {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.Section2Text {
+  font-size: 15px !important;
+  text-align: left;
+}
+
+.becomeDealerBtn {
+  background: #00cb2f !important;
+  color: white !important;
+  border-color: #00cb2f !important;
+}
+
+@media screen and (max-width: 1440px) {
+  .section1MainContainer {
+    width: 80%;
+    margin: 75px 10% 0;
+  }
+
+  .locationCardContainer {
+    height: 350px !important;
+  }
+
+  .CardText {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+
+  .CardTextContainer {
+    padding: 30px 20px 5px;
+  }
+
+  .locationCardContainer {
+    padding-bottom: 10px !important;
+  }
+
+  .CardIconContainer svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .AddressText {
+    font-size: 20px !important;
+  }
+
+  .CardIconContainer {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .CardIconContainer svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .CardTextContainer {
+    padding: 15px 0px 0;
+  }
+
+  .locationCardContainer {
+    row-gap: 15px;
+    padding-bottom: 10px !important;
+  }
+
+  .StoreFloatText1 {
+    font-size: 10rem !important;
+    top: -60px;
+  }
+
+  .StoreFloatText2 {
+    top: 450px;
+  }
+
+  .CardText {
+    font-size: 14px !important;
+  }
+
+  .AddressText {
+    font-size: 12px !important;
+  }
+
+  .Section1MapRow {
+    height: 550px;
+  }
+
+  .pincodeText {
+    font-size: 18px !important;
+  }
+
+  .ColumnContainer svg {
+    font-size: 14px !important;
+  }
+
+  .SmallLocationIconContainer svg {
+    font-size: 14px !important;
+    margin-top: -5px !important;
+  }
+
+  .locationdetailsCard {
+    width: 95%;
+    margin: 0 auto !important;
+  }
+
+  .locationCardmain {
+    padding: 15px !important;
+  }
+
+  .Section2Text {
+    font-size: 14px !important;
+  }
+
+  .section1HeaderText {
+    font-size: 33px !important;
+    line-height: normal !important;
+  }
+
+  .section1Btn {
+    font-size: 11px !important;
+    height: 30px !important;
+    padding: 0 10px !important;
+  }
+
+  .dotIcon {
+    width: 11px;
+    height: 11px;
+  }
+
+  .section1SubHeaderText {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .StoreFloatText1 {
+    font-size: 9rem !important;
+    top: -40px;
+    right: 25px;
+  }
+
+  .StoreFloatText2 {
+    top: 275px;
+    right: unset;
+    left: -45px;
+  }
+
+  .section1MainContainer {
+    width: 90%;
+    margin: 75px 5% 0;
+  }
+
+  .CardText {
+    font-size: 16px !important;
+  }
+
+  .CardTextContainer {
+    padding: 10px 0;
+  }
+
+  .AddressText {
+    font-size: 13px !important;
+  }
+
+  .Section1MapRow {
+    height: 600px;
+  }
+
+  .section1HeaderText {
+    font-size: 32px !important;
+    line-height: normal !important;
+  }
+
+  .section1SubHeaderText {
+    font-size: 19px !important;
+  }
+
+  .Section2Text {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .StoreFloatText1 {
+    font-size: 6rem !important;
+  }
+
+  /* .Section1ColumnContainer {
+        width: unset !important;
+    } */
+
+  .Section2Text {
+    font-size: 17px !important;
+    line-height: normal !important;
+  }
+
+  .section1MainContainer {
+    width: 90%;
+    margin: 35px 5% 0;
+  }
+
+  .MapBoxContainer {
+    height: 450px;
+  }
+
+  .section1BtnSubContainer {
+    column-gap: 10px;
+  }
+
+  .section1Btn {
+    column-gap: 5px;
+  }
+
+  .section1HeaderContainer {
+    /* height: 180px; */
+  }
+
+  .CardText {
+    font-size: 20px !important;
+  }
+
+  .section1BtnMainContainer {
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 15px !important;
+  }
+
+  .CardTextContainer {
+    padding: 25px 0 0;
+  }
+
+  .section1BtnSubContainer {
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 15px !important;
+  }
+
+  .AddressText {
+    font-size: 21px !important;
+  }
+
+  .Section1MapRow {
+    height: max-content;
+    row-gap: 30px;
+  }
+
+  .Section1MainRow {
+    row-gap: 20px !important;
+  }
+
+  .section1HeaderText {
+    font-size: 45px !important;
+    line-height: normal !important;
+  }
+
+  .section1SubHeaderText {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section1HeaderText {
+    font-size: 30px !important;
+  }
+
+  .section1SubHeaderText {
+    font-size: 14px !important;
+  }
+
+  .MapTextBoxContainer {
+    padding: 15px 25px !important;
+  }
+}

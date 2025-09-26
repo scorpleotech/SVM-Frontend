@@ -1,0 +1,88 @@
+.div0 {
+  left: 70px !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 0 !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0 !important;
+}
+
+.remove-whiteSpace {
+  white-space: normal;
+}
+
+.react-multi-carousel-item {
+  /* display: flex !important; */
+}
+
+.react-multi-carousel-dot-list {
+  /* bottom: -20px; */
+}
+
+.loginBtn .MuiCheckbox-colorSecondary.Mui-checked {
+  color: #7f7f7f !important;
+}
+
+.eventsPageSubContainer2 .react-multi-carousel-dot-list {
+  bottom: -20px !important;
+}
+
+.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  padding: 5px 10px;
+}
+
+.active.carousel-item-right {
+  -webkit-transform: translateX(100%) !important;
+  transform: translateX(100%) !important;
+}
+
+.active.carousel-item-left {
+  -webkit-transform: translateX(100%) !important;
+  transform: translateX(100%) !important;
+}
+
+.carousel-item-next:not(.carousel-item-left),
+.carousel-item-prev:not(.carousel-item-right) {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+ul:has(.all-listing) {
+  height: 300px !important;
+  overflow: scroll !important;
+}
+
+.city-autocomplete > div {
+  padding-top: 3.5px !important;
+  padding-bottom: 3.5px !important;
+}
+.city-autocomplete-agent > div {
+  background-color: rgba(244, 244, 244, 1) !important;
+}
+.city-autocomplete-agent ::placeholder {
+  color: black !important;
+}
+.autocomplete-book-demo > div {
+  padding: 4.5px 3.5px 4.5px 15px !important;
+  border-radius: 20px !important;
+}
+@media screen and (max-width: 500px) {
+  .react-multiple-carousel__arrow::before {
+    font-size: unset !important;
+  }
+
+  .react-multiple-carousel__arrow--left,
+  .react-multiple-carousel__arrow--right {
+    min-height: 25px !important;
+    min-width: 25px !important;
+  }
+}

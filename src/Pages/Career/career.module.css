@@ -1,0 +1,263 @@
+.termsHeading {
+  text-align: center;
+  margin-bottom: 30px !important;
+  min-height: 180px;
+  background: #004787;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px !important;
+  color: white;
+  font-weight: 700 !important;
+  /* text-transform: uppercase !important; */
+  font-family: "Orbitron" !important;
+  letter-spacing: 4px !important;
+  padding: 30px 10%;
+}
+
+.carrerApplyformContainer {
+  width: 80% !important;
+  margin: 2% auto;
+}
+
+.MaincardContainer {
+  padding: 30px !important;
+  width: 80% !important;
+  margin: 2% auto;
+}
+
+.cardSearchContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 20px !important;
+}
+
+.leaderFormInput2 > div > div {
+  color: #c5c5c5;
+}
+
+.leaderFormInput > div {
+  height: 40px !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+.leaderFormInput fieldset {
+  /* border-color: #fff !important; */
+}
+
+.fileInput > div {
+  padding-right: 0 !important;
+}
+
+.browseBtn {
+  height: 38px !important;
+  background-color: lightgray !important;
+  color: black !important;
+  text-transform: none !important;
+  position: absolute !important;
+  bottom: 1px !important;
+  right: 0;
+  z-index: 10;
+}
+
+.leaderFormBtn {
+  border-radius: 0 !important;
+  height: 40px !important;
+  padding: auto 10px !important;
+  min-width: 100px !important;
+}
+
+.brudCrumNavBtn {
+  font-size: 13px !important;
+}
+
+.carrerMainHeading {
+  color: #4f5457;
+  font-size: 37px !important;
+  font-weight: 900 !important;
+  font-family: "NothanSans" !important;
+  line-height: 60px !important;
+}
+
+.carrerSubHeading {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+.carrerSubHeading1 {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 20px !important;
+}
+
+.carrearForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  align-items: center;
+}
+
+.careerViePageBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px !important;
+}
+
+.careerViePageBtn button {
+  text-transform: none !important;
+  padding: 7px 15px !important;
+  border-radius: 0 !important;
+  width: 150px !important;
+  font-size: 18px !important;
+  background-color: #004787 !important;
+  border-radius: 7px !important;
+}
+
+.carrearForm div {
+  width: 100% !important;
+}
+
+.formLable span {
+  color: red;
+}
+
+.submitBtn {
+  width: 200px !important;
+  text-transform: none !important;
+}
+
+.career {
+  border-radius: 12px;
+  padding: 15px 25px !important;
+  width: 100% !important;
+  border: 1px solid black;
+  cursor: pointer !important;
+}
+
+.careerListContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 25px !important;
+  height: 400px !important;
+  overflow-y: scroll;
+}
+
+.chip {
+  width: unset !important;
+}
+
+.chipContainer {
+  display: flex;
+  column-gap: 10px !important;
+}
+
+.careerListContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.career_detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 20px !important; */
+}
+.career_detail span {
+  opacity: 0.5 !important;
+}
+.job_role {
+  font-weight: 600 !important;
+  font-size: 21px !important;
+}
+.job_role svg {
+  font-size: 34px !important;
+  background-color: rgb(155 151 151 / 10%);
+  padding: 7px;
+  border-radius: 6px;
+}
+.job_price {
+  font-size: 20px !important;
+}
+.job_price svg {
+  font-size: 21px;
+  fill: #5baee9;
+}
+.apply_job {
+  text-transform: capitalize !important;
+}
+
+.TermsMainContainer {
+  width: 80%;
+  margin: 3% 10% 5%;
+}
+
+.TermsMainContainer iframe {
+  width: 100%;
+  height: 45rem;
+}
+
+.TermsMainContainer p,
+.TermsMainContainer li,
+.TermsMainContainer span,
+.TermsMainContainer p > strong,
+.TermsMainContainer p > a,
+.TermsMainContainer p > a > u {
+  font-family: "Goutham" !important;
+  font-size: 15px !important;
+  text-align: justify;
+  overflow-x: hidden !important;
+}
+
+.TermsMainContainer h4,
+.TermsMainContainer h4 > span,
+.TermsMainContainer h4 > strong {
+  font-family: "NothanSans" !important;
+  font-size: 28px !important;
+  line-height: 35px !important;
+  color: #004787 !important;
+}
+
+.TermsMainContainer li {
+  overflow-x: unset !important;
+}
+
+.TermsMainContainer .ql-align-center {
+  text-align: center !important;
+}
+
+.ShortDescription {
+  width: 100% !important;
+  margin: 3% 0% 1%;
+}
+
+@media screen and (max-width: 850px) {
+  .cardSearchContainer {
+    flex-direction: column;
+    row-gap: 25px !important;
+  }
+  .career_detail {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .chipContainer {
+    flex-wrap: wrap !important;
+    row-gap: 20px !important;
+  }
+
+  .careerListContainer {
+    /* height: 400px !important; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .termsHeading {
+    height: auto;
+    padding: 30px 20px;
+    font-size: 22px !important;
+  }
+}

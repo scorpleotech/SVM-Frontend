@@ -1,0 +1,727 @@
+.headerMainDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px 15px 80px;
+  align-items: center;
+  animation: bannerBike 1s ease;
+  animation-fill-mode: forwards;
+  background-color: #f2f2f2 !important;
+}
+
+.navbarContainer li button {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.defaultHeaderParentDiv {
+  position: fixed;
+  width: 100%;
+  z-index: 1002;
+}
+
+.navbarMainDiv {
+  padding: 10px 20px;
+  background: #f2f2f2;
+}
+
+.defaultParentDiv {
+  position: relative;
+}
+
+.defaultContentParentDiv {
+  /* position: relative; */
+  padding-top: 70px;
+  min-height: 100vh;
+}
+
+@keyframes bannerBike {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  column-gap: 8px;
+  /* Reduced from 10px */
+  margin-left: 110px;
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
+}
+
+.MenuIcon {
+  border: none !important;
+}
+
+.headerButtonDiv {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  /* Reduced from 10px */
+}
+
+.activebtn {}
+.hamburgerMenuButton {
+  background-color: black !important;
+  color: white !important;
+  /* makes the icon visible */
+  border: none !important;
+  box-shadow: none !important;
+  /* optional: remove MUI shadow */
+}
+.loginButton {
+  font-family: "Orbitron" !important;
+  background-color: var(--black-background) !important;
+  color: var(--white-background) !important;
+  border: none !important;
+  font-size: 12px !important;
+  border-radius: 10px !important;
+  padding: 7px 15px 5px !important;
+  /* Reduced horizontal padding */
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  font-weight: 600 !important;
+  min-height: 30px !important;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.loginButton span {
+  font-family: "Orbitron" !important;
+}
+
+.subscribeError {
+  font-size: 10px !important;
+  color: red;
+}
+
+.subscribeSuccess {
+  font-size: 10px !important;
+  color: green;
+}
+
+.loginButton path {
+  stroke-width: 1px !important;
+}
+
+.logo {
+  height: 15px;
+  /* Further reduced from 30px */
+}
+
+.linkburron {
+  font-family: "Montserrat" !important;
+  font-size: 13px !important;
+  /* Slightly reduced from 14px */
+  text-align: left;
+  color: var(--black-background) !important;
+  font-weight: 600 !important;
+  min-width: unset !important;
+  padding: 5px 8px !important;
+  /* Reduced horizontal padding */
+  letter-spacing: 0.5px !important;
+  /* Reduced letter spacing */
+  border-radius: 5px !important;
+  white-space: nowrap !important;
+  /* Prevent text wrapping */
+}
+
+.activebtn .linkburron {
+  background-color: var(--lightgray-background);
+}
+
+.footerMainDiv {
+  background-color: #f5f5f7 !important;
+  padding: 50px 0 75px;
+  height: max-content;
+  position: relative;
+}
+
+.footerRow {
+  width: 90% !important;
+  /* margin: 20px 20px 20px 20px !important;  */
+  /* display: flex;
+    flex-direction: column; */
+  row-gap: 50px;
+  margin: 0 5% !important;
+  justify-content: space-between !important;
+}
+
+.footerCol1 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  text-align: center;
+}
+
+.footerLogo {
+  height: 100px;
+}
+
+.footerheadingText {
+  font-family: "NothanSans" !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-underline-offset: 8px;
+  text-transform: uppercase !important;
+  color: black;
+  text-align: left !important;
+  margin-bottom: 15px !important;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerBtn {
+  padding: 5px 0 !important;
+  color: #000000b5 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+}
+
+.footerBtn:hover {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footerSubText {
+  color: #000000b5 !important;
+  font-size: 14px !important;
+  font-weight: 400;
+  text-align: left !important;
+}
+
+.footerEmailInput {
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  height: 40px !important;
+  background-color: #e3e3e3 !important;
+  border: 1px solid #e3e3e3 !important;
+  padding: 0 10px !important;
+  font-size: 12px !important;
+}
+
+.WaveContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.WhatsAppBtn {
+  width: 50px;
+  /* Adjust as needed */
+  height: 50px;
+  /* Adjust as needed */
+}
+
+/* .WhatsAppBtn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: wave 1.5s infinite ease-out;
+  border-radius: 50%;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+} */
+
+.footerEmailInput::placeholder {
+  font-size: 12px !important;
+  text-align: center !important;
+}
+
+.footerCopyrightText {
+  color: #000000 !important;
+  font-size: 14px !important;
+  font-weight: 400;
+  text-align: left !important;
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+  width: max-content !important;
+}
+
+.footerSubscribeBtn {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  background-color: #42f25d !important;
+  border: 1px solid #42f25d !important;
+  height: 40px;
+  padding: 0 !important;
+  font-size: 12px !important;
+  width: 30%;
+}
+
+.footerSubHeaderText {
+  color: #000000;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  line-height: normal !important;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.footerCountText {
+  background: linear-gradient(121deg, #ffd500 0%, #22a9ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px !important;
+  font-weight: bolder !important;
+  width: max-content;
+  text-align: left;
+}
+
+.footerCardImageContainer {
+  position: absolute;
+  display: flex;
+  column-gap: 10px;
+  bottom: 20px;
+  right: 40px;
+  width: max-content !important;
+}
+
+.smallNavBarCotainer {
+  display: none;
+}
+
+.footerCardImage {
+  width: 75px;
+}
+
+.hamburgerMenuButton svg {
+  font-size: 20px !important;
+}
+
+.DrawerContainer {
+  padding: 50px 30px 30px !important;
+  position: relative !important;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.navbarContainer {
+  max-height: 420px;
+  overflow-y: scroll !important;
+}
+
+.DrwercloseBtn {
+  position: absolute !important;
+  top: 10px;
+  right: -10px;
+  z-index: 10;
+}
+
+.DrwercloseBtn svg {
+  height: 20px !important;
+}
+
+.drawerLinks {
+  font-size: 15px !important;
+}
+
+.drawerLinks span {
+  font-family: "Orbitron" !important;
+}
+
+/* Optimized media queries for better menu spacing */
+
+@media screen and (max-width: 1920px) {
+  .headerMainDiv {
+    padding: 20px 30px 15px 60px;
+    /* Better spacing for large screens */
+  }
+
+  .navbar {
+    margin-left: 80px;
+    column-gap: 10px;
+  }
+
+  .linkburron {
+    font-size: 14px !important;
+    padding: 5px 10px !important;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .headerMainDiv {
+    padding: 20px 25px 15px 50px;
+  }
+
+  .navbar {
+    margin-left: 60px;
+    column-gap: 8px;
+  }
+
+  .footerLogo {
+    height: 70px;
+  }
+
+  .linkburron {
+    font-size: 13px !important;
+    padding: 5px 8px !important;
+  }
+
+  .loginButton {
+    font-size: 11px !important;
+    padding: 6px 12px !important;
+  }
+
+  .hamburgerMenuButton svg {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .headerMainDiv {
+    padding: 20px 20px 15px 40px;
+  }
+
+  .navbar {
+    margin-left: 40px;
+    column-gap: 6px;
+  }
+
+  .logo {
+    height: 14px;
+    /* Reduced from 35px */
+  }
+
+  .linkburron {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding: 5px 6px !important;
+    letter-spacing: 0.3px !important;
+  }
+
+  .headerButtonDiv {
+    column-gap: 6px !important;
+  }
+
+  .loginButton {
+    font-size: 10px !important;
+    padding: 5px 10px !important;
+  }
+
+  .hamburgerMenuButton svg {
+    font-size: 20px !important;
+  }
+
+  .drawerLinks {
+    font-size: 14px !important;
+  }
+
+  .footerMainDiv {
+    /* height: 350px; */
+  }
+
+  .footerLogo {
+    height: 62px;
+  }
+
+  .footerheadingText {
+    font-size: 18px !important;
+  }
+
+  .footerBtn {
+    font-size: 12px !important;
+  }
+
+  .footerSubText {
+    font-size: 12px !important;
+  }
+
+  .footerEmailInput,
+  .footerSubscribeBtn {
+    height: 30px !important;
+  }
+
+  .footerSubHeaderText {
+    font-size: 14px !important;
+    text-underline-offset: 5px;
+  }
+
+  .footerCountText {
+    font-size: 25px !important;
+  }
+
+  .footerCardImage {
+    width: 60px;
+  }
+
+  .footerCopyrightText {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .headerMainDiv {
+    padding: 20px 15px 15px 30px;
+  }
+
+  .navbar {
+    margin-left: 30px;
+    column-gap: 5px;
+  }
+
+  .linkburron {
+    font-size: 11px !important;
+    padding: 4px 5px !important;
+    letter-spacing: 0.2px !important;
+  }
+
+  .loginButton {
+    font-size: 9px !important;
+    padding: 4px 8px !important;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .headerMainDiv {
+    padding: 20px 20px 15px 40px;
+  }
+
+  .navbar {
+    margin-left: 30px !important;
+    column-gap: 4px;
+  }
+
+  .logo {
+    height: 13px !important;
+    /* Reduced from 25px */
+  }
+
+  .linkburron {
+    font-size: 10px !important;
+    padding: 4px 4px !important;
+    letter-spacing: 0.1px !important;
+  }
+
+  .headerButtonDiv {
+    column-gap: 4px !important;
+  }
+
+  .loginButton {
+    font-size: 9px !important;
+    padding: 4px 6px !important;
+  }
+
+  .footerMainDiv {
+    height: max-content !important;
+  }
+
+  .functionButton {
+    font-size: 8px !important;
+    padding: 5px 10px !important;
+  }
+}
+
+/* New breakpoint for better 100% and 125% zoom handling */
+@media screen and (max-width: 1000px) {
+  .headerMainDiv {
+    padding: 20px 15px 15px 25px;
+  }
+
+  .navbar {
+    margin-left: 20px;
+    column-gap: 3px;
+  }
+
+  .linkburron {
+    font-size: 9px !important;
+    padding: 3px 4px !important;
+    letter-spacing: 0px !important;
+  }
+
+  .loginButton {
+    font-size: 8px !important;
+    padding: 3px 5px !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .headerMainDiv {
+    display: none;
+  }
+
+  .linkburron,
+  .loginButton {
+    font-size: 11px !important;
+  }
+
+  .loginButton {
+    padding: 5px 15px !important;
+  }
+
+  .smallNavBarCotainer {
+    display: block;
+  }
+
+  .smallNavBarCotainer>nav>div {
+    margin-top: 15px !important;
+  }
+
+  .footerMainDiv {
+    /* height: 510px !important; */
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .footerCopyrightText {
+    left: 60px;
+    /* bottom: -340px; */
+  }
+
+  .defaultContentParentDiv {
+    padding-top: 60px !important;
+  }
+
+  .footerheadingText {
+    margin-bottom: 0 !important;
+    text-decoration: none !important;
+  }
+
+  .footerAccordianMain {
+    background: unset !important;
+    box-shadow: unset !important;
+    position: unset !important;
+    width: 90% !important;
+    margin: 0 !important;
+  }
+
+  .footerAccordianSummary {
+    padding: 0 !important;
+    min-height: unset !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    column-gap: 15px !important;
+  }
+
+  .footerAccordianSummary>div {
+    margin-bottom: 10px !important;
+  }
+
+  .NrmlExpandIcon {
+    margin-top: 10px !important;
+  }
+
+  .footerAccordianDetails {
+    padding: 0 !important;
+  }
+
+  .expandedIcon {
+    margin-top: -20px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footerSubText {
+    margin-top: 25px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerCopyrightText {
+    /* left: 16px !important; */
+    /* bottom: -500px !important; */
+    position: unset !important;
+    /* padding-left: 7.5%; */
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
+
+  .footerCardImageContainer {
+    /* bottom: -100px;
+    left: 15px; */
+    position: unset !important;
+    /* padding-left: 7.5%; */
+    margin-top: 20px !important;
+  }
+
+  .footerLogo {
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .footerCol1 {
+    align-items: flex-start;
+  }
+
+  .footerCol1 {
+    flex-direction: column;
+  }
+
+  .footerMainDiv {
+    /* height: 950px !important; */
+    /* padding-left: 30px;   */
+    position: relative;
+    padding-bottom: 30px !important;
+  }
+
+  .footerCopyrightText {
+    font-size: 10px !important;
+  }
+
+  .footerRow {
+    row-gap: 10px !important;
+    width: 85% !important;
+    margin: 0 7.5% !important;
+  }
+
+  .footerSubscribeBtnSubcontainer {
+    /* width: 100%; */
+  }
+
+  .footerheadingText,
+  .footerSubHeaderText {
+    font-size: 10px !important;
+    text-underline-offset: 2px !important;
+  }
+
+  .footerSubText {
+    margin-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footerMainDiv {
+    /* height: 1000px !important; */
+  }
+
+  .footerCopyrightText {
+    /* bottom: -535px !important; */
+  }
+
+  .footerCardImageContainer {
+    bottom: -125px;
+  }
+}

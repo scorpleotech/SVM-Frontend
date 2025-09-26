@@ -1,0 +1,90 @@
+.termsHeading {
+  text-align: center;
+  margin-bottom: 30px !important;
+  min-height: 180px;
+  background: #004787;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px !important;
+  color: white;
+  font-weight: 700 !important;
+  /* text-transform: uppercase !important; */
+  font-family: "Orbitron" !important;
+  letter-spacing: 4px !important;
+  padding: 30px 10%;
+}
+
+.paddingClass {
+  padding: 5%;
+}
+
+.pop_container {
+  padding: 14px 24px 24px 24px !important;
+  background-color: #fff !important;
+  border-radius: 8px !important;
+  width: 800px !important;
+  height: 470px !important;
+}
+
+.video_part {
+  /* height: 250px !important; */
+  width: 100% !important;
+  position: relative !important;
+  cursor: pointer !important;
+}
+
+.video_part img {
+  border-radius: 12px !important;
+  filter: brightness(0.8) !important;
+}
+
+.video_part svg {
+  position: absolute !important;
+  top: 42% !important;
+  left: 44% !important;
+  font-size: 31px;
+  color: white;
+  background: black !important;
+  border-radius: 50% !important;
+}
+
+.ImageGridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.imageGridItem {
+  height: 250px;
+}
+
+@media screen and (max-width: 850px) {
+  .ImageGridContainer {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+  }
+
+  .paddingClass {
+    padding: 5%;
+  }
+
+  .imageGridItem {
+    width: 100%;
+    object-fit: fill;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ImageGridContainer {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .imageGridItem {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+}

@@ -1,0 +1,5050 @@
+/* Section 1 Starts Here*/
+
+.homeContainer {
+  /* background: var(--main-page-background); */
+  overflow-x: hidden;
+}
+
+.homeContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.dummy {
+  min-height: 700px;
+  height: calc(970px) !important;
+  width: 100%;
+  /* background: linear-gradient(0deg,
+      var(--main-background1) 0%,
+      var(--main-background2) 35%); */
+  position: relative;
+  overflow: hidden !important;
+  /* margin-bottom: 100px; */
+}
+
+.aboutBannerImage {
+  width: 100%;
+  box-shadow: inset 0 10px 10px -10px var(--white-background);
+  max-height: 1000px;
+  height: calc(100vh - 70px);
+  object-fit: cover;
+}
+
+.pranaBg {
+  width: 69%;
+  position: absolute;
+  height: 219px;
+  transform: translate(-50%, -10%);
+}
+
+.homeBannerTextContainer1 {
+  position: absolute;
+  z-index: 2;
+  left: 5%;
+  top: 5%;
+}
+
+.homeBannerImage {
+  width: 100%;
+  min-height: 707px;
+}
+
+.HeaderTextSubDiv {
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerText1 {
+  color: var(--white-background);
+  font-size: 1.6vw !important;
+  line-height: 2vw !important;
+  /* letter-spacing: 3px !important; */
+}
+
+.headerText2 {
+  color: var(--white-background-5);
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  line-height: 50px !important;
+  /* letter-spacing: 3px !important; */
+}
+
+.headerText3 {
+  color: #34bc3d;
+  font-size: 120px !important;
+  line-height: 120px !important;
+  font-weight: bolder !important;
+}
+
+.headerText4 {
+  color: var(--white-background);
+  font-size: 22px !important;
+  line-height: 22px !important;
+  float: right;
+}
+
+.initial_banner_load {
+  min-height: 90vh !important;
+  display: grid !important;
+  place-items: center !important;
+  /* background-color: green !important; */
+}
+
+.banner_size {
+  min-height: 90vh !important;
+  width: 100% !important;
+}
+
+.homeBannerTextContainer2 {
+  position: absolute;
+  right: 8%;
+  top: 15%;
+}
+
+.headerText5 {
+  color: var(--white-background-5);
+  font-size: 22px !important;
+  line-height: 30px !important;
+}
+
+.variantColourContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: max-content;
+  /* position: absolute;
+  top: 35%;
+  left: -18%; */
+}
+
+.ColourDivContainer {
+  display: flex;
+  column-gap: 30px;
+}
+
+.SplHeading {
+  text-decoration: underline;
+  color: #34bc3d;
+}
+
+@keyframes heading4 {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.headerTextTransition {
+  position: relative;
+  animation-name: headertransition;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes headertransition {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.linkBtnsDiv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: absolute;
+  animation-name: linkbtns;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  z-index: 23;
+  right: 25px;
+  top: 35%;
+  width: 40px;
+  /* Adjust the top position according to your design */
+}
+
+@keyframes linkbtns {
+  from {
+    right: -100px;
+    top: 35%;
+  }
+
+  to {
+    right: 25px;
+    top: 35%;
+  }
+}
+
+.bannerImage {
+  height: 1050px;
+  object-fit: cover;
+  width: 85%;
+}
+
+.bannerBikeFront {
+  display: none;
+}
+
+.section4FullBikeImage {
+  display: none;
+}
+
+.bannerImageContainer {
+  position: relative;
+  animation: bannerBike 2s ease;
+  animation-fill-mode: forwards;
+  /* transform: translate(-45%, -20%); */
+  /* animation-delay: 1s; */
+  transform: translateX(-20%);
+  transform: translate(5%, 100%);
+}
+
+@keyframes bannerBike {
+  from {
+    transform: translate(2%, 100%);
+  }
+
+  to {
+    transform: translate(2%, -30%);
+  }
+}
+
+.linkIconBtns {
+  min-width: unset !important;
+  width: 35px;
+  height: 35px;
+  background-color: var(--white-background) !important;
+  border-radius: 75px !important;
+  cursor: pointer;
+}
+
+.linkIconBtns:hover {
+  transform: scale(1.2) !important;
+}
+
+.functionButtonDiv {
+  display: flex;
+  column-gap: 190px;
+  position: absolute;
+  justify-content: center;
+  z-index: 22;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@keyframes functionbtns {
+  from {
+    transform: translate(-100%, 0);
+  }
+
+  to {
+    transform: translate(170%, 0);
+  }
+}
+
+.functionButton {
+  color: var(--white-background) !important;
+  background-color: #000000;
+  border: 1px solid var(--black-background) !important;
+  font-size: 25px !important;
+}
+
+.functionButtonDiv1 {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, 0%);
+  z-index: 22;
+}
+
+/* @keyframes functionbtns1 {
+    from {
+        transform: translate(-100%, -10%);
+    }
+
+    to {
+        transform: translate(0, -10%);
+    }
+} */
+
+.headerArrawButtonIcon {
+  width: 60px;
+  height: 60px;
+  min-width: unset !important;
+}
+
+.section2Container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.featureDivContainer1 {
+  display: flex;
+}
+
+.featureLeftDiv {
+  /* width: 25%; */
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.featureRightDiv {
+  /* width: 25%; */
+  text-align: right;
+}
+
+.featureText1 {
+  font-family: "NothanSans" !important;
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+  line-height: 3rem !important;
+  color: var(--black-background) !important;
+  width: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-2.25em);
+    /* Adjust this value based on your font size and container size */
+  }
+}
+
+@keyframes settle {
+  from {
+    transform: translateY(-2.25em);
+  }
+
+  to {
+    transform: translateY(-4.5em);
+    /* Adjust this value based on your font size and container size */
+  }
+}
+
+/* Section 1 End Here*/
+/* Section 2 Starts Here*/
+
+.odometerDiv {
+  display: flex;
+  font-size: 50px !important;
+  justify-content: flex-end;
+  font-weight: 500 !important;
+}
+
+.odometer {
+  overflow: hidden;
+  height: 68px;
+}
+
+.odometerItem {
+  display: inline-block;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  vertical-align: top;
+  position: relative;
+  left: 22px;
+}
+
+.odometerDiv span {
+  font-family: "NothanSans" !important;
+}
+
+.sectio2OrderBtnContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 20px 0 10px;
+}
+
+.orderBtn {
+  background-color: var(--black-background) !important;
+  color: var(--white-background) !important;
+}
+
+.anotherText {
+  /* font-size: 48px !important; */
+  font-size: 50px !important;
+  /* margin-top: -25px; */
+  font-weight: 400 !important;
+  line-height: 52px !important;
+}
+
+.Section2BtnIcon {
+  z-index: 1;
+  position: absolute;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+  background: rgba(255, 255, 255, 0.85);
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 75px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+  font-size: 18px !important;
+}
+
+.arrowTransist {
+  animation: arraowTransist 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arraowTransist {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  100% {
+    transform: translate(110px, 0%);
+  }
+}
+
+.Section2Btn {
+  border: 1px solid var(--black-background) !important;
+  color: var(--black-background) !important;
+  border-radius: 75px !important;
+  display: flex !important;
+  column-gap: 5px;
+  text-transform: none !important;
+  position: relative !important;
+  padding: 0 20px !important;
+  height: 45px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.Section2Btn > span {
+  margin-left: 35px;
+}
+
+.BtnTransist > span {
+  margin-left: 0px;
+  margin-right: 35px;
+}
+
+/* @keyframes arraowTransist {
+  0% {
+    margin-left: 35px;
+    margin-right: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+} */
+
+/* Section 2 End Here*/
+/* Section 3 Starts Here*/
+
+.Section3Image {
+  /* height: 100%;
+  width: 100%; */
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.Section3HeadText {
+  font-family: "NothanSans" !important;
+  font-size: 3.5rem !important;
+  font-weight: 400 !important;
+  text-align: left;
+  line-height: 5rem !important;
+}
+
+.boldClass {
+  font-weight: 900 !important;
+  font-family: "NothanSans" !important;
+}
+
+.Section3Col {
+  padding: 30px 0px 35px;
+  padding-left: 80px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+
+.Section3HeadTextSpan {
+  font-weight: bolder !important;
+  font-size: 5rem !important;
+}
+
+.Section3NrmlText {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  text-align: justify;
+  line-height: 30px !important;
+  color: #00000099 !important;
+}
+
+.Section3Btn {
+  border: 1px solid var(--black-background) !important;
+  color: var(--black-background) !important;
+  border-radius: 75px !important;
+  display: flex !important;
+  column-gap: 5px;
+  text-transform: none !important;
+  position: relative !important;
+  height: 40px;
+  z-index: 1;
+}
+
+.Section3BtnIcon {
+  z-index: 1;
+  position: absolute;
+  background-color: var(--white-background);
+  left: -5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 75px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+}
+
+/* Section 3 End Here*/
+/* Section 4 Starts Here*/
+
+.section4Maincontainer {
+  background-image: url("../../Assets/Images/home_page_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: linear-gradient(-164deg, rgba(0, 14, 2, 0.89) 0%, #959595 100%);
+  min-height: 200px;
+   */
+  min-height: 250px;
+  margin-top: 40px;
+  position: relative;
+  margin-bottom: 40px;
+  /* height: 290px !important;*/
+  border-radius: 30px !important; 
+}
+
+.section4Image {
+  height: 692px;
+  position: absolute;
+  top: -225px;
+  left: 0;
+}
+
+.section4InterSectorIcon svg {
+  height: 290px !important;
+  width: 100% !important;
+}
+
+.section4InterSectorIcon {
+  position: absolute;
+  right: 0px;
+}
+
+.section4TextContainer {
+  position: absolute;
+  left: 350px;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.section4HeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 3rem !important;
+  color: var(--white-background);
+  text-align: left;
+}
+
+.section4Text {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: var(--white-background-5);
+  text-align: left;
+  width: 60%;
+}
+
+.section4Btn {
+  background: var(--lightgreen-btn-background) !important;
+  color: var(--black-background) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  height: 40px;
+  display: flex !important;
+  line-height: 0;
+  text-transform: none !important;
+  border-radius: 75px !important;
+  width: 140px;
+}
+
+/* Section 4 End Here*/
+/* Section 5 Starts Here*/
+
+.section5Maincontainer {
+  display: grid;
+  grid-template-columns: 39% 28.5% 28.5%;
+  column-gap: 2%;
+  row-gap: 35px;
+}
+
+.section5Image {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.section5Image1TextContainer {
+  position: absolute;
+  bottom: 0px;
+  width: 75%;
+  margin: 30px 20px;
+}
+
+.section5HeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 30px !important;
+  color: var(--white-background);
+  text-align: left;
+  font-style: italic !important;
+}
+
+.section5Image2TextContainer {
+  margin: 25px 40px;
+}
+
+.section5Text1 {
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  color: #ffffffcc;
+  text-align: left;
+  width: 95% !important;
+}
+
+.section5Text2 {
+  width: 65% !important;
+}
+
+.section5Text3 {
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  color: #ffffffcc;
+  text-align: left;
+  width: 100% !important;
+}
+
+.section5Image3TextContainer {
+  margin: 30px 20px;
+}
+
+/* Section 5 End Here*/
+/* Section 6 Starts Here*/
+
+.Section6HeaderText {
+  font-family: "Elemental" !important;
+  font-size: 7rem !important;
+  text-transform: uppercase !important;
+  position: absolute;
+  top: 3%;
+  left: -20%;
+}
+
+.colourVariantBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #9e9e9e;
+  cursor: pointer !important;
+}
+
+.highlightBorder {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border: 1.5px solid #607eff;
+  border-radius: 7px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.activeColorVariant {
+  width: 55px;
+  height: 55px;
+}
+
+.section6MainDiv {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin: 5% 0;
+  align-items: center;
+}
+
+.Section6NewBackgroundImage {
+  width: 100%;
+}
+
+.section6BikeBackground1 {
+  position: relative;
+  background: var(--bikelightgray-background);
+  height: 750px;
+  width: 76%;
+  border-radius: 100px;
+  left: 15%;
+  z-index: 1;
+}
+
+.section6BikeBackground2 {
+  /* position: absolute; */
+  background: var(--bikelightgray-background);
+  height: 425px;
+  width: 75%;
+  border-radius: 100px;
+  left: 11%;
+  z-index: 2;
+  top: 11%;
+}
+
+.Coroseldiv {
+  position: absolute !important;
+  display: flex;
+  left: 0%;
+  z-index: 3;
+  bottom: 0%;
+  width: 90%;
+  column-gap: 50%;
+}
+
+.TransitionClass {
+  animation: sliderBike 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sliderBike {
+  0% {
+      /*changed 29042025 Mani-IT*/
+    transform: translatex(100%);
+    /*before change
+    transform: translatex(-100%);
+    */
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.section6ImageHiddenImages {
+  position: absolute !important;
+  visibility: hidden !important;
+}
+
+.section6Image {
+  /* height: 630px; */
+  width: 88%;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+  /* object-fit: cover; */
+  /* z-index: 1;
+    aspect-ratio: 3/2;
+    object-fit: contain; */
+}
+
+.section6ImageTextDiv {
+  position: absolute;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  z-index: 3;
+  display: none;
+}
+
+.Section6ImageHeaderText {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: #939393;
+  text-align: left !important;
+}
+
+.Section6ImageText {
+  text-align: left !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+
+.Section6ColourText {
+  transform: rotate(180deg);
+  font-family: "Articulate CF" !important;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  font-weight: 600 !important;
+  font-size: 7rem !important;
+  top: 11% !important;
+  position: absolute;
+  right: -10px;
+  text-transform: uppercase !important;
+}
+
+.colourDot {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: 13%;
+  top: 6%;
+  z-index: 22;
+}
+
+.colourStepperMainContainer {
+  position: absolute;
+  bottom: 30%;
+  left: -12%;
+  display: flex;
+  align-items: center;
+  row-gap: 30px !important;
+  flex-direction: column;
+}
+
+.chooseColourText {
+  font-size: 30px !important;
+  font-weight: 500 !important;
+  margin-top: 10px !important;
+}
+
+.colourStepperContainer {
+  display: flex;
+}
+
+.colourDot1 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  z-index: 65;
+  margin-top: 10px;
+  box-shadow: 0 0 7px 0px var(--black-background) !important;
+  cursor: pointer !important;
+}
+
+.dotSeparator {
+  font-size: 40px;
+  line-height: 25px;
+}
+
+/* Section 6 End Here*/
+/* Section 7 Starts Here*/
+
+.section7MainDiv {
+  position: relative;
+  overflow-y: clip;
+}
+
+.section7InnerDiv1 {
+  padding: 50px;
+  background: #e6feff80;
+  border-color: #e6feff;
+  border-width: 1px;
+  border-top-left-radius: 67px;
+  border-top-right-radius: 282px;
+  border-bottom-right-radius: 333px;
+  border-bottom-left-radius: 67px;
+  height: max-content;
+  /* visibility: hidden; */
+  /* display: none; */
+}
+
+.firstTransition {
+  height: max-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.secondTransition {
+  height: max-content;
+  position: relative;
+  margin-top: 40px;
+  overflow-y: hidden;
+}
+
+.section7RedBikeImage {
+  height: 600px;
+  position: absolute;
+  transform: translate(-100%, 0%);
+  /* transform: translate(100%, 0%); */
+}
+
+.Prana1Container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  opacity: 0.05;
+  transform: translate(-40%, -11%);
+}
+
+.section7RunningText1 {
+  font-size: 22rem !important;
+  font-weight: bolder !important;
+  margin-right: 500px !important;
+}
+
+.prana2nd,
+.prana3rd {
+  position: absolute;
+  margin: 0 !important;
+  opacity: 0.05;
+}
+
+.prana2nd {
+  bottom: 0%;
+  left: -55%;
+}
+
+.prana3rd {
+  bottom: -9%;
+  right: -55%;
+}
+
+.prana2ndTransistion {
+  animation: prana2ndTransition 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes prana2ndTransition {
+  0% {
+    transform: translate(100%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.Prana1ContainerTransistion {
+  animation: Prana1Transition 1s ease;
+  animation-fill-mode: forwards;
+  /* animation-delay: 2s; */
+  justify-content: center;
+}
+
+@keyframes Prana1Transition {
+  0% {
+    transform: translate(-40%, -15%);
+  }
+
+  100% {
+    transform: translate(42%, -15%);
+  }
+}
+
+.section7PranaBikeImage {
+  height: 600px;
+}
+
+.section7RedImageVisible {
+  animation: bikeRedImageTransition 1s ease;
+  animation-fill-mode: forwards;
+  /* animation-delay: 2s; */
+  justify-content: center;
+  z-index: 22;
+}
+
+@keyframes bikeRedImageTransition {
+  0% {
+    transform: translate(200%, 0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(350%, -100%);
+    opacity: 1;
+    display: none;
+  }
+}
+
+.section7black1Image {
+  height: 600px;
+  display: none;
+  position: absolute;
+}
+
+.section7black1ImageVisible {
+  animation: bikeBlack1mageTransition 1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  display: inline-block;
+  justify-content: center;
+  transform: translate(0, 100%);
+  z-index: 22;
+}
+
+@keyframes bikeBlack1mageTransition {
+  from {
+    transform: translate(270%, 50%);
+  }
+
+  to {
+    transform: translate(420%, -100%);
+    display: none;
+  }
+}
+
+.section7green1Image {
+  height: 600px;
+  display: none;
+  position: absolute;
+}
+
+.section7green1ImageVisible {
+  animation: bikeGreen1mageTransition 1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  display: inline-block;
+  justify-content: center;
+  transform: translate(0, 100%);
+  z-index: 22;
+}
+
+@keyframes bikeGreen1mageTransition {
+  from {
+    transform: translate(290%, 100%);
+  }
+
+  to {
+    transform: translate(440%, -100%);
+    display: none;
+  }
+}
+
+.section7InnerDiv1Visible {
+  animation: bikeDivfeatuurediv1 2s ease;
+  animation-fill-mode: forwards;
+  justify-content: center;
+  z-index: 22;
+  opacity: 1;
+  display: inline-block;
+  clip-path: polygon(0 0, 0 100%, 0% 100%, 0% 0%);
+}
+
+@keyframes bikeDivfeatuurediv1 {
+  from {
+    opacity: 0;
+    clip-path: polygon(0 0%, 0 0%, 0% 100%, 0% 0%);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    /* Expand clip-path to reveal the element */
+  }
+}
+
+.section7InnerDiv2Visible {
+  animation: bikeDivfeatuurediv2 2s ease;
+  animation-fill-mode: forwards;
+  /* animation-delay: 1s; */
+  justify-content: center;
+  z-index: 22;
+  opacity: 1;
+  display: inline-block;
+  clip-path: polygon(0 0, 0 100%, 0% 100%, 0% 0%);
+}
+
+@keyframes bikeDivfeatuurediv2 {
+  from {
+    opacity: 0;
+    clip-path: polygon(0 0%, 0 0%, 0% 100%, 0% 0%);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    /* Expand clip-path to reveal the element */
+  }
+}
+
+.section7InnerDiv2 {
+  background: #ffefef80 !important;
+  border-color: #ffefef !important;
+  border-width: 1px;
+  border-top-left-radius: 282px;
+  border-top-right-radius: 67px;
+  border-bottom-right-radius: 67px;
+  border-bottom-left-radius: 333px;
+  height: max-content;
+}
+
+.section7Image {
+  position: absolute;
+  /* top: -160px; */
+  height: 532px;
+  display: none;
+  /* right: 15px; */
+}
+
+.BlacImaghesection7 {
+  position: absolute;
+  /* top: -160px; */
+  height: 465px;
+  display: none;
+  transform: translate(18%, 78%);
+}
+
+.Section7MainImage1Tramsition {
+  animation: section7MainImage1 1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  display: inline-block;
+  justify-content: center;
+  transform: translate(0, 100%);
+  z-index: 22;
+}
+
+@keyframes section7MainImage1 {
+  from {
+    transform: translate(200%, 70%);
+  }
+
+  to {
+    transform: translate(431%, -1%);
+  }
+}
+
+.Section7MainImage2Tramsition {
+  animation: section7MainImage2 1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  display: inline-block;
+  justify-content: center;
+  transform: translate(-250%, 78%);
+  z-index: 22;
+}
+
+@keyframes section7MainImage2 {
+  from {
+    transform: translate(150%, -96%);
+  }
+
+  to {
+    transform: translate(48%, -2%);
+  }
+}
+
+.MainheaderText1 {
+  font-family: "NothanSans" !important;
+  font-size: 70px !important;
+  text-align: left;
+  line-height: 85px !important;
+  background: -webkit-linear-gradient(144deg, #00a59a 65%, #1d1d1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder !important;
+}
+
+.MainheaderText2 {
+  background: -webkit-linear-gradient(144deg, #9a0d0e 65%, #1d1d1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section7SubText1 {
+  font-size: 16px !important;
+  text-align: left;
+  line-height: 40px !important;
+  font-weight: 500 !important;
+  color: #1d1d1f;
+  width: 90%;
+}
+
+.section7FeaturesContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-left: 30px;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.CategoryText {
+  font-size: 40px !important;
+  line-height: 60px !important;
+  font-weight: 900 !important;
+  margin-bottom: 15px !important;
+}
+
+.FeaturesListText {
+  color: #03998e;
+  font-size: 30px !important;
+}
+
+.FeaturesListText span {
+  font-weight: 400;
+  font-size: 25px !important;
+  font-style: italic;
+  color: #03998e80;
+}
+
+.FeaturesListText1 {
+  color: #950d0e;
+}
+
+.FeaturesListText1 span {
+  font-weight: 400;
+  font-size: 30px !important;
+  font-style: italic;
+  color: #950d0e80;
+}
+
+.section7white2BikeImage {
+  position: absolute;
+  /* top: -160px; */
+  height: 700px;
+  display: none;
+  transform: translate(18%, 78%);
+}
+
+.section7white2BikeImageTransition {
+  animation: section7white2BikeImageTransition 1s ease;
+  animation-fill-mode: forwards;
+  /* animation-delay: 0.6s; */
+  display: inline-block;
+  justify-content: center;
+  transform: translate(0, 100%);
+  z-index: 22;
+}
+
+@keyframes section7white2BikeImageTransition {
+  from {
+    transform: translate(350%, -96%);
+  }
+
+  to {
+    transform: translate(200%, 70%);
+    display: none;
+  }
+}
+
+.section7green2BikeImage {
+  position: absolute;
+  /* top: -160px; */
+  height: 700px;
+  display: none;
+  transform: translate(18%, 78%);
+}
+
+.section7green2BikeImageTransition {
+  animation: section7green2BikeImageTransition 1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  display: inline-block;
+  justify-content: center;
+  transform: translate(0, 100%);
+  z-index: 22;
+}
+
+@keyframes section7green2BikeImageTransition {
+  from {
+    transform: translate(250%, -96%);
+  }
+
+  to {
+    transform: translate(100%, 70%);
+    display: none;
+  }
+}
+
+.section7red2BikeImage {
+  position: absolute;
+  /* top: -160px; */
+  height: 700px;
+  display: none;
+  transform: translate(18%, 78%);
+}
+
+.section7red2BikeImageTransition {
+  animation: section7red2BikeImageTransition 1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  display: inline-block;
+  justify-content: center;
+  transform: translate(0, 100%);
+  z-index: 22;
+}
+
+@keyframes section7red2BikeImageTransition {
+  from {
+    transform: translate(200%, -96%);
+  }
+
+  to {
+    transform: translate(50%, 70%);
+    display: none;
+  }
+}
+
+/* Section 7 End Here*/
+/* Section 8 Starts Here*/
+
+.section8MainContainer {
+  background: linear-gradient(-163deg, #000000 0%, rgba(84, 84, 84, 0.79) 100%);
+}
+
+.section8SplHeadertxt {
+  font-family: "NothanSans" !important;
+  text-align: left;
+  color: var(--white-background);
+  font-size: 25px !important;
+  line-height: 35px !important;
+}
+
+.section8InnerContainer {
+  height: 400px;
+  width: 80%;
+  margin: auto !important;
+  align-items: center;
+}
+
+.section8Text1 {
+  font-family: "NothanSans" !important;
+  color: var(--white-background);
+  font-size: 45px !important;
+  line-height: 80px !important;
+  text-align: left;
+  width: 90%;
+}
+
+.bigTextContainer {
+  height: 280px;
+  overflow-y: scroll;
+}
+
+.bigTextContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.section8Text2 {
+  color: #ffffffcc;
+  text-align: justify;
+  font-size: 18px !important;
+  font-family: "Goutham" !important;
+}
+
+/* Section 8 Starts Here*/
+/* Section 9 Starts Here */
+
+.section9MainContainer {
+  width: 96%;
+  margin: auto;
+}
+
+.Section9Card {
+  width: 90%;
+}
+
+/* .section9CardContainer {
+  width: 90%;
+  margin: auto 5% !important;
+} */
+
+.section9HeaderText {
+  font-family: "NothanSans" !important;
+  background: linear-gradient(-77deg, #000000 50%, #5454544d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px !important;
+  line-height: 105px !important;
+  text-align: left;
+  margin-left: 5% !important;
+  font-weight: bolder !important;
+}
+
+.section9CardImage {
+  width: 100%;
+}
+
+.section9CardTopic {
+  position: absolute !important;
+  text-transform: none !important;
+  color: var(--black-background) !important;
+  background: var(--white-background) !important;
+  z-index: 85;
+  left: 10px;
+  top: 10px;
+  border-radius: 75px !important;
+  font-weight: 600 !important;
+  height: 30px;
+  font-size: 11px !important;
+}
+
+.section9CardTopic:hover {
+  color: var(--black-background);
+  background: var(--white-background);
+}
+
+.section9CardMessage {
+  font-size: 16px !important;
+  text-align: left;
+  font-weight: 500 !important;
+  color: var(--black-background);
+  line-height: 30px !important;
+  width: 85%;
+  margin-left: 15px !important;
+  margin-top: 30px !important;
+}
+
+.section9CardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.section9Smalltext {
+  display: flex;
+  align-content: center;
+  column-gap: 5px !important;
+  font-size: 12px !important;
+  color: var(--description-light-text) !important;
+}
+
+/* .section9Smalltext > span {
+  display: flex;
+  align-content: center;
+  column-gap: 5px !important;
+} */
+
+.section9CardButton {
+  font-size: larger !important;
+  min-width: unset !important;
+  width: 40px;
+  height: 40px;
+  padding: 0 !important;
+  background: white !important;
+  color: black !important;
+  border-radius: 50% !important;
+}
+
+.section9CardButton:hover {
+  background: var(--black-background) !important;
+  color: var(--white-background) !important;
+}
+
+/* Section 9 End Here */
+/* Section 10 Start Here */
+
+.section10MainContainer {
+  /* width: 99%; */
+  overflow-x: hidden;
+}
+
+.eventArrowTransition {
+  animation: section11ArrowTransist 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.section10Btn > span {
+  margin-left: 25px !important;
+  margin-right: 10px !important;
+}
+
+@keyframes section11ArrowTransist {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(120px, 0);
+  }
+}
+
+.eventBtnTransition > span {
+  margin-left: 10px !important;
+  margin-right: 25px !important;
+}
+
+.section10Btn {
+  background-color: #ffffff !important;
+  border: 0px solid var(--white-background) !important;
+}
+
+.section10BtnContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section10BtnIcon {
+  background-color: #c7c7c7;
+  z-index: 33 !important;
+  top: 3px !important;
+  left: unset;
+  right: 115px;
+}
+
+.section10leftContainer {
+  background: linear-gradient(36deg, #000000 0%, #545454 100%);
+  height: 440px !important;
+  position: relative;
+}
+
+.section10CardButton {
+  font-size: larger !important;
+  min-width: unset !important;
+  width: 25px;
+  height: 25px;
+  padding: 0 !important;
+  background: black !important;
+  color: white !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 10px 2px var(--white-background) !important;
+}
+
+.section10leftContainer .section10cardBtncontainer {
+  display: flex;
+  column-gap: 30px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.section10rightContainer .section10cardBtncontainer {
+  display: flex;
+  column-gap: 30px;
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+
+.section10HeaderText {
+  font-family: "Orbitron" !important;
+  color: var(--white-background);
+  font-size: 8rem !important;
+  text-align: left;
+  font-weight: bolder !important;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.headerLeftSection10 {
+  animation: eventsText 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.section10Card {
+  position: absolute;
+  width: 75%;
+  height: 420px;
+  transform: translate(20%, 30%);
+  /* box-shadow: 0px 0px 12.5px var(--white-background) !important; */
+  filter: drop-shadow(0px 0px 12.5px #ffffff);
+  border-radius: 60px !important;
+}
+
+.section10CardImage {
+  width: 100%;
+  /* opacity: 0.7; */
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  object-position: 50% 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.section10rightContainer {
+  background: linear-gradient(90deg, #b06dcc 10%, #0101ee 100%);
+  height: 440px;
+  position: relative;
+}
+
+.section10HeaderText2 {
+  top: 5px;
+  right: 15px;
+}
+
+.headerRightSection10 {
+  animation: webcastText 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.section10rightContainer .section10SubHeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 60px !important;
+  line-height: 50px;
+  text-align: left;
+  font-weight: bolder !important;
+  color: white;
+}
+
+.section10leftContainer .section10SubHeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 55px !important;
+  line-height: 60px;
+  text-align: left;
+  font-weight: bolder !important;
+  color: white;
+  /* animation: EventsSubHEader 1s ease;
+    animation-fill-mode: forwards; */
+}
+
+.section10rightContainer .section10NrmlTexts {
+  font-size: 16px !important;
+  line-height: 30px !important;
+  text-align: left;
+  color: white;
+  width: 75%;
+}
+
+.section10rightContainer .section10SubHeaderContainer {
+  top: 180px;
+  position: absolute;
+  width: 75%;
+  left: 10%;
+}
+
+.section10TextOverImageCotainer {
+  width: 75%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: 180px;
+  margin: auto 10%;
+}
+
+.section10leftContainer .section10NrmlTexts {
+  font-size: 16px !important;
+  line-height: 30px !important;
+  text-align: left;
+  color: white;
+  width: 75%;
+}
+
+.transitionclassLeftText {
+  animation: EventsSubHEader 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.rightContainerTransition {
+  animation: WebcastSubHEader 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.TestimonialMainCard {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  height: 630px;
+  margin-top: 60px;
+  margin-bottom: 30px !important;
+  border-radius: 25px !important;
+  box-shadow: 0 0 10px 2px var(--lightgray-background) !important;
+  display: flex;
+  justify-content: center;
+}
+
+.TestimonialText {
+  font-size: 15rem !important;
+  font-weight: bolder !important;
+  color: #d3d3d3;
+  line-height: 23rem !important;
+  width: max-content;
+  font-family: "Orbitron" !important;
+}
+
+.testimonialTextTransist {
+  animation: TestimonialText 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.avatarImage {
+  width: 65px !important;
+  height: 65px !important;
+}
+
+.TestimonialCardAvatar {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.TestimonialCard {
+  height: 340px;
+  padding: 40px 45px;
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 30px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #323232 !important;
+  width: 90%;
+  margin: auto 5% !important;
+}
+
+.TestimonialCardTopic {
+  font-family: "NothanSans" !important;
+  color: white;
+  font-weight: bolder !important;
+  font-size: 23px !important;
+  text-align: left !important;
+}
+
+.TestimonialRow {
+  width: 98%;
+  margin: auto !important;
+  position: absolute;
+  top: 38%;
+  left: 1%;
+  row-gap: 35px;
+}
+
+.TestimonialCardText {
+  color: hsla(0, 0%, 100%, 0.9);
+  font-size: 15px !important;
+  text-align: left;
+}
+
+.TestimonialCardName {
+  font-family: "NothanSans" !important;
+  color: white;
+  font-size: 17px !important;
+  font-weight: bolder !important;
+  text-align: left;
+}
+
+.TestimonialCardDesignation {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px !important;
+  text-align: left;
+}
+
+.section10-in-view {
+  /* Transition properties and durations */
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+
+  /* Desired visual effects on scroll */
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+@keyframes eventsText {
+  from {
+    transform: translate(55px, 100%);
+  }
+
+  to {
+    transform: translate(0px, 0);
+  }
+}
+
+@keyframes webcastText {
+  from {
+    transform: translate(-100px, -100%);
+  }
+
+  to {
+    transform: translate(0px, 0);
+  }
+}
+
+@keyframes EventsSubHEader {
+  from {
+    transform: translate(100px, -50%);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes TestimonialText {
+  from {
+    transform: translate(100px, -100%);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes WebcastSubHEader {
+  from {
+    transform: translate(-55px, 100%);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+/* Section 10 End Here */
+/* Section 11 Starts Here */
+.section11MainContainer {
+  margin-bottom: 30px;
+  /* width: 99%; */
+}
+
+.sliderheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section11commonCardClass {
+  padding: 30px;
+  background-color: #e2e2e21a !important;
+  box-shadow: 0 0 10px 2px var(--lightgray-background) !important;
+  border-radius: 20px !important;
+}
+
+.KilometeText {
+  line-height: 45px !important;
+  color: #a89696;
+  font-size: 22px !important;
+}
+
+.section11slider1 {
+  height: 12px !important;
+}
+
+.ValueText {
+  font-size: 26px !important;
+  text-align: center;
+}
+
+.ValueText span {
+  font-size: 45px !important;
+  font-weight: bolder;
+  line-height: 45px !important;
+}
+
+.section11SavingsBtn {
+  background: linear-gradient(
+    -164deg,
+    rgba(225, 34, 174, 0.89) 0%,
+    #ff9fc0 100%
+  ) !important;
+  height: 23px;
+  padding: 0 10px !important;
+  font-size: 15px !important;
+  border-radius: 75px !important;
+  position: absolute !important;
+  left: 15px;
+  color: white !important;
+  width: max-content !important;
+}
+
+.section11SavingsCard {
+  background-color: transparent !important;
+  margin-top: 35px;
+}
+
+.ValueLableText {
+  color: #f9c2c2 !important;
+  margin-top: 5px;
+  font-size: 18px !important;
+  text-align: center;
+}
+
+.section11HeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 35px !important;
+  font-weight: 500 !important;
+  position: relative;
+}
+
+.section11SpanSubText {
+  font-size: 25px !important;
+  font-family: "NothanSans" !important;
+}
+
+.section11SpanMainText {
+  font-size: 45px !important;
+  font-weight: bolder !important;
+  position: absolute;
+}
+
+.marginleftClass {
+  margin-left: 80px;
+}
+
+.section11RightDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  height: 100%;
+}
+
+.section11HeaderText2 {
+  font-family: "Orbitron" !important;
+  font-size: 70px !important;
+  font-weight: bolder !important;
+  background: linear-gradient(-127deg, #8d5502 0%, #e7b41a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 85px !important;
+}
+
+.section11HeaderText3 {
+  font-family: "NothanSans" !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  line-height: 35px !important;
+  font-style: italic !important;
+  letter-spacing: 3px !important;
+}
+
+.section11NrmlText {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+  text-align: justify;
+  width: 90%;
+  color: var(--description-light-text);
+}
+
+/* Section 11 End Here */
+/* Section 12 Starts Here */
+
+.section12HeaderText {
+  font-family: "NothanSans" !important;
+  font-size: 55px !important;
+  font-weight: bolder !important;
+  line-height: 65px !important;
+  text-align: left;
+}
+
+.section12SubText {
+  font-size: 16px !important;
+  line-height: 25px !important;
+  text-align: left;
+  color: #00000099;
+}
+
+.section12MainContainer {
+  height: auto !important;
+  margin-bottom: 4% !important;
+}
+
+.sliderContainer {
+  position: relative;
+}
+
+.sliderContainer li {
+  display: flex !important;
+}
+
+.sliderContainer svg {
+  color: black !important;
+  margin: 0 -25px !important;
+}
+
+.sliderImage {
+  width: 65%;
+  margin: auto;
+}
+/* Section 12 End Here */
+
+.myOrders {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 30px 35px !important;
+  margin: 25px 0 !important;
+  border-radius: 8px !important;
+  position: relative;
+}
+.myOrdersBox {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.myOrdersBox svg {
+  font-size: 24px;
+  color: #639b39d4;
+  background-color: #639b393b;
+  padding: 9px;
+  width: 44px;
+  height: 44px;
+  border-radius: 9px;
+}
+.myOrdersBox h1 {
+  font-weight: 600 !important;
+  font-size: 28px !important;
+}
+.myOrdersBox span {
+  font-size: 14px !important;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.myOrderstable {
+  margin-top: 25px !important;
+  width: 90%;
+  margin: auto;
+}
+.myOrderstable table {
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
+  border-collapse: collapse !important;
+}
+.myOrders th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
+  padding: 12px !important;
+  font-weight: bold !important;
+}
+.myOrderstable thead th {
+  font-weight: 600 !important;
+}
+.orderrow {
+  background-color: #fff !important;
+}
+.order_header {
+  font-family: "NothanSans" !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  color: black;
+}
+.order_data {
+  font-family: "NothanSans" !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.order_summary {
+  font-family: "Orbitron" !important;
+  font-weight: 600 !important;
+  font-size: 31px !important;
+  margin-bottom: 24px !important;
+}
+
+.sub_order_summary {
+  font-family: "NothanSans" !important;
+  font-weight: 600 !important;
+  font-size: 23px !important;
+  margin-bottom: 4px !important;
+}
+
+.ColumnFlexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0 !important;
+}
+
+.btnContainer {
+  position: absolute;
+  top: 30px;
+  display: flex !important;
+  column-gap: 10px !important;
+  right: 35px;
+}
+
+.anotherBookingbtn {
+  text-transform: none !important;
+}
+
+.cancelBookingbtn{
+background-color: red !important;
+}
+
+.myOrders hr {
+  opacity: 0.8 !important;
+  border-color: #b7b7b7 !important;
+}
+
+.SubContainer {
+  display: grid;
+  grid-template-columns: 60% 2% 38%;
+}
+
+.OrderNoteText {
+  text-align: justify !important;
+  font-size: 14px !important;
+}
+
+.bookedBikeimage {
+  width: 125px;
+  height: 90px;
+}
+
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  row-gap: 15px !important;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundbookNowIcon {
+  text-transform: none !important;
+}
+
+@media screen and (min-width: 1990px) {
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(200%, 70%);
+    }
+
+    to {
+      transform: translate(487%, -6%);
+    }
+  }
+}
+
+@media screen and (min-width: 2350px) {
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(200%, 70%);
+    }
+
+    to {
+      transform: translate(500%, -15%);
+    }
+  }
+}
+
+@media screen and (max-width: 1690px) {
+  .section4HeaderText {
+    font-size: 30px !important;
+  }
+
+  .section4Text {
+    font-size: 13px !important;
+  }
+
+  .homeBannerImage {
+    min-height: 606px;
+  }
+
+  .featureText1 {
+    font-size: 35px !important;
+    line-height: 50px !important;
+  }
+
+  .odometerDiv {
+    font-size: 40px !important;
+  }
+
+  .odometer {
+    height: 55px !important;
+  }
+
+  .MainheaderText1 {
+    font-size: 50px !important;
+    line-height: 65px !important;
+  }
+
+  .section5HeaderText {
+    font-size: 25px !important;
+  }
+
+  .section5Text3 {
+    font-size: 13px !important;
+  }
+
+  .FeaturesListText {
+    font-size: 25px !important;
+  }
+
+  .FeaturesListText1 span,
+  .FeaturesListText span {
+    font-size: 20px !important;
+  }
+
+  .section7SubText1 {
+    font-size: 15px !important;
+  }
+
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(200%, 70%);
+    }
+
+    to {
+      transform: translate(408%, 0%);
+    }
+  }
+
+  @keyframes prana2ndTransition {
+    0% {
+      transform: translate(100%, 5%);
+    }
+
+    100% {
+      transform: translate(0%, 5%);
+    }
+  }
+
+  .section8Text1 {
+    font-size: 35px !important;
+    line-height: 50px !important;
+    text-align: left;
+    width: 80%;
+  }
+
+  .bigTextContainer {
+    height: 250px !important;
+  }
+
+  .section8SplHeadertxt {
+    font-size: 22px !important;
+  }
+
+  .section8Text2 {
+    font-size: 15px !important;
+  }
+
+  .section8InnerContainer {
+    height: 350px !important;
+  }
+
+  .section7RunningText1 {
+    font-size: 20rem !important;
+  }
+
+  @keyframes Prana1Transition {
+    0% {
+      transform: translate(-40%, -15%);
+    }
+
+    100% {
+      transform: translate(42%, -15%);
+    }
+  }
+
+  .section7RedBikeImage,
+  .section7Image,
+  .BlacImaghesection7,
+  .section7black1Image,
+  .section7green1Image {
+    height: 492px !important;
+  }
+
+  .section11NrmlText {
+    font-size: 13px !important;
+    line-height: 30px !important;
+  }
+
+  .section9CardMessage {
+    font-size: 12px !important;
+    line-height: 22px !important;
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+  }
+
+  .TestimonialText {
+    font-size: 12rem !important;
+    line-height: 13rem !important;
+  }
+
+  .TestimonialCardTopic {
+    font-size: 20px !important;
+  }
+
+  .Section3HeadText {
+    font-size: 40px !important;
+    line-height: normal !important;
+  }
+
+  .Section3NrmlText {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+  .KilometeText {
+    line-height: 30px !important;
+    font-size: 18px !important;
+  }
+
+  .TestimonialCardText {
+    font-size: 14px !important;
+  }
+
+  .TestimonialCardName {
+    font-size: 15px !important;
+  }
+
+  .TestimonialCardDesignation {
+    font-size: 14px !important;
+  }
+
+  .TestimonialMainCard {
+    height: 450px;
+  }
+
+  .TestimonialRow {
+    top: 35%;
+  }
+
+  .TestimonialCard {
+    height: 270px;
+  }
+
+  .section11HeaderText2 {
+    font-size: 55px !important;
+    line-height: 60px !important;
+  }
+
+  .section11HeaderText {
+    font-size: 25px !important;
+  }
+
+  .marginleftClass {
+    margin-left: 50px !important;
+  }
+
+  .section11HeaderText3 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+  .section11SpanMainText {
+    font-size: 33px !important;
+  }
+  .section10leftContainer .section10SubHeaderText,
+  .section10rightContainer .section10SubHeaderText {
+    font-size: 40px !important;
+  }
+
+  .section10leftContainer .section10NrmlTexts,
+  .section10rightContainer .section10NrmlTexts {
+    font-size: 14px !important;
+  }
+
+  .section10HeaderText {
+    font-size: 6.5rem !important;
+  }
+  .section10leftContainer,
+  .section10rightContainer {
+    height: 380px !important;
+  }
+
+  .section10TextOverImageCotainer,
+  .section10rightContainer .section10SubHeaderContainer {
+    top: 145px;
+  }
+
+  .section11HeaderText {
+    font-size: 20px !important;
+  }
+  .section11SpanSubText {
+    font-size: 16px !important;
+  }
+
+  .section11SpanMainText {
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .dummy {
+    height: 730px !important;
+  }
+
+  .HeaderTextSubDiv {
+    height: 160px !important;
+  }
+
+  .homeBannerImage {
+    min-height: 505px;
+  }
+
+  .Section2Btn {
+    height: 40px;
+    font-size: 12px !important;
+  }
+
+  .Section2BtnIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .section7white2BikeImage,
+  .section7green2BikeImage,
+  .section7red2BikeImage {
+    height: 410px;
+  }
+
+  .Section2Btn > span {
+    margin-left: 25px;
+  }
+
+  .BtnTransist > span {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+  .functionButtonDiv {
+    column-gap: 120px;
+  }
+
+  .bannerImage {
+    height: 780px !important;
+  }
+
+  .headerText1 {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  @keyframes prana2ndTransition {
+    0% {
+      transform: translate(100%, -15%);
+    }
+
+    100% {
+      transform: translate(0%, -15%);
+    }
+  }
+
+  .headerText2 {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  /* .headerText3 {
+    font-size: 30px !important;
+    line-height: 35px !important;
+    margin-top: 10px !important;
+  } */
+
+  .Section3Col {
+    padding-left: 60px !important;
+    row-gap: 10px;
+  }
+
+  .headerText4 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .headerText3 {
+    font-size: 5.5vw !important;
+    line-height: 5vw !important;
+  }
+
+  .headerText5 {
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
+
+  @keyframes bannerBike {
+    from {
+      transform: translate(4%, 100%);
+    }
+
+    to {
+      transform: translate(4%, -36%);
+    }
+  }
+
+  .section10TextOverImageCotainer {
+    top: 150px;
+  }
+
+  .functionButton {
+    font-size: 15px !important;
+  }
+
+  @keyframes functionbtns {
+    from {
+      transform: translate(-100%, 230px);
+    }
+
+    to {
+      transform: translate(0, 230px);
+    }
+  }
+
+  .headerArrawButtonIcon {
+    height: 45px;
+    width: 45px;
+  }
+
+  .odometerDiv,
+  .anotherText {
+    font-size: 40px !important;
+    margin-top: -4px !important;
+  }
+
+  .odometer {
+    height: 55px !important;
+  }
+
+  .featureText1 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+
+  .Section3HeadText {
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
+
+  .Section3HeadTextSpan {
+    font-size: 45px !important;
+  }
+
+  .Section3NrmlText {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 22px !important;
+  }
+
+  .section4Image {
+    height: 512px;
+    top: -181px;
+    left: 0;
+  }
+
+  .section5Text1,
+  .section5Text3 {
+    font-size: 10px !important;
+  }
+
+  .section5HeaderText {
+    font-size: 20px !important;
+  }
+
+  .section4Maincontainer {
+    /* margin-top: 100px !important; */
+    height: 200px !important;
+  }
+
+  .section5Maincontainer {
+    row-gap: 20px;
+  }
+
+  .section4InterSectorIcon svg {
+    height: 200px !important;
+  }
+
+  .section4TextContainer {
+    left: 250px;
+    top: 25px;
+  }
+
+  .Prana1Container {
+    transform: translate(-40%, -8%);
+  }
+
+  .section7RunningText1 {
+    font-size: 16rem !important;
+    margin-right: 335px !important;
+  }
+
+  .prana2nd,
+  .prana3rd {
+    margin: 0 !important;
+  }
+
+  .prana2nd {
+    bottom: -7%;
+    left: -55%;
+  }
+
+  .section9Smalltext {
+    font-size: 10px !important;
+  }
+
+  .section9CardTopic {
+    height: 25px;
+    font-size: 9px !important;
+    padding: 0 8px !important;
+  }
+
+  .prana3rd {
+    bottom: -7%;
+    right: -70%;
+  }
+
+  .section7PranaBikeImage {
+    height: 550px;
+  }
+
+  @keyframes Prana1Transition {
+    0% {
+      transform: translate(-40%, -20%);
+    }
+
+    100% {
+      transform: translate(42%, -20%);
+    }
+  }
+
+  .section4HeaderText {
+    font-size: 30px !important;
+  }
+
+  .section4Text {
+    font-size: 12px !important;
+    line-height: 18px !important;
+    margin: 0 !important;
+  }
+
+  .section4Btn {
+    height: 30px;
+    margin-top: 10px !important;
+  }
+
+  .Section6HeaderText {
+    font-size: 5.5rem !important;
+    top: 6% !important;
+    left: -25% !important;
+  }
+
+  .section6BikeBackground1 {
+    width: 73%;
+    left: 17%;
+    height: 530px;
+  }
+
+  /* .section6MainDiv {
+    height: 670px;
+  } */
+
+  .Section6ColourText {
+    right: -10px;
+    font-size: 6rem !important;
+    top: 10% !important;
+  }
+
+
+  .colourStepperMainContainer {
+    bottom: 15%;
+  }
+
+  .colourVariantBox {
+    width: 28px;
+    height: 28px;
+  }
+
+  .activeColorVariant {
+    width: 45px;
+    height: 45px;
+  }
+
+  .colourDot {
+    top: 7%;
+    right: 14%;
+  }
+
+  .section7InnerDiv1 {
+    height: max-content;
+  }
+
+  .section7RedBikeImage,
+  .section7Image,
+  .BlacImaghesection7,
+  .section7black1Image,
+  .section7green1Image {
+    height: 407px !important;
+  }
+
+  /* .firstTransition,
+  .secondTransition {
+    height: 400px !important;
+  } */
+
+  @keyframes bikeRedImageTransition {
+    0% {
+      transform: translate(200%, 0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(350%, -100%);
+      opacity: 1;
+      display: none;
+    }
+  }
+
+  .CategoryText {
+    font-size: 25px !important;
+    line-height: 30px !important;
+    margin-bottom: 10px !important;
+  }
+
+  @keyframes bikeBlack1mageTransition {
+    from {
+      transform: translate(220%, 50%);
+    }
+
+    to {
+      transform: translate(420%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes bikeGreen1mageTransition {
+    from {
+      transform: translate(240%, 100%);
+    }
+
+    to {
+      transform: translate(440%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(255%, 70%);
+    }
+
+    to {
+      transform: translate(416%, 1%);
+    }
+  }
+
+  @keyframes section7MainImage2 {
+    from {
+      transform: translate(150%, -87%);
+    }
+
+    to {
+      transform: translate(18%, -8%);
+    }
+  }
+
+  .MainheaderText1 {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+
+  .section7SubText1 {
+    font-size: 13px !important;
+    line-height: 25px !important;
+    width: 75% !important;
+  }
+
+  .FeaturesListText {
+    font-size: 20px !important;
+  }
+
+  .FeaturesListText span {
+    font-size: 17px !important;
+  }
+
+  /* .section7Image {
+    top: -140px;
+    right: 0;
+  } */
+
+  .section8InnerContainer {
+    height: max-content;
+    padding: 50px 0;
+  }
+
+  .bigTextContainer {
+    height: 190px !important;
+  }
+
+  .section8Text1 {
+    font-size: 30px !important;
+    line-height: 45px !important;
+  }
+
+  .section8SplHeadertxt {
+    font-size: 20px !important;
+  }
+
+  .section8Text2 {
+    font-size: 13px !important;
+  }
+
+  .section8InnerContainer {
+    height: 300px !important;
+  }
+
+  .section9HeaderText {
+    font-size: 80px !important;
+    line-height: 100px !important;
+  }
+
+  .section9CardMessage {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+  }
+
+  .section10leftContainer,
+  .section10rightContainer {
+    height: 355px !important;
+  }
+
+  .section10HeaderText {
+    font-size: 7rem !important;
+  }
+
+  .section10Card {
+    height: 335px;
+  }
+
+  .section10leftContainer .section10SubHeaderText {
+    font-size: 45px !important;
+    line-height: 40px !important;
+  }
+
+  .section10leftContainer .section10NrmlTexts {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .section10rightContainer .section10SubHeaderText {
+    font-size: 45px !important;
+    line-height: 40px !important;
+  }
+
+  .section10rightContainer .section10NrmlTexts {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .section10rightContainer .section10SubHeaderContainer {
+    top: 145px;
+  }
+
+  .TestimonialText {
+    font-size: 11rem !important;
+    line-height: 12rem !important;
+  }
+
+  .variantColourContainer {
+    top: 37%;
+    left: -23%;
+  }
+
+  .TestimonialMainCard {
+    height: 400px !important;
+  }
+
+  .TestimonialCardTopic {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+  }
+
+  .TestimonialCard {
+    height: 225px;
+    padding: 30px 35px;
+  }
+
+  .KilometeText {
+    font-size: 17px !important;
+    line-height: 30px !important;
+  }
+
+  .section11slider1 {
+    height: 9px !important;
+  }
+
+  .TestimonialCardText {
+    font-size: 13px !important;
+  }
+
+  .avatarImage {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .TestimonialRow {
+    top: 35%;
+  }
+
+  .TestimonialCardName {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+
+  .TestimonialCardDesignation {
+    font-size: 12px !important;
+  }
+
+  .marginleftClass {
+    margin-left: 65px !important;
+  }
+
+  .section11HeaderText {
+    font-size: 25px !important;
+  }
+
+  .section11SpanSubText {
+    font-size: 18px !important;
+  }
+
+  .section11SpanMainText {
+    font-size: 35px !important;
+  }
+
+  .section11HeaderText2 {
+    font-size: 52px !important;
+    line-height: 65px !important;
+  }
+
+  .section11HeaderText3 {
+    font-size: 25px !important;
+    line-height: 35px !important;
+  }
+
+  .ValueText span {
+    font-size: 35px !important;
+  }
+
+  .linkBtnsDiv {
+    row-gap: 15px;
+  }
+
+  .linkIconBtns {
+    width: 30px;
+    height: 30px;
+  }
+
+  .section11SavingsBtn {
+    top: 10px;
+    left: 15px;
+  }
+
+  .section11NrmlText {
+    font-size: 12px !important;
+    line-height: 24px !important;
+    width: 90%;
+  }
+
+  .section11SavingsCard {
+    margin-top: 15px !important;
+  }
+
+  .section12HeaderText {
+    font-size: 45px !important;
+    line-height: 45px !important;
+  }
+
+  .section12SubText {
+    font-size: 15px !important;
+    line-height: 18px !important;
+  }
+
+  .sliderContainer {
+    margin: 0 0 !important;
+  }
+
+  @keyframes arraowTransist {
+    0% {
+      transform: translate(0%, 0%);
+    }
+
+    100% {
+      transform: translate(95px, 0%);
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .headerText4 {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .functionButtonDiv {
+    column-gap: 100px;
+  }
+
+  .homeBannerImage {
+    min-height: 300px;
+  }
+
+  .section8InnerContainer {
+    height: 280px !important;
+  }
+
+  .headerText2 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .dummy {
+    height: 680px !important;
+    min-height: 600px;
+  }
+
+  @keyframes linkbtns {
+    from {
+      right: 1900px;
+      top: 0%;
+    }
+
+    to {
+      right: 0px;
+      top: 40%;
+    }
+  }
+
+  .Section3Col {
+    padding-left: 45px !important;
+  }
+
+  .bannerImage {
+    height: 700px !important;
+    width: 100%;
+  }
+
+  .section8Text2 {
+    font-size: 11px !important;
+  }
+
+  .section2Container {
+    width: 90%;
+  }
+
+  .home_Section2BtnIcon__tWScf {
+    width: 30px;
+    height: 30px;
+  }
+
+  .odometerDiv,
+  .anotherText {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .featureText1 {
+    font-size: 25px !important;
+  }
+
+  .odometer {
+    height: 35px !important;
+    margin-top: 10px;
+  }
+
+  .orderBtn {
+    font-size: 11px !important;
+  }
+
+  .Section2BtnIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 12px !important;
+  }
+
+  @keyframes functionbtns {
+    from {
+      transform: translate(-100%, 210px);
+    }
+
+    to {
+      transform: translate(0, 210px);
+    }
+  }
+
+  .Section3HeadText {
+    font-size: 28px !important;
+    line-height: 33px !important;
+  }
+
+  .Section3NrmlText {
+    font-size: 11px !important;
+    line-height: 20px !important;
+  }
+
+  .section5Image3TextContainer,
+  .section5Image1TextContainer {
+    margin: 20px !important;
+  }
+
+  .section5Maincontainer {
+    grid-template-columns: 32% 32% 32%;
+  }
+
+  .Section2Btn {
+    height: 35px;
+    font-size: 11px !important;
+    padding: 0 12px !important;
+  }
+
+  .section4Btn {
+    height: 30px;
+    width: 120px !important;
+    font-size: 11px !important;
+    margin-top: 10px !important;
+  }
+
+  .home_Section2BtnIcon__tWScf {
+    width: 35px;
+    height: 35px;
+  }
+
+  .section4HeaderText {
+    font-size: 24px !important;
+  }
+
+  .section4Text {
+    font-size: 10px !important;
+  }
+
+  .section4InterSectorIcon svg {
+    height: 201px !important;
+  }
+
+  .section4InterSectorIcon {
+    top: -1px;
+    right: -1px;
+  }
+
+  .section4Maincontainer {
+    border-radius: 20px !important;
+  }
+
+  .section6MainDiv {
+    height: 500px;
+  }
+
+  .section6BikeBackground1 {
+    height: 480px;
+    width: 70%;
+  }
+
+  .Section6HeaderText {
+    font-size: 5rem !important;
+  }
+
+  .Section6ImageHeaderText {
+    font-size: 18px !important;
+  }
+
+  .Section6ImageText {
+    font-size: 15px !important;
+  }
+
+  .Prana1Container {
+    transform: translate(-40%, -8%);
+  }
+
+  .section7RunningText1 {
+    font-size: 16rem !important;
+    margin-right: 140px !important;
+  }
+
+  .prana2nd,
+  .prana3rd {
+    margin: 0 !important;
+  }
+
+  .prana2nd {
+    bottom: -9%;
+    left: -55%;
+  }
+
+  .prana3rd {
+    bottom: -9%;
+    right: -75%;
+  }
+
+  .section7PranaBikeImage {
+    height: 480px;
+  }
+
+  @keyframes Prana1Transition {
+    0% {
+      transform: translate(-40%, -8%);
+    }
+
+    100% {
+      transform: translate(42%, -8%);
+    }
+  }
+
+  .Coroseldiv {
+    left: 0%;
+  }
+
+  .MainheaderText1 {
+    font-size: 45px !important;
+    line-height: 60px !important;
+  }
+
+  .TestimonialText {
+    font-size: 8rem !important;
+  }
+
+  .TestimonialCardTopic {
+    font-size: 18px !important;
+  }
+
+  .TestimonialCardText {
+    font-size: 12px !important;
+  }
+
+  .TestimonialRow {
+    top: 35%;
+  }
+
+  .section7SubText1 {
+    font-size: 11px !important;
+    line-height: 23px !important;
+  }
+
+  .FeaturesListText {
+    font-size: 20px !important;
+  }
+
+  .FeaturesListText span {
+    font-size: 15px !important;
+  }
+
+  .section7RedBikeImage,
+  .section7Image,
+  .BlacImaghesection7,
+  .section7black1Image,
+  .section7green1Image {
+    height: 415px !important;
+  }
+
+  @keyframes bikeRedImageTransition {
+    0% {
+      transform: translate(200%, 0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(350%, -100%);
+      opacity: 1;
+      display: none;
+    }
+  }
+
+  @keyframes bikeBlack1mageTransition {
+    from {
+      transform: translate(220%, 50%);
+    }
+
+    to {
+      transform: translate(420%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes bikeGreen1mageTransition {
+    from {
+      transform: translate(240%, 100%);
+    }
+
+    to {
+      transform: translate(440%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(-55%, 70%);
+    }
+
+    to {
+      transform: translate(354%, -3%);
+    }
+  }
+
+  @keyframes section7MainImage2 {
+    from {
+      transform: translate(333%, -87%);
+    }
+
+    to {
+      transform: translate(18%, -8%);
+    }
+  }
+
+  @keyframes arraowTransist {
+    0% {
+      transform: translate(0%, 0%);
+    }
+
+    100% {
+      transform: translate(83px, 0%);
+    }
+  }
+
+  .section8SplHeadertxt {
+    font-size: 17px !important;
+    line-height: 20px !important;
+  }
+
+  .section8Text1 {
+    font-size: 25px !important;
+    line-height: 50px !important;
+    font-weight: 400 !important;
+    width: 90%;
+  }
+
+  .bigTextContainer {
+    height: 180px !important;
+  }
+
+  .section9HeaderText {
+    font-size: 65px !important;
+    line-height: 85px !important;
+  }
+
+  .section9CardMessage {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+
+  .section9Smalltext {
+    font-size: 11px !important;
+    flex-direction: column;
+  }
+
+  .section10HeaderText {
+    font-size: 6rem !important;
+  }
+
+  .section10leftContainer .section10NrmlTexts {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+
+  .section10leftContainer .section10SubHeaderText {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .linkBtnsDiv {
+    row-gap: 10px;
+    top: 63%;
+    right: 30px;
+  }
+
+  .linkIconBtns {
+    height: 20px;
+    width: 20px;
+    padding: 5px !important;
+  }
+
+  /* .linkIconBtns:hover {
+    height: 23px;
+    width: 23px;
+  } */
+
+  .section10rightContainer .section10SubHeaderText {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .section10rightContainer .section10NrmlTexts {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+
+  .section10Btn {
+    font-size: 10px !important;
+    padding: 0px 5px !important;
+    height: 30px !important;
+  }
+
+  .section10BtnIcon {
+    width: 25px !important;
+    height: 25px !important;
+    right: 80px;
+  }
+
+  @keyframes section11ArrowTransist {
+    from {
+      transform: translate(0, 0);
+    }
+
+    to {
+      transform: translate(90px, 0);
+    }
+  }
+
+  .TestimonialMainCard {
+    height: 430px !important;
+  }
+
+  .TestimonialCard {
+    height: 260px;
+  }
+
+  .TestimonialCardName {
+    font-size: 15px !important;
+  }
+
+  .TestimonialCardDesignation {
+    font-size: 11px !important;
+  }
+
+  .section11NrmlText {
+    font-size: 11px !important;
+    width: 95% !important;
+  }
+
+  .sliderContainer svg {
+    margin: 0 10px !important;
+  }
+
+
+
+  .KilometeText {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .section11slider1 {
+    height: 8px !important;
+    padding: 20px 0 !important;
+  }
+
+  .section11SavingsBtn {
+    font-size: 10px !important;
+  }
+
+  .ValueText {
+    font-size: 19px !important;
+    text-align: center;
+  }
+
+  .section11HeaderText2 {
+    font-size: 45px !important;
+    line-height: 55px !important;
+  }
+  .section11HeaderText3 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+
+  .ValueText span {
+    font-size: 25px !important;
+  }
+
+  .ValueLableText {
+    font-size: 14px !important;
+  }
+  .section12HeaderText {
+    font-size: 38px !important;
+    line-height: 40px !important;
+  }
+  .section12SubText {
+    font-size: 12px !important;
+  }
+  /* .odometer div {
+        transform: translateX(calc(0% + 0px)) translateY(calc(-100% + 60px)) translateZ(0px) !important;
+    } */
+}
+
+@media screen and (max-width: 850px) {
+  .headerText1 {
+    font-size: 15px !important;
+    line-height: 23px !important;
+  }
+
+  .banner_size {
+    min-height: unset !important;
+  }
+
+  .homeBannerImage {
+    min-height: 210px;
+  }
+
+  .section7red2BikeImageTransition,
+  .section7green2BikeImageTransition,
+  .section7white2BikeImageTransition {
+    display: none !important;
+  }
+
+  .section4TextContainer {
+    left: 40px;
+    height: max-content;
+  }
+
+  .Prana1Container,
+  .prana2nd,
+  .prana3rd {
+    display: none;
+  }
+
+  .headerText5 {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+
+  .section4FullBikeImage {
+    display: block;
+    height: unset !important;
+    position: absolute;
+    left: 43px;
+    width: 95%;
+    bottom: -37px;
+  }
+
+  .section7RedBikeImage,
+  .section7Image,
+  .BlacImaghesection7,
+  .section7black1Image,
+  .section7green1Image {
+    height: 698px !important;
+  }
+
+  .firstTransition,
+  .secondTransition {
+    height: max-content !important;
+  }
+
+  .variantColourContainer {
+    left: 0;
+    bottom: -30%;
+    top: unset;
+    flex-direction: row;
+    column-gap: 35px !important;
+    grid-row: 2;
+  }
+
+  .section6ImageHiddenImages {
+    display: none;
+  }
+
+  .secondTransition {
+    margin-top: 20px !important;
+  }
+
+  @keyframes functionbtns {
+    from {
+      transform: translate(-100%, 120px);
+    }
+
+    to {
+      transform: translate(0, 120px);
+    }
+  }
+
+  .section5Maincontainer {
+    grid-template-columns: 50% 50%;
+  }
+
+  .section5HeaderText {
+    font-size: 25px !important;
+  }
+
+  @keyframes bikeRedImageTransition {
+    0% {
+      transform: translate(200%, 0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(350%, -100%);
+      opacity: 1;
+      display: none;
+    }
+  }
+
+  @keyframes bikeBlack1mageTransition {
+    from {
+      transform: translate(220%, 50%);
+    }
+
+    to {
+      transform: translate(420%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes bikeGreen1mageTransition {
+    from {
+      transform: translate(240%, 100%);
+    }
+
+    to {
+      transform: translate(440%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(-55%, 70%);
+    }
+
+    to {
+      transform: translate(25%, 74%);
+    }
+  }
+
+  @keyframes section7MainImage2 {
+    from {
+      transform: translate(333%, -87%);
+    }
+
+    to {
+      transform: translate(22%, 2%);
+    }
+  }
+
+  @keyframes arraowTransist {
+    0% {
+      transform: translate(0%, 0%);
+    }
+
+    100% {
+      transform: translate(84px, 0%);
+    }
+  }
+
+  .linkBtnsDiv {
+    row-gap: 10px;
+    top: 53%;
+    right: 30px;
+    width: 30px !important;
+  }
+
+  .linkIconBtns {
+    height: 20px;
+    width: 20px;
+    padding: 5px !important;
+  }
+
+  /* .linkIconBtns:hover {
+    height: 23px;
+    width: 23px;
+  } */
+
+  .dummy {
+    min-height: unset !important;
+    height: 550px !important;
+  }
+
+  .bannerImage {
+    height: 525px !important;
+  }
+
+  .headerText4 {
+    margin-top: 0px !important;
+    /* letter-spacing: 13px !important; */
+    font-size: 10px !important;
+  }
+
+  @keyframes bannerBike {
+    from {
+      transform: translate(4%, 100%);
+    }
+
+    to {
+      transform: translate(4%, -48%);
+    }
+  }
+
+  .featureText1 {
+    font-size: 35px !important;
+    line-height: 40px !important;
+    /* text-align: left; */
+    margin-top: 15px !important;
+  }
+
+  .odometerDiv {
+    font-size: 35px !important;
+  }
+
+  .odometer {
+    height: 45px;
+  }
+
+  .odometerItem {
+    left: 0px !important;
+  }
+
+  .anotherText {
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
+
+  .Section3Col {
+    padding: 20px 20px 20px 25px !important;
+  }
+
+  .Section3NrmlText {
+    font-size: 18px !important;
+  }
+
+  .section4Maincontainer {
+    min-height: 550px !important;
+  }
+
+  .section4HeaderText {
+    font-size: 18px !important;
+  }
+
+  .Section3SplHeader {
+    font-size: 25px !important;
+  }
+
+  .section5Image1TextContainer {
+    margin: 15px !important;
+    width: calc(100% - 30px) !important;
+  }
+
+  .section4Text {
+    font-size: 10px !important;
+    line-height: 15px !important;
+    width: 95% !important;
+    color: var(--white-background);
+  }
+
+  .SplNrmlText {
+    font-size: 17px !important;
+    line-height: 30px !important;
+  }
+
+  .section4Image {
+    height: 255px !important;
+    top: -50px;
+    left: -200px;
+  }
+
+  .home_section4TextContainer__Ah\+By {
+    left: 210px;
+  }
+
+  .section4InterSectorIcon {
+    display: none !important;
+  }
+
+  @keyframes linkbtns {
+    from {
+      transform: translate(0, -100%);
+    }
+
+    to {
+      transform: translate(93%, -45%);
+    }
+  }
+
+  /* .section5Image {
+    height: 70vh;
+  } */
+
+
+  .section6BikeBackground1 {
+    height: 390px !important;
+    width: 80%;
+    left: 10%;
+  }
+
+  .Section6HeaderText {
+    font-size: 3rem !important;
+    left: -10% !important;
+  }
+
+  .Section6ColourText {
+    font-size: 3rem !important;
+    right: -5px;
+    top: 5% !important;
+  }
+
+  .colourStepperMainContainer {
+    bottom: 80px;
+    right: unset;
+    left: -65px;
+    row-gap: 20px !important;
+  }
+
+  .colourVariantBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .activeColorVariant {
+    width: 37px;
+    height: 37px;
+  }
+
+  .section6MainDiv {
+    height: max-content;
+    /* display: flex;
+    flex-direction: column-reverse; */
+    grid-template-columns: 100% !important;
+  }
+
+  .Coroseldiv {
+    left: 0%;
+  }
+
+  .section6ImageTextDiv {
+    top: 49%;
+    left: 30px;
+  }
+
+  .Section6ImageHeaderText {
+    font-size: 40px !important;
+  }
+
+  .Section6ImageText {
+    font-size: 40px !important;
+    width: 95% !important;
+  }
+
+  .section7InnerDiv1 {
+    /* border-top-left-radius: 333px;
+        border-top-right-radius: 333px; */
+    border-radius: 67px;
+    height: unset !important;
+  }
+
+  .section7Image {
+    position: absolute !important;
+  }
+
+  .section7Imagecontainer {
+    height: 600px;
+  }
+
+  .section7InnerDiv1 {
+    border-top-left-radius: 67px;
+    border-bottom-right-radius: 282px;
+    border-bottom-left-radius: 333px;
+    border-top-right-radius: 67px;
+  }
+
+  .section7InnerDiv2 {
+    border-bottom-left-radius: 67px;
+    border-top-right-radius: 282px;
+    border-top-left-radius: 333px;
+    border-bottom-right-radius: 67px;
+  }
+
+  .MainheaderText1 {
+    font-size: 40px !important;
+    line-height: 50px !important;
+    width: 100%;
+  }
+
+  .section7SubText1 {
+    font-size: 15px !important;
+    line-height: 30px !important;
+    width: 100% !important;
+  }
+
+  .section7FeaturesContainer {
+    padding-left: 0px;
+  }
+
+  .FeaturesListText {
+    font-size: 30px !important;
+  }
+
+  .FeaturesListText span {
+    font-size: 25px !important;
+  }
+
+  .section8InnerContainer {
+    height: max-content !important;
+    width: 90% !important;
+    padding: 60px 0;
+  }
+
+  .section8Text1 {
+    font-size: 35px !important;
+    line-height: 55px !important;
+    width: 65%;
+  }
+
+  .bigTextContainer {
+    height: 335px;
+  }
+
+  .section8Text2 {
+    font-size: 17px !important;
+  }
+
+  .section9CardTopic {
+    top: 30px;
+    left: 30px;
+    font-size: 20px !important;
+    height: 40px !important;
+  }
+
+  .section9CardMessage {
+    font-size: 50px !important;
+    line-height: 75px !important;
+  }
+
+  .section9Smalltext {
+    line-height: 25px !important;
+    font-size: 20px !important;
+  }
+
+  .section9CardButton {
+    font-size: 40px !important;
+    height: 60px;
+    width: 60px;
+  }
+
+  .section10Row {
+    flex-direction: column-reverse;
+  }
+
+  .TestimonialCard {
+    justify-content: space-around !important;
+    height: 350px;
+  }
+
+  .TestimonialCardTopic {
+    font-size: 25px !important;
+  }
+
+  .TestimonialCardText {
+    font-size: 18px !important;
+  }
+
+  .TestimonialCardName {
+    font-size: 20px !important;
+  }
+
+  .TestimonialCardDesignation {
+    font-size: 15px !important;
+  }
+
+  .section10CardButton {
+    width: 30px;
+    height: 30px;
+  }
+
+  .TestimonialMainCard {
+    width: 90% !important;
+  }
+
+  .TestimonialText {
+    font-size: 6rem !important;
+    line-height: 9rem !important;
+  }
+
+  .section10leftContainer .section10SubHeaderText {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+
+  .section10leftContainer .section10NrmlTexts {
+    font-size: 15px !important;
+    line-height: 30px !important;
+  }
+
+  .section10leftContainer .section10NrmlTexts {
+    width: 100% !important;
+  }
+
+  .section10rightContainer .section10SubHeaderText {
+    font-size: 40px !important;
+    line-height: 55px !important;
+  }
+
+  .section10HeaderText {
+    font-size: 6rem !important;
+  }
+
+  .section10HeaderText2 {
+    top: -5px !important;
+    right: -15px !important;
+  }
+
+  .section10TextOverImageCotainer {
+    top: 120px;
+  }
+
+  .section10rightContainer .section10SubHeaderContainer {
+    top: 120px;
+  }
+
+  .section10rightContainer .section10NrmlTexts {
+    font-size: 15px !important;
+    line-height: 30px !important;
+    width: 100%;
+  }
+
+  .section11NrmlText {
+    font-size: 16px !important;
+  }
+
+  .section11NrmlText {
+    width: 100%;
+  }
+
+  .KilometeText {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+
+  .section11SavingsBtn {
+    font-size: 15px !important;
+  }
+
+  .section12HeaderText {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+
+  .section12SubText {
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+
+  .TestimonialMainCard {
+    height: 360px !important;
+  }
+
+  .TestimonialRow {
+    top: 18%;
+  }
+
+  .section9CardMessage {
+    width: 90%;
+  }
+
+  .section10leftContainer,
+  .section10rightContainer {
+    height: 350px !important;
+  }
+
+  .section9CardMessage {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .section10Card {
+    height: 370px !important;
+  }
+
+  .section9CardFooter {
+    width: 95%;
+  }
+
+  .section11HeaderText {
+    font-size: 35px !important;
+  }
+
+  .section11SpanMainText {
+    font-size: 45px !important;
+    top: 0px;
+  }
+
+  .section11RightDiv {
+    margin-top: 20px;
+    align-items: start;
+  }
+
+  .marginleftClass {
+    margin-left: 80px !important;
+  }
+
+  .section11SpanSubText {
+    font-size: 35px !important;
+  }
+
+  .section11SpanSubText {
+    font-size: 27px !important;
+  }
+
+  .sectio2OrderBtnContainer {
+    justify-content: center !important;
+  }
+
+  .section11NrmlText {
+    font-size: 14px !important;
+    line-height: 30px !important;
+    width: 100% !important;
+  }
+
+  .featureRightDiv {
+    /* width: 25%; */
+    text-align: center !important;
+    margin-top: 20px;
+  }
+
+  .featureLeftDiv {
+    text-align: center !important;
+  }
+
+  .odometerDiv {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  @keyframes webcastText {
+    from {
+      transform: translate(-100px, -100%);
+    }
+
+    to {
+      transform: translate(-28px, 0);
+    }
+  }
+
+  .SubContainer {
+    grid-template-columns: 100%;
+  }
+
+  .myOrders hr {
+    display: none !important;
+  }
+
+  .imageContainer {
+    flex-direction: column !important;
+    margin-top: 30px !important;
+  }
+
+  .btnContainer {
+    position: unset !important;
+    margin-top: 10px !important;
+  }
+
+  .myOrders {
+    padding: 20px 25px !important;
+  }
+
+  .bookedBikeimage {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .leftContainer {
+    padding: 0 !important;
+    margin: 4% 0 !important;
+  }
+
+  /* .footerRow {
+        width: 100% !important;
+        margin: auto !important;
+    } */
+}
+
+@media screen and (max-width: 700) {
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(-55%, 70%);
+    }
+
+    to {
+      transform: translate(45%, 135%);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .HeaderTextSubDiv {
+    height: 190px !important;
+  }
+
+  .headerText1 {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+
+  .homeBannerImage {
+    min-height: 168px;
+  }
+
+  .section2Btn {
+    float: none;
+  }
+
+  .featureText1 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+
+  .odometerDiv {
+    font-size: 28px !important;
+    margin-top: -10px !important;
+  }
+
+  .anotherText {
+    font-size: 28px !important;
+  }
+
+  .sliderContainer {
+    margin: 16px 10px !important;
+  }
+
+  .slick-dots {
+    bottom: -80px !important;
+  }
+
+
+  .headerText2 {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+
+  .headerText3 {
+    font-size: 35px !important;
+    line-height: 40px !important;
+    /* width: 90%; */
+  }
+
+  .headerText4 {
+    line-height: 10px !important;
+    /* margin-top: -35px !important; */
+    /* letter-spacing: 7px !important; */
+    font-size: 6px !important;
+  }
+
+  .headerText5 {
+    font-size: 7px !important;
+    line-height: 10px !important;
+  }
+
+  .bannerImageClass{
+    min-height: 170px !important;
+  }
+
+  /* .bannerImageContainer {
+    top: 10px;
+    left: 66px;
+  } */
+
+  .section7Image {
+    position: absolute !important;
+    bottom: 125px;
+    left: 30%;
+  }
+
+  .BlacImaghesection7 {
+    position: absolute !important;
+    top: 25px;
+  }
+
+  .section9HeaderText {
+    font-size: 50px !important;
+    line-height: 85px !important;
+    margin-left: 0px !important;
+  }
+
+  .section9CardMessage {
+    font-size: 15px !important;
+    line-height: 25px !important;
+    width: 95%;
+  }
+
+  .section9Smalltext {
+    line-height: 10px !important;
+    font-size: 10px !important;
+  }
+
+  .section10HeaderText2 {
+    top: -5px !important;
+    right: 20px !important;
+  }
+
+  .Section3BtnIcon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .section10HeaderText {
+    font-size: 5rem !important;
+  }
+
+  .Section3Btn {
+    height: 50px;
+  }
+
+  .section9CardButton {
+    font-size: 20px !important;
+    height: 40px;
+    width: 40px;
+  }
+
+  .section10rightContainer .section10cardBtncontainer {
+    bottom: 50px;
+  }
+
+  .section10Card {
+    width: 85%;
+    height: 450px !important;
+    left: -45px;
+  }
+
+  .TestimonialText {
+    font-size: 3.5rem !important;
+    line-height: 5rem !important;
+  }
+
+  .TestimonialMainCard {
+    height: 380px !important;
+    width: 92% !important;
+    margin-top: 50px;
+  }
+
+  .TestimonialRow {
+    top: 15%;
+  }
+
+  .TestimonialCard {
+    height: 300px;
+    width: 90% !important;
+    margin: 0 5% !important;
+    padding: 20px 25px !important;
+  }
+
+  .section11SavingsBtn {
+    font-size: 10px !important;
+    top: 5px;
+    left: 5px;
+  }
+
+  .section4Maincontainer {
+    margin: 20px 0 !important;
+    height: 80px !important;
+    min-height: unset !important;
+    border-radius: 20px !important;
+  }
+
+  .section5Image {
+    height: unset !important;
+  }
+
+  .section5Image1TextContainer {
+    width: 80%;
+  }
+
+  /* .section5Image3TextContainer {
+    margin: 40px !important;
+  } */
+
+  .section10rightContainer {
+    height: 400px !important;
+  }
+
+  .section10rightContainer .section10NrmlTexts {
+    font-size: 15px !important;
+  }
+
+  .section10rightContainer .section10SubHeaderText {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .section10TextOverImageCotainer {
+    padding: 30px 0 !important;
+    top: 105px !important;
+    margin: auto 8%;
+  }
+
+  .section10leftContainer .section10NrmlTexts {
+    font-size: 15px !important;
+  }
+
+  .section10CardButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section8Text1 {
+    font-size: 30px !important;
+    line-height: 45px !important;
+    width: 100%;
+  }
+
+  .section8SplHeadertxt {
+    font-size: 17px !important;
+  }
+
+  .section8InnerContainer {
+    height: max-content !important;
+    width: 100% !important;
+    padding: 60px 40px !important;
+  }
+
+  .section9CardTopic {
+    top: 10px;
+    left: 10px;
+    font-size: 11px !important;
+    height: 30px !important;
+  }
+
+  .bigTextContainer {
+    height: 300px;
+  }
+
+  .section8Text2 {
+    font-size: 15px !important;
+    text-align: justify;
+  }
+  .dummy {
+    height: 780px !important;
+  }
+
+  .linkBtnsDiv {
+    column-gap: 5px;
+    top: unset;
+    right: 100px;
+    flex-direction: row;
+    bottom: 20px !important;
+  }
+
+  .linkIconBtns {
+    height: 15px;
+    width: 15px;
+    padding: 5px !important;
+  }
+
+  .headerArrawButtonIcon {
+    height: 16px !important;
+    width: 16px !important;
+    padding: 0 !important;
+  }
+
+  .section10leftContainer .section10SubHeaderText {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .functionButton {
+    font-size: 5px !important;
+    padding: 2px 5px !important;
+    width: max-content;
+    min-width: max-content !important;
+  }
+
+  .functionButtonDiv {
+    /* top: 100px; */
+    column-gap: 50px;
+  }
+
+  .section12HeaderText {
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+
+  .section12SubText {
+    font-size: 13px !important;
+    line-height: 15px !important;
+  }
+
+  .bannerImage {
+    display: none;
+  }
+
+  .bannerBikeFront {
+    display: inline;
+    height: 620px;
+  }
+
+  @keyframes bannerBike {
+    from {
+      transform: translate(0%, 100%);
+    }
+
+    to {
+      transform: translate(0%, -25%);
+    }
+  }
+
+  .section4FullBikeImage {
+    height: auto !important;
+    left: 28px;
+    width: 95%;
+    bottom: -30px;
+  }
+
+  .section5Maincontainer {
+    grid-template-columns: 100%;
+  }
+
+  .section4Image {
+    display: none;
+  }
+
+  .Section6HeaderText {
+    left: 0% !important;
+    font-size: 35px !important;
+    top: 8% !important;
+  }
+
+  /* .section5Image { */
+  /* height: 50vh; */
+  /* } */
+  /* .section4HeaderText {
+    font-size: 30px !important;
+  } */
+
+  .section7SubText1 {
+    font-size: 14px !important;
+    line-height: 25px !important;
+    text-align: justify;
+  }
+
+  .section7FeaturesContainer {
+    text-align: left !important;
+  }
+
+  .FeaturesListText {
+    font-size: 25px !important;
+  }
+
+  .FeaturesListText span {
+    font-size: 20px !important;
+  }
+
+  .section4Text {
+    font-size: 14px !important;
+    line-height: 30px !important;
+    width: 100% !important;
+    text-align: justify !important;
+    color: var(--white-background) !important;
+  }
+
+  .MainheaderText1 {
+    font-size: 35px !important;
+    line-height: 50px !important;
+    width: 100%;
+  }
+
+  .section6Image {
+    width: 90% !important;
+    /* height: 220px !important; */
+  }
+
+  .section9MainContainer {
+    width: 90%;
+  }
+
+  .section6MainDiv {
+    /* height: 410px; */
+    margin: 10% 0 !important;
+  }
+
+  .section6MainDiv div {
+    overflow-x: unset !important;
+    /* column-gap: 10px !important; */
+  }
+
+  .ColourDivContainer {
+    column-gap: 10px !important;
+  }
+
+  .variantColourContainer {
+    left: 10%;
+    bottom: -30%;
+  }
+
+  .colourVariantBox {
+    width: 25px;
+    height: 25px;
+  }
+
+  .CategoryText {
+    font-size: 25px !important;
+    line-height: 30px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .section11HeaderText {
+    font-size: 26px !important;
+  }
+
+  .section4TextContainer {
+    left: 5%;
+    top: 20px;
+    width: 90%;
+  }
+
+  .Coroseldiv {
+    left: 0% !important;
+    bottom: -5% !important;
+  }
+
+  /* .section6ImageTextDiv {
+    top: 59% !important;
+    display: flex;
+    flex-direction: column;
+    left: 6% !important;
+  } */
+
+  .Section6ColourText {
+    font-size: 40px !important;
+    right: -18px;
+    top: 13% !important;
+    z-index: 35;
+  }
+
+  .colourDot {
+    width: 20px !important;
+    height: 20px !important;
+    top: 7% !important;
+    right: 8% !important;
+  }
+
+  .chooseColourText {
+    font-size: 25px !important;
+  }
+
+  .Section6ImageHeaderText {
+    font-size: 20px !important;
+  }
+
+  .Section6ImageText {
+    font-size: 20px !important;
+    width: 80% !important;
+  }
+
+  .colourStepperMainContainer {
+    bottom: -75px;
+    left: 10% !important;
+    flex-direction: row;
+    column-gap: 25px;
+    align-items: center;
+  }
+
+  .section6BikeBackground1 {
+    width: 100%;
+    left: 0% !important;
+    height: 290px !important;
+  }
+
+  .section6ImageTextDiv {
+    row-gap: 15px !important;
+  }
+
+  .section7Imagecontainer {
+    height: 450px;
+  }
+
+  .pranaBg {
+    width: 100%;
+  }
+
+  .section7InnerDiv1 {
+    border-top-left-radius: 67px;
+    border-bottom-right-radius: 282px;
+    border-bottom-left-radius: 333px;
+    border-top-right-radius: 67px;
+    padding: 25px !important;
+  }
+
+  .section7InnerDiv2 {
+    border-bottom-left-radius: 67px;
+    border-top-right-radius: 282px;
+    border-top-left-radius: 333px;
+    border-bottom-right-radius: 67px;
+  }
+
+  .section11HeaderText3 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+
+  .section10leftContainer .section10rightContainer {
+    height: 400px;
+  }
+
+  .section10leftContainer {
+    height: 400px !important;
+  }
+
+  .TestimonialCardTopic {
+    font-size: 22px !important;
+  }
+
+  .TestimonialCardText {
+    font-size: 15px !important;
+  }
+
+  .Section2Btn > span {
+    font-size: 14px;
+    margin-left: 25px !important;
+    margin-right: 0px !important;
+  }
+
+  .BtnTransist > span {
+    margin-left: 0px !important;
+    margin-right: 25px !important;
+  }
+
+  @keyframes arraowTransist {
+    0% {
+      transform: translate(0%, 0%);
+    }
+
+    100% {
+      transform: translate(90px, 0%);
+    }
+  }
+
+  .Section2BtnIcon {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 12px !important;
+    left: 0px !important;
+  }
+
+  .Section2Btn {
+    height: 35px !important;
+  }
+
+  .Section3NrmlText {
+    font-size: 15px !important;
+    line-height: 30px !important;
+  }
+
+  .section11RightDiv {
+    align-items: flex-start !important;
+  }
+
+  .section11NrmlText {
+    text-align: justify;
+    font-size: 15px !important;
+    line-height: 25px !important;
+    width: 100% !important;
+  }
+
+  .section7RedBikeImage,
+  .section7Image,
+  .BlacImaghesection7,
+  .section7black1Image,
+  .section7green1Image {
+    height: 507px !important;
+  }
+
+  .firstTransition,
+  .secondTransition {
+    height: max-content !important;
+  }
+
+  .secondTransition {
+    margin-top: 20px !important;
+  }
+
+  @keyframes bikeRedImageTransition {
+    0% {
+      transform: translate(200%, 0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(350%, -100%);
+      opacity: 1;
+      display: none;
+    }
+  }
+
+  @keyframes bikeBlack1mageTransition {
+    from {
+      transform: translate(220%, 50%);
+    }
+
+    to {
+      transform: translate(420%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes bikeGreen1mageTransition {
+    from {
+      transform: translate(240%, 100%);
+    }
+
+    to {
+      transform: translate(440%, -100%);
+      display: none;
+    }
+  }
+
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(-55%, 70%);
+    }
+
+    to {
+      transform: translate(-20%, 27%);
+    }
+  }
+
+  @keyframes section7MainImage2 {
+    from {
+      transform: translate(333%, -87%);
+    }
+
+    to {
+      transform: translate(32%, -3%);
+    }
+  }
+
+  .section11HeaderText {
+    font-size: 25px !important;
+  }
+
+  .section11SpanSubText {
+    font-size: 20px !important;
+  }
+
+  /* .linkIconBtns:hover {
+    width: 30px;
+    height: 30px;
+  } */
+
+  .section12MainContainer {
+    height: unset !important;
+  }
+
+  .marginleftClass {
+    margin-left: 60px !important;
+  }
+
+  .section11SpanMainText {
+    font-size: 30px !important;
+  }
+
+  .section11HeaderText2 {
+    font-size: 50px !important;
+  }
+
+  .Section3SplHeader {
+    font-size: 25px !important;
+  }
+  .KilometeText {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  @keyframes bannerBike {
+    from {
+      transform: translate(0%, 100%);
+    }
+
+    to {
+      transform: translate(0%, -30%);
+    }
+  }
+
+  .section6BikeBackground1 {
+    height: 260px !important;
+  }
+
+  .homeBannerImage {
+    min-height: 120px;
+  }
+
+  .section4Maincontainer {
+    height: 76px !important;
+    margin: 20px 0;
+    /* min-height: 425px !important; */
+  }
+
+  .section4FullBikeImage {
+    height: auto !important;
+    left: 15px;
+    width: 100%;
+    bottom: -20px;
+  }
+
+  .homeBannerTextContainer2 {
+    right: 15%;
+  }
+
+  .linkBtnsDiv {
+    bottom: -3px !important;
+  }
+
+  .section8Text1 {
+    font-size: 23px !important;
+    line-height: 35px !important;
+    width: 100%;
+  }
+
+  .section8SplHeadertxt {
+    font-size: 15px !important;
+  }
+
+  .section8Text2 {
+    font-size: 12px !important;
+  }
+
+  @keyframes section7MainImage1 {
+    from {
+      transform: translate(-55%, 70%);
+    }
+
+    to {
+      transform: translate(-22%, 7%);
+    }
+  }
+
+  .section6Image {
+    width: 90% !important;
+    /* height: 200px !important; */
+  }
+
+  .FeaturesListText {
+    font-size: 22px !important;
+  }
+
+  .FeaturesListText span {
+    font-size: 18px !important;
+  }
+
+  .MainheaderText1 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+
+  .section7SubText1 {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+
+  .Section6HeaderText {
+    font-size: 30px !important;
+  }
+
+  .Section6ColourText {
+    font-size: 35px !important;
+  }
+
+  .Section3SplHeader {
+    font-size: 17px !important;
+  }
+
+  .section4Text {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+
+  .bannerBikeFront {
+    display: inline;
+    height: 550px;
+  }
+  .marginleftClass {
+    margin-left: 45px !important;
+  }
+
+  .TestimonialText {
+    font-size: 4rem !important;
+  }
+
+  .TestimonialMainCard {
+    height: 350px !important;
+  }
+
+  .TestimonialCardTopic {
+    font-size: 20px !important;
+  }
+
+  .TestimonialCard {
+    height: 250px;
+  }
+
+  .KilometeText {
+    font-size: 11px !important;
+    line-height: 11px !important;
+  }
+
+  .section11HeaderText {
+    font-size: 18px !important;
+  }
+
+  .section11SpanSubText {
+    font-size: 15px !important;
+  }
+
+  .section11SpanMainText {
+    font-size: 23px !important;
+  }
+
+  .section7Image {
+    bottom: 20px;
+    left: 28%;
+  }
+
+  .bannerImageClass{
+    min-height: 140px !important;
+  }
+
+  .TestimonialCardText {
+    font-size: 13px !important;
+  }
+
+  .section11HeaderText2 {
+    font-size: 42px !important;
+  }
+
+  .BlacImaghesection7 {
+    left: -10%;
+    top: 30px;
+  }
+
+  .odometer {
+    height: 45px !important;
+  }
+
+  .odometerDiv {
+    font-size: 32px !important;
+  }
+
+  .Section3NrmlText {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+
+  .ValueText span {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .section11NrmlText {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+
+  .section10rightContainer .section10SubHeaderText,
+  .section10leftContainer .section10SubHeaderText {
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
+
+  .section10HeaderText {
+    font-size: 3.5rem !important;
+  }
+
+  .section10TextOverImageCotainer,
+  .section10rightContainer .section10SubHeaderContainer {
+    top: 80px !important;
+  }
+
+  .section10leftContainer .section10NrmlTexts,
+  .section10rightContainer .section10NrmlTexts {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+}

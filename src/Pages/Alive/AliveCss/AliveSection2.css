@@ -1,0 +1,339 @@
+/* aliveSection2.css - Using exact Prana styling */
+
+.Section2MainHeader {
+    font-family: "NothanSans" !important;
+    font-size: 45px !important;
+    font-weight: 900 !important;
+    line-height: 55px !important;
+    text-align: left !important;
+    padding-left: 15px !important;
+    margin-bottom: 30px !important;
+}
+
+.Section2MainHeader span {
+    color: #34bc3d;
+}
+
+.Section2Maincontainer {
+    background-color: #f8fbff;
+    padding: 5% 0;
+}
+
+.sliderContainer {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section2ImageCard {
+    height: 100%;
+    width: 90%;
+    margin: auto !important;
+    padding: 50px;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    border-radius: 10px !important;
+    justify-content: space-between;
+}
+.liteWarrantyText{
+text-align:center;
+align-items: center;
+justify-content: center;
+}
+.section2CardBike {
+    width: 100%;
+}
+
+/* New CSS for centering title images */
+.modelTitleImage {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.CategoryHeader {
+    font-family: "Orbitron" !important;
+    font-size: 50px !important;
+    font-weight: 600 !important;
+    line-height: 70px !important;
+    text-align: center;
+    margin-bottom: 50px !important;
+}
+
+.FeaturesValue {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+
+}
+
+.FeaturesLable {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    word-wrap: break-word !important;
+    display: -webkit-box !important;
+    display: block !important;
+    -webkit-line-clamp: 2 !important;
+    line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+
+.Section2CardRowContainer {
+    margin: 20px 0 !important;
+    width: 100%;
+}
+
+.Section2Btn {
+    color: white !important;
+    background-color: black !important;
+    text-transform: none !important;
+    display: flex;
+    column-gap: 15px;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    margin-top: 10px !important;
+    height: 45px !important;
+}
+
+.Section2BtnPrice {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    text-align: left;
+}
+
+.sectionBtnContainer {
+    display: flex;
+    margin-top: 20px !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px !important;
+    width: 100%;
+}
+
+.cardTextContainerSection2 {
+    width: 100%;
+}
+
+.row-custom-style {
+    margin: 0 -15px;
+}
+
+/* Responsive Design - Matching Prana breakpoints */
+@media screen and (max-width: 1680px) {
+    .FeaturesValue {
+        font-size: 13px !important;
+        line-height: 1.2 !important;
+    }
+
+    .FeaturesLable {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+    }
+
+    .Section2BtnPrice {
+        font-size: 15px !important;
+        line-height: 1.2 !important;
+    }
+
+    .Section2Btn {
+        height: 40px !important;
+    }
+
+    .modelTitleImage {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Section2MainHeader {
+        font-size: 40px !important;
+        line-height: 50px !important;
+    }
+
+    .section2ImageCard {
+        padding: 30px !important;
+    }
+
+    .CategoryHeader {
+        font-size: 40px !important;
+        line-height: 55px !important;
+    }
+
+    .FeaturesValue {
+        font-size: 14px !important;
+        line-height: 1.2 !important;
+    }
+
+    .FeaturesLable {
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    .Section2BtnPrice {
+        font-size: 15px !important;
+        line-height: 1.2 !important;
+        font-weight: 600 !important;
+    }
+
+    .Section2Btn {
+        height: 35px !important;
+        font-size: 10px !important;
+    }
+
+    .modelTitleImage {
+        max-width: 160px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Section2MainHeader {
+        font-size: 35px !important;
+        line-height: 45px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .section2ImageCard {
+        padding: 15px !important;
+    }
+
+    .CategoryHeader {
+        font-size: 37px !important;
+        line-height: 45px !important;
+        margin-bottom: 35px !important;
+    }
+
+    .FeaturesValue {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+    }
+
+    .FeaturesLable {
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    .Section2BtnPrice {
+        font-size: 20px !important;
+        line-height: 1.2 !important;
+    }
+
+    .Section2Btn {
+        height: 40px !important;
+        font-size: 12px !important;
+    }
+
+    .modelTitleImage {
+        max-width: 140px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .Section2BtnPrice {
+        font-size: 15px !important;
+        line-height: 1.2 !important;
+    }
+
+    .Section2Btn {
+        height: 35px !important;
+        font-size: 10px !important;
+    }
+
+    .section2CardBike {
+        height: auto;
+        width: 100%;
+    }
+
+    .modelTitleImage {
+        max-width: 120px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section2ImageCard {
+        width: 100% !important;
+    }
+
+    .Section2CardRowContainer {
+        row-gap: 15px;
+    }
+
+    .FeaturesValue {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+    }
+
+    .FeaturesLable {
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+        color: #80808099 !important;
+    }
+
+    .sliderContainer {
+        width: 95%;
+    }
+
+    .Section2BtnPrice {
+        font-size: 15px !important;
+        line-height: 1.2 !important;
+    }
+
+    .modelTitleImage {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .FeaturesValue {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+    }
+
+    .FeaturesLable {
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+        color: #80808099 !important;
+    }
+
+    .Section2Btn {
+        font-size: 11px !important;
+        height: 30px !important;
+        padding: 0 10px !important;
+        column-gap: 10px !important;
+    }
+
+    .Section2BtnPrice {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+    }
+
+    .modelTitleImage {
+        max-width: 80px;
+        margin-bottom: 8px;
+    }
+           .section2CardWarranty {
+               text-align: center;
+               font-size: 10px !important;
+               margin-top: 0.5rem;
+               font-weight: 400;
+               color: #555;
+               /* neutral color */
+           }
+}
