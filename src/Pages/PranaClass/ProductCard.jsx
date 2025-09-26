@@ -42,6 +42,11 @@ const PranaSection2 = () => {
     price: 144900,
   };
 
+  // Safety check for pranaData
+  if (!pranaData || !pranaData.variants) {
+    return <div>Loading...</div>;
+  }
+
   const handlePreBookClick = () => {
     setSelectedModel(pranaData.title);
     setShowPopup(true);
@@ -96,7 +101,8 @@ const PranaSection2 = () => {
           {/* Left side - Both bike variants */}
           <Col lg={8} md={12} className={styles.bikeVariantsSection}>
             <Row>
-              {pranaData.variants.map(variant => renderBikeCard(variant))}
+              {/* FIXED LINE 99 - Added safety check */}
+              {(pranaData?.variants || []).map(variant => renderBikeCard(variant))}
             </Row>
           </Col>
 
@@ -123,7 +129,8 @@ const PranaSection2 = () => {
 
               {/* Color selection indicators */}
               <div className={styles.colorSelection}>
-                {pranaData.variants.map((variant) => (
+                {/* FIXED LINE 126 - Added safety check */}
+                {(pranaData?.variants || []).map((variant) => (
                   <button
                     key={variant.color}
                     className={`${styles.colorOption} ${selectedColor === variant.color ? styles.selected : ''}`}
