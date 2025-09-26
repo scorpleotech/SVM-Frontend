@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { Alphabetic, Numeric } from "../../Utils/commonFunctions";
 import { MdRadioButtonUnchecked } from "react-icons/md";
-import CircleCheckedFilled from "@material-ui/icons/CheckCircle";
+import CircleCheckedFilled from "@mui/icons-material/CheckCircle";
 import { FaArrowRight } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";

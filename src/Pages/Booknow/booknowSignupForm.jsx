@@ -8,7 +8,7 @@ import {
   Numeric,
   generateCaptcha,
 } from "../../Utils/commonFunctions";
-import CircleCheckedFilled from "@material-ui/icons/CheckCircle";
+import CircleCheckedFilled from "@mui/icons-material/CheckCircle";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import {
   Checkbox,

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import classes from "./career.module.css";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { BsGlobe } from "react-icons/bs";
 import { Button, Divider, InputAdornment, Chip } from "@mui/material";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import { Numeric } from "../../Utils/commonFunctions";
-import { Email } from "@material-ui/icons";
+import { Email } from "@mui/icons-material";
 import { authApi } from "../../Api/api";
 import { pageLoader } from "../../Redux/Actions/userActions";
 import {

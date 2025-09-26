@@ -35,12 +35,12 @@ function App() {
   // }
   return (
     // <Suspense fallback={placeholder}>
-      <div className="App">
+    // </Suspense>
+    <div className="App">
       <Provider store={store}>
         <RouterProvider router={Router} />
       </Provider>
     </div>
-    // </Suspense>
   );
 }
 

@@ -15,7 +15,7 @@ import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { Alphabetic, Numeric } from "../../Utils/commonFunctions";
 import { MdRadioButtonUnchecked } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
-import CircleCheckedFilled from "@material-ui/icons/CheckCircle";
+import CircleCheckedFilled from "@mui/icons-material/CheckCircle";
 import { useDispatch, useSelector } from "react-redux";
 import {
   aadharOtpValidate,

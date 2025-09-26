@@ -1,4 +1,4 @@
-import { Typography, Button, Card } from "@material-ui/core";
+import { Typography, Button, Card } from "@mui/material";
 import classes from "./bookNow.module.css";
 import { useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";

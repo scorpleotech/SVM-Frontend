@@ -17,7 +17,7 @@ const BannerComponent = () => {
         //   length={bannerData?.length}
         //   data={bannerData}
         // />
-        <div className={classes.banner_size}>
+        (<div className={classes.banner_size}>
           {/* <LazyLoadImage
             alt="best electric bike in coimbatore"
             effect="blur"
@@ -43,7 +43,7 @@ const BannerComponent = () => {
             alt="best electric bike in coimbatore"
             className={classes.bannerImageClass}
           />
-        </div>
+        </div>)
       )}
       <LinkBtns />
       <div className={classes.functionButtonDiv}>
@@ -82,8 +82,6 @@ const BannerComponent = () => {
     Alive
   </Button>
 </div>
-
-
       {/* <div className={classes.functionButtonDiv1}>
         <Button variant="text" className={classes.headerArrawButtonIcon}>
           <DownArrowIcon />

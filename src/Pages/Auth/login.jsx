@@ -10,8 +10,8 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import CircleCheckedFilled from "@material-ui/icons/CheckCircle";
-import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
+import CircleCheckedFilled from "@mui/icons-material/CheckCircle";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import OtpInput from "react-otp-input";
 import { Numeric } from "../../Utils/commonFunctions";
 import indianFlag from "../../Assets/Images/IndianFlag.png";

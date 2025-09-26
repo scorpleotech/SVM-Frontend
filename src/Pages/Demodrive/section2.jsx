@@ -16,8 +16,8 @@ import {
 import dayjs from "dayjs";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import { FaArrowRight } from "react-icons/fa6";
-import CircleChecked from "@material-ui/icons/CheckCircleOutline";
-import CircleCheckedFilled from "@material-ui/icons/CheckCircle";
+import CircleChecked from "@mui/icons-material/CheckCircleOutline";
+import CircleCheckedFilled from "@mui/icons-material/CheckCircle";
 import { DemoPageImageArray } from "../../Utils/dummyConstants";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
