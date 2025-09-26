@@ -5,7 +5,6 @@ import pranaClassApi from '../../Api/pranaClassApi';
 // Bike Images and Logos
 import pranaBlack from '../../Assets/Images/prana_class/prana_black.png';
 import pranaBlue from '../../Assets/Images/prana_class/prana_blue.png';
-
 import pranaLogo from '../../Assets/Images/prana_class/PranaLOGO.png';
 
 // Create color object with single image per color
@@ -17,17 +16,13 @@ const DEFAULT_BIKE_MODELS = {
     name: 'PRANA Black',
     price: 999,
     logoImage: pranaLogo,
-    availableColors: [
-      createColorObject('Black', '#000000', pranaBlack),
-    ],
+    availableColors: [createColorObject('Black', '#000000', pranaBlack)],
   },
   Blue: {
     name: 'PRANA Blue',
     price: 999,
     logoImage: pranaLogo,
-    availableColors: [
-      createColorObject('Blue', '#1E90FF', pranaBlue),
-    ],
+    availableColors: [createColorObject('Blue', '#1E90FF', pranaBlue)],
   },
 };
 
@@ -86,9 +81,13 @@ function PranaReservationPopup({ isOpen = false, onClose = () => {} }) {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleColorSelect = (color) => {
-    setSelectedColor(color.hex);
+  // Restrict mobile input to numbers only and max 10 digits
+  const handleMobileInput = (e) => {
+    const value = e.target.value.replace(/\D/g, '');
+    if (value.length <= 10) setFormData((prev) => ({ ...prev, mobile: value }));
   };
+
+  const handleColorSelect = (color) => setSelectedColor(color.hex);
 
   const handleModelSelect = (modelKey) => {
     setCurrentSelectedModel(modelKey);
@@ -97,31 +96,16 @@ function PranaReservationPopup({ isOpen = false, onClose = () => {} }) {
 
   const handleSubmit = async () => {
     // Validation
-    if (!formData.name.trim()) {
-      showAlert('Please enter your name');
-      return;
-    }
-    if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      showAlert('Please enter a valid email');
-      return;
-    }
-    if (!formData.mobile.trim()) {
-      showAlert('Please enter your mobile number');
-      return;
-    }
-    if (!selectedColor) {
-      showAlert('Please select a color');
-      return;
-    }
-    if (!agreedToTerms) {
-      showAlert('Please agree to Terms & Conditions and Privacy Policy');
-      return;
-    }
+    if (!formData.name.trim()) return showAlert('Please enter your name');
+    if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) return showAlert('Please enter a valid email');
+    if (!formData.mobile.trim()) return showAlert('Please enter your mobile number');
+    if (!/^\d{10}$/.test(formData.mobile.trim())) return showAlert('Mobile number must be 10 digits');
+    if (!selectedColor) return showAlert('Please select a color');
+    if (!agreedToTerms) return showAlert('Please agree to Terms & Conditions and Privacy Policy');
 
     setIsSubmitting(true);
 
     try {
-      // Prepare reservation data
       const reservationData = {
         name: formData.name.trim(),
         email: formData.email.trim(),
@@ -134,13 +118,10 @@ function PranaReservationPopup({ isOpen = false, onClose = () => {} }) {
 
       console.log('Creating PranaClass reservation:', reservationData);
 
-      // Create reservation with payment redirect
       const response = await pranaClassApi.createReservationWithPayment(reservationData);
       
       if (response.variant === 'success') {
         showAlert(`Reservation created successfully! Redirecting to payment...`);
-        
-        // Redirect to payment after a short delay (same as alive)
         setTimeout(() => {
           if (response.redirectUrl) {
             window.location.href = `${process.env.REACT_APP_API_URL}${response.redirectUrl}`;
@@ -185,9 +166,7 @@ function PranaReservationPopup({ isOpen = false, onClose = () => {} }) {
 
           {/* Right Panel */}
           <div className={styles.formPanel}>
-            <button className={styles.closeBtn} onClick={onClose}>
-              ×
-            </button>
+            <button className={styles.closeBtn} onClick={onClose}>×</button>
             <div className={styles.header}>
               <h2 className={styles.title}>Reserve Your Bike</h2>
               <p className={styles.subtitle}>Pay a small amount now and secure your booking</p>
@@ -240,12 +219,13 @@ function PranaReservationPopup({ isOpen = false, onClose = () => {} }) {
                 className={styles.formInput}
                 placeholder="Mobile number"
                 value={formData.mobile}
-                onChange={handleInputChange}
+                onChange={handleMobileInput}
               />
             </div>
             <p className={styles.inputHelp}>
               We will use your number to share booking updates via SMS and Whatsapp
             </p>
+
             <div className={styles.priceSection}>
               <div className={styles.priceMain}>
                 INR {currentBike.price}.00
@@ -256,13 +236,11 @@ function PranaReservationPopup({ isOpen = false, onClose = () => {} }) {
               className={styles.payBtn} 
               onClick={handleSubmit}
               disabled={isSubmitting}
-              style={{ 
-                opacity: isSubmitting ? 0.7 : 1, 
-                cursor: isSubmitting ? 'not-allowed' : 'pointer' 
-              }}
+              style={{ opacity: isSubmitting ? 0.7 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
             >
               {isSubmitting ? 'PROCESSING...' : 'PAY NOW'}
             </button>
+
             <div className={styles.termsContainer}>
               <input
                 type="checkbox"
@@ -273,14 +251,9 @@ function PranaReservationPopup({ isOpen = false, onClose = () => {} }) {
               />
               <label htmlFor="agree-terms" className={styles.terms}>
                 By clicking PAY NOW, you agree to our{' '}
-                <a href="/terms-condition" target="_blank" rel="noreferrer">
-                  Terms & Conditions
-                </a>{' '}
+                <a href="/terms-condition" target="_blank" rel="noreferrer">Terms & Conditions</a>{' '}
                 and{' '}
-                <a href="/policy" target="_blank" rel="noreferrer">
-                  Privacy Policy
-                </a>
-                .
+                <a href="/policy" target="_blank" rel="noreferrer">Privacy Policy</a>.
               </label>
             </div>
           </div>

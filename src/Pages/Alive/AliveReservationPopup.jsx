@@ -132,11 +132,9 @@ function AliveReservationPopup({ isOpen = false, onClose = () => {}, selectedMod
     const esc = (e) => e.key === 'Escape' && onClose();
     if (isOpen) {
       document.addEventListener('keydown', esc);
-      //document.body.style.overflow = 'hidden';
     }
     return () => {
       document.removeEventListener('keydown', esc);
-      //document.body.style.overflow = 'auto';
     };
   }, [isOpen, onClose]);
 
@@ -149,6 +147,10 @@ function AliveReservationPopup({ isOpen = false, onClose = () => {}, selectedMod
     if (!formData.name.trim()) return showAlert('Please enter your name');
     if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) return showAlert('Please enter a valid email');
     if (!formData.mobile.trim()) return showAlert('Please enter your mobile number');
+
+    // Mobile validation: exactly 10 digits
+    if (!/^\d{10}$/.test(formData.mobile.trim())) return showAlert('Mobile number must be 10 digits');
+
     if (!selectedColor) return showAlert('Please select a color');
     if (!agreedToTerms) return showAlert('Please agree to Terms & Privacy Policy');
 
@@ -179,6 +181,12 @@ function AliveReservationPopup({ isOpen = false, onClose = () => {}, selectedMod
     } finally {
       setLoading(false);
     }
+  };
+
+  // Prevent non-numeric input in mobile field
+  const handleMobileInput = (e) => {
+    const value = e.target.value.replace(/\D/g, ''); // remove non-numeric
+    if (value.length <= 10) setFormData({ ...formData, mobile: value });
   };
 
   return (
@@ -216,7 +224,7 @@ function AliveReservationPopup({ isOpen = false, onClose = () => {}, selectedMod
             </div>
             <div className="form-group"><input type="text" name="name" className="form-input" placeholder="Name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} disabled={loading} /></div>
             <div className="form-group"><input type="email" name="email" className="form-input" placeholder="Email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} disabled={loading} /></div>
-            <div className="form-group"><input type="tel" name="mobile" className="form-input" placeholder="Mobile (WhatsApp)" value={formData.mobile} onChange={(e) => setFormData({ ...formData, mobile: e.target.value })} disabled={loading} /><p className="input-help">We’ll share booking updates via SMS & WhatsApp</p></div>
+            <div className="form-group"><input type="tel" name="mobile" className="form-input" placeholder="Mobile (WhatsApp)" value={formData.mobile} onChange={handleMobileInput} disabled={loading} /><p className="input-help">We’ll share booking updates via SMS & WhatsApp</p></div>
             <div className="price-section"><div className="price-main">INR {currentBike.price}.00 <span className="price-note">(Advance)</span></div></div>
             <button className={`pay-btn ${loading ? 'disabled' : ''}`} onClick={handleSubmit} disabled={loading}>{loading ? 'PROCESSING...' : 'PAY NOW'}</button>
             <div className="terms-container">
